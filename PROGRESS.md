@@ -31,20 +31,24 @@
   `len(tokenizer.encode(text))` langsung di Colab sebelum training penuh
   untuk kepastian, terutama setelah data discaling (CoT bisa lebih panjang).
 
+### 4. Susun anchor makro historis riil — `data/macro_anchors.json` (2026-08-23)
+- **Keputusan pendekatan:** kombinasi anchor historis riil + skenario sintetis
+  di atasnya (bukan cuma satu atau yang lain).
+- Riset & susun 3 periode makro riil Indonesia sebagai anchor:
+  - **Maret 2023** — BI Rate 5.75%, Inflasi YoY 4.97% (sumber: BI, BPS)
+  - **Desember 2023** — BI Rate 6.00%, Inflasi YoY 2.61% (sumber: BI, BPS)
+  - **Q3 2024** — BI Rate 6.00%, Inflasi YoY 2.12% (periode yang sudah
+    dipakai di dataset pilot sebelumnya, dipertahankan sebagai anchor ke-3)
+- File tersimpan di `data/macro_anchors.json`, lengkap dengan sumber dan
+  catatan penggunaan (kapan pakai anchor riil vs skenario sintetis turunan).
+- **Belum diverifikasi lebih presisi:** `usd_idr_exchange_rate_approx` dan
+  `economic_growth_gdp_percent` di 2 anchor baru (Maret & Desember 2023)
+  masih estimasi mendekati, bukan angka resmi per-kuartal — perlu
+  diverifikasi lagi sebelum dipakai untuk scaling besar (500-10.000 data).
+
 ---
 
 ## 🔜 BELUM DIKERJAKAN (urutan prioritas)
-
-### 4. Variasi data makro di dataset pilot
-- **Masalah:** Semua 5 aset pilot (BBRI, ADRO, TLKM, GOLD, USD/IDR) pakai
-  `bi_rate_percent: 6.00` dan `inflation_yoy_percent: 2.12` yang identik
-  persis (semua per Q3-2024). Risiko: model "menghafal" angka makro sebagai
-  konstanta, bukan belajar mengaitkan sensitivitas makro secara umum.
-- **Perlu keputusan dari user:** apakah scaling data nanti akan
-  mengambil periode historis berbeda (misal Q1-2023, Q2-2024, dst. dengan
-  BI Rate/inflasi aktual periode itu), atau tetap 1 periode tapi variasi
-  skenario makro dibuat sintetis (misal simulasi "seandainya BI Rate naik
-  ke 7%")? Ini menentukan cara generate data selanjutnya.
 
 ### 5. Klarifikasi Model Guru (Teacher Model) API
 - Belum diketahui: API/model apa yang dipakai user untuk generate dataset
@@ -53,11 +57,15 @@
   komersial pihak ketiga — beberapa provider melarang ini secara eksplisit.
 
 ### 6. Scaling dataset 20 → 500 Q&A
-- Menambah 10–20 emiten IHSG baru + variasi periode/skenario makro (lihat
-  poin 4) sebelum lanjut ke 500, lalu ke 10.000 sesuai roadmap Fase 5 di
-  `BLUEPRINT.md`.
+- Menambah 10–20 emiten IHSG baru, dengan `macro_context` diambil dari
+  salah satu 3 anchor di `data/macro_anchors.json` (bukan angka baru
+  sembarangan) — distribusikan aset ke 3 periode itu secara merata biar
+  variasi makro tersebar, sebelum lanjut ke 500, lalu ke 10.000 sesuai
+  roadmap Fase 5 di `BLUEPRINT.md`.
 - Perlu jaga kualitas per-batch, bukan asal kuantitas — audit manual
   sampel tiap batch baru.
+- Verifikasi lebih presisi `usd_idr_exchange_rate_approx` &
+  `economic_growth_gdp_percent` di 2 anchor baru sebelum batch besar.
 
 ### 7. Smoke test training run v0.1 di Colab
 - Jalankan notebook end-to-end (10 sel) sebagai uji pipeline teknis, BUKAN

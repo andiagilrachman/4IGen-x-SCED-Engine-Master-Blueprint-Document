@@ -1,0 +1,37 @@
+{
+  "_readme": "File referensi 3 periode makro historis riil Indonesia sebagai anchor untuk variasi data training SCED Engine. Tujuan: model belajar mengaitkan sensitivitas makro secara umum, bukan menghafal satu angka konstan. Sumber: Bank Indonesia (BI Rate) & Badan Pusat Statistik (Inflasi YoY nasional). Field lain (usd_idr_exchange_rate, economic_growth_gdp_percent) adalah estimasi mendekati kondisi periode tsb — perlu diverifikasi lebih presisi sebelum dipakai skala besar, terutama untuk economic_growth_gdp_percent per-kuartal.",
+
+  "periode_maret_2023": {
+    "label": "Maret 2023 — awal siklus suku bunga tinggi",
+    "bi_rate_percent": 5.75,
+    "inflation_yoy_percent": 4.97,
+    "usd_idr_exchange_rate_approx": 15200,
+    "sector_trend_context": "BI baru saja menaikkan suku bunga ke level tertinggi saat itu untuk redam inflasi pasca kenaikan harga BBM 2022; inflasi masih relatif tinggi (4.97%) sebelum mulai melandai.",
+    "source": "BI7DRR/BI-Rate press release Maret 2023; BPS inflasi nasional Maret 2023 (4.97% yoy)"
+  },
+
+  "periode_desember_2023": {
+    "label": "Desember 2023 — inflasi melandai, suku bunga tertinggi 4 tahun",
+    "bi_rate_percent": 6.00,
+    "inflation_yoy_percent": 2.61,
+    "usd_idr_exchange_rate_approx": 15500,
+    "sector_trend_context": "BI Rate naik ke 6.00% (tertinggi dalam 4 tahun) untuk stabilkan Rupiah, tapi inflasi domestik sudah jauh melandai ke 2.61% — kombinasi suku bunga tinggi + inflasi rendah ini konteks berbeda dari Maret 2023.",
+    "source": "BI-Rate press release Desember 2023 (6.00%); BPS inflasi nasional Desember 2023 (2.61% yoy)"
+  },
+
+  "periode_q3_2024": {
+    "label": "Q3 2024 — suku bunga tinggi bertahan, inflasi rendah stabil",
+    "bi_rate_percent": 6.00,
+    "inflation_yoy_percent": 2.12,
+    "usd_idr_exchange_rate_approx": 15800,
+    "economic_growth_gdp_percent": 4.95,
+    "sector_trend_context": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil (2.12%), Rupiah melemah sedikit terhadap dolar. Ini periode yang sudah dipakai di dataset pilot awal (BBRI, ADRO, TLKM, GOLD, USD/IDR).",
+    "source": "Sudah dipakai di data/synthetic_dataset/*.json sebelumnya — dipertahankan sebagai salah satu dari 3 anchor."
+  },
+
+  "catatan_penggunaan": [
+    "Gunakan salah satu dari 3 anchor ini (bukan bikin angka makro baru sembarangan) saat generate data sintetis aset baru, supaya variasi makro tetap grounded pada kejadian riil.",
+    "Untuk skenario sintetis tambahan (misal 'seandainya BI Rate naik ke 7%'), turunkan dari salah satu anchor ini dengan modifikasi eksplisit dan tandai jelas sebagai skenario hipotetis di metadata, jangan dicampur seolah data riil.",
+    "usd_idr_exchange_rate_approx dan economic_growth_gdp_percent masih perlu verifikasi lebih presisi per-periode sebelum dipakai untuk scaling besar (500-10000 data) — saat ini masih estimasi mendekati."
+  ]
+}
