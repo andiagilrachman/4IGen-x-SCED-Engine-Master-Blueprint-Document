@@ -1,0 +1,6 @@
+cd C:\
+git clone https://github.com/andiagilrachman/4IGen-x-SCED-Engine-Master-Blueprint-Document.git 4IGen-x-SCED-Engine-new
+
+
+cd C:\4IGen-x-SCED-Engine
+git pull origin main
