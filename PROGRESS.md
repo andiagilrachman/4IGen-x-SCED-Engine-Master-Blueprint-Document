@@ -262,19 +262,42 @@ sebelumnya).
   **Total bank/institusi keuangan dari financial_rows sekarang: 19 dari
   101 yang tersedia** (4 dari batch4 + 15 dari batch6).
 
-### 6i. Langkah selanjutnya
-- Perluas `financial_rows` ke sisa institusi keuangan (82 dari 101 belum
-  dipakai).
-- Perluas cakupan saham non-keuangan lagi dari 1.203 yang tersedia di
+### 6j. ✅ Lensa Risk & Macro untuk 19 institusi keuangan pakai YoY riil (2026-08-23)
+Total dataset sekarang **244 entri** (naik dari 206).
+
+- Manfaatkan data 2 tahun (FY2023 & FY2024) yang sudah tersedia untuk 19
+  institusi keuangan (4 dari batch4 + 15 dari batch6) untuk hitung
+  **pertumbuhan YoY sungguhan** dari fakta neraca — bukan snapshot 1 titik
+  waktu seperti kebanyakan data lain di dataset ini.
+- `batch7_19finance_risk_macro.json` (38 entri: 19 institusi x 2 lensa):
+  - **Risk & Red Flags Detector**: bandingkan Total Aset/Ekuitas/Laba
+    Bersih FY2023 vs FY2024, hitung growth % riil + ROE tiap tahun. Narasi
+    kondisional: kalau laba bersih turun YoY -> nada waspada + saran
+    investigasi lanjutan (bukan asal klaim penyebab); kalau naik -> nada
+    positif tapi tetap ingatkan cek kualitas pertumbuhan.
+  - **Macro & Interest Rate Sensitivity**: rasio Aset/Ekuitas (proksi
+    leverage) FY2024 dikaitkan dengan sensitivitas suku bunga.
+  - **Temuan menarik**: 10 dari 19 institusi mengalami penurunan laba
+    bersih YoY riil (contoh: ADMF -27.64%), padahal aset/ekuitas tetap
+    tumbuh — insight yang tidak mungkin didapat dari data snapshot 1
+    waktu saja.
+  - Semua rasio growth/ROE DIHITUNG LANGSUNG dari fakta (Net Income/
+    Equity, YoY %), bukan diambil dari sumber lain manapun.
+
+### 6k. Langkah selanjutnya
+- 19 institusi keuangan sekarang punya: Growth (batch4/6) + Risk + Macro
+  (batch7) = 3 lensa. Masih kurang 1 lensa (Value & Risk Margin) untuk
+  konsisten dengan 33 saham batch3/5 yang sudah 4 lensa penuh — tapi lensa
+  ini butuh PER/PBV/dividend_yield yang datanya dari sumber berbeda
+  (snapshot 2026, bukan financial_rows FY2023/2024) sehingga perlu
+  pendekatan berbeda atau diterima saja 3 lensa untuk grup ini.
+- Perluas `financial_rows` ke sisa 82 institusi keuangan yang belum
+  dipakai (masih banyak ruang: sudah 19/101).
+- Perluas saham non-keuangan lagi dari 1.203 yang tersedia di
   `fundamental_snapshot_all.json` (baru dipakai 37 saham).
-- Pertimbangkan tambah lensa Value & Risk Margin untuk 15 institusi
-  keuangan baru ini juga (saat ini baru lensa Growth saja, beda dengan 33
-  saham batch3/5 yang sudah 4 lensa lengkap) — supaya konsisten cakupan
-  lensa antar semua saham di dataset.
 - Tetap tunda data eksplisit Invezgo sampai ToS dikonfirmasi (poin 6b).
 - Mulai pertimbangkan kapan waktunya jalankan smoke test training di
-  Colab (roadmap poin #7) — dataset sudah 206 entri, jauh lebih besar dari
-  pilot 20 baris awal.
+  Colab (roadmap poin #7) — dataset sudah 244 entri.
 
 ### 7. Smoke test training run v0.1 di Colab
 - Jalankan notebook end-to-end (10 sel) sebagai uji pipeline teknis, BUKAN

@@ -1,0 +1,1446 @@
+[
+  {
+    "asset_code": "ADMF",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja ADMF (Adira Dinamika Multi Finance) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ADMF",
+        "asset_name": "Adira Dinamika Multi Finance",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 31007222000000.0,
+        "total_assets_fy2024_idr": 32588191000000.0,
+        "total_equity_fy2023_idr": 11112186000000.0,
+        "total_equity_fy2024_idr": 11555744000000.0,
+        "net_income_fy2023_idr": 1944047000000.0,
+        "net_income_fy2024_idr": 1406682000000.0,
+        "asset_growth_yoy_percent": 5.1,
+        "equity_growth_yoy_percent": 3.99,
+        "net_income_growth_yoy_percent": -27.64,
+        "roe_fy2023_percent": 17.49,
+        "roe_fy2024_percent": 12.17
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp31.01 Triliun -> Rp32.59 Triliun (+5.10%), Ekuitas Rp11.11 Triliun -> Rp11.56 Triliun (+3.99%), Laba Bersih Rp1.94 Triliun -> Rp1.41 Triliun (-27.64%).",
+      "step_2_correlation": "ROE bergerak dari 17.49% (FY2023) menjadi 12.17% (FY2024). Pertumbuhan laba bersih (-27.64%) dibandingkan pertumbuhan ekuitas (+3.99%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional ADMF dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Penurunan laba bersih YoY sebesar -27.64% adalah sinyal yang perlu diinvestigasi lebih lanjut — apakah disebabkan faktor musiman, peningkatan pencadangan/provisi, atau tekanan struktural pada bisnis inti."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "ADMF",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage ADMF (Adira Dinamika Multi Finance) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ADMF",
+        "asset_name": "Adira Dinamika Multi Finance",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 32588191000000.0,
+        "total_equity_idr": 11555744000000.0,
+        "asset_to_equity_ratio": 2.82
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset ADMF FY2024 sebesar Rp32.59 Triliun dengan Total Ekuitas Rp11.56 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 2.82x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 2.82x menunjukkan seberapa besar operasi ADMF dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 2.82x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 2.82x memberi gambaran skala leverage ADMF, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "ASDM",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja ASDM (Asuransi Dayin Mitra) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ASDM",
+        "asset_name": "Asuransi Dayin Mitra",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 982940217000.0,
+        "total_assets_fy2024_idr": 1082550737000.0,
+        "total_equity_fy2023_idr": 371724043000.0,
+        "total_equity_fy2024_idr": 398470362000.0,
+        "net_income_fy2023_idr": 21037991000.0,
+        "net_income_fy2024_idr": 30125811000.0,
+        "asset_growth_yoy_percent": 10.13,
+        "equity_growth_yoy_percent": 7.2,
+        "net_income_growth_yoy_percent": 43.2,
+        "roe_fy2023_percent": 5.66,
+        "roe_fy2024_percent": 7.56
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp0.98 Triliun -> Rp1.08 Triliun (+10.13%), Ekuitas Rp0.37 Triliun -> Rp0.40 Triliun (+7.20%), Laba Bersih Rp0.02 Triliun -> Rp0.03 Triliun (+43.20%).",
+      "step_2_correlation": "ROE bergerak dari 5.66% (FY2023) menjadi 7.56% (FY2024). Pertumbuhan laba bersih (+43.20%) dibandingkan pertumbuhan ekuitas (+7.20%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional ASDM dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Pertumbuhan laba bersih YoY yang positif (+43.20%) merupakan sinyal sehat, namun tetap perlu dibandingkan dengan pertumbuhan aset dan ekuitas untuk memastikan kualitas pertumbuhan (bukan sekadar ekspansi neraca tanpa efisiensi)."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "ASDM",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage ASDM (Asuransi Dayin Mitra) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ASDM",
+        "asset_name": "Asuransi Dayin Mitra",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 1082550737000.0,
+        "total_equity_idr": 398470362000.0,
+        "asset_to_equity_ratio": 2.72
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset ASDM FY2024 sebesar Rp1.08 Triliun dengan Total Ekuitas Rp0.40 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 2.72x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 2.72x menunjukkan seberapa besar operasi ASDM dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 2.72x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 2.72x memberi gambaran skala leverage ASDM, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "BBCA",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja BBCA (Bank Central Asia) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BBCA",
+        "asset_name": "Bank Central Asia",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 1408107010000000.0,
+        "total_assets_fy2024_idr": 1449301328000000.0,
+        "total_equity_fy2023_idr": 242537593000000.0,
+        "total_equity_fy2024_idr": 262835087000000.0,
+        "net_income_fy2023_idr": 48658095000000.0,
+        "net_income_fy2024_idr": 54851274000000.0,
+        "asset_growth_yoy_percent": 2.93,
+        "equity_growth_yoy_percent": 8.37,
+        "net_income_growth_yoy_percent": 12.73,
+        "roe_fy2023_percent": 20.06,
+        "roe_fy2024_percent": 20.87
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp1408.11 Triliun -> Rp1449.30 Triliun (+2.93%), Ekuitas Rp242.54 Triliun -> Rp262.84 Triliun (+8.37%), Laba Bersih Rp48.66 Triliun -> Rp54.85 Triliun (+12.73%).",
+      "step_2_correlation": "ROE bergerak dari 20.06% (FY2023) menjadi 20.87% (FY2024). Pertumbuhan laba bersih (+12.73%) dibandingkan pertumbuhan ekuitas (+8.37%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional BBCA dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Pertumbuhan laba bersih YoY yang positif (+12.73%) merupakan sinyal sehat, namun tetap perlu dibandingkan dengan pertumbuhan aset dan ekuitas untuk memastikan kualitas pertumbuhan (bukan sekadar ekspansi neraca tanpa efisiensi)."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "BBCA",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage BBCA (Bank Central Asia) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BBCA",
+        "asset_name": "Bank Central Asia",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 1449301328000000.0,
+        "total_equity_idr": 262835087000000.0,
+        "asset_to_equity_ratio": 5.51
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset BBCA FY2024 sebesar Rp1449.30 Triliun dengan Total Ekuitas Rp262.84 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 5.51x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 5.51x menunjukkan seberapa besar operasi BBCA dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 5.51x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 5.51x memberi gambaran skala leverage BBCA, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "BBNI",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja BBNI (Bank Negara Indonesia (Persero)) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BBNI",
+        "asset_name": "Bank Negara Indonesia (Persero)",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 1086663986000000.0,
+        "total_assets_fy2024_idr": 1129805637000000.0,
+        "total_equity_fy2023_idr": 154732520000000.0,
+        "total_equity_fy2024_idr": 167186553000000.0,
+        "net_income_fy2023_idr": 21106228000000.0,
+        "net_income_fy2024_idr": 21669397000000.0,
+        "asset_growth_yoy_percent": 3.97,
+        "equity_growth_yoy_percent": 8.05,
+        "net_income_growth_yoy_percent": 2.67,
+        "roe_fy2023_percent": 13.64,
+        "roe_fy2024_percent": 12.96
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp1086.66 Triliun -> Rp1129.81 Triliun (+3.97%), Ekuitas Rp154.73 Triliun -> Rp167.19 Triliun (+8.05%), Laba Bersih Rp21.11 Triliun -> Rp21.67 Triliun (+2.67%).",
+      "step_2_correlation": "ROE bergerak dari 13.64% (FY2023) menjadi 12.96% (FY2024). Pertumbuhan laba bersih (+2.67%) dibandingkan pertumbuhan ekuitas (+8.05%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional BBNI dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Pertumbuhan laba bersih YoY yang positif (+2.67%) merupakan sinyal sehat, namun tetap perlu dibandingkan dengan pertumbuhan aset dan ekuitas untuk memastikan kualitas pertumbuhan (bukan sekadar ekspansi neraca tanpa efisiensi)."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "BBNI",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage BBNI (Bank Negara Indonesia (Persero)) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BBNI",
+        "asset_name": "Bank Negara Indonesia (Persero)",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 1129805637000000.0,
+        "total_equity_idr": 167186553000000.0,
+        "asset_to_equity_ratio": 6.76
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset BBNI FY2024 sebesar Rp1129.81 Triliun dengan Total Ekuitas Rp167.19 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 6.76x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 6.76x menunjukkan seberapa besar operasi BBNI dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 6.76x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 6.76x memberi gambaran skala leverage BBNI, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "BBTN",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja BBTN (Bank Tabungan Negara (Persero)) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BBTN",
+        "asset_name": "Bank Tabungan Negara (Persero)",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 438749736000000.0,
+        "total_assets_fy2024_idr": 469614502000000.0,
+        "total_equity_fy2023_idr": 30479152000000.0,
+        "total_equity_fy2024_idr": 32571889000000.0,
+        "net_income_fy2023_idr": 3500988000000.0,
+        "net_income_fy2024_idr": 3007328000000.0,
+        "asset_growth_yoy_percent": 7.03,
+        "equity_growth_yoy_percent": 6.87,
+        "net_income_growth_yoy_percent": -14.1,
+        "roe_fy2023_percent": 11.49,
+        "roe_fy2024_percent": 9.23
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp438.75 Triliun -> Rp469.61 Triliun (+7.03%), Ekuitas Rp30.48 Triliun -> Rp32.57 Triliun (+6.87%), Laba Bersih Rp3.50 Triliun -> Rp3.01 Triliun (-14.10%).",
+      "step_2_correlation": "ROE bergerak dari 11.49% (FY2023) menjadi 9.23% (FY2024). Pertumbuhan laba bersih (-14.10%) dibandingkan pertumbuhan ekuitas (+6.87%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional BBTN dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Penurunan laba bersih YoY sebesar -14.10% adalah sinyal yang perlu diinvestigasi lebih lanjut — apakah disebabkan faktor musiman, peningkatan pencadangan/provisi, atau tekanan struktural pada bisnis inti."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "BBTN",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage BBTN (Bank Tabungan Negara (Persero)) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BBTN",
+        "asset_name": "Bank Tabungan Negara (Persero)",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 469614502000000.0,
+        "total_equity_idr": 32571889000000.0,
+        "asset_to_equity_ratio": 14.42
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset BBTN FY2024 sebesar Rp469.61 Triliun dengan Total Ekuitas Rp32.57 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 14.42x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 14.42x menunjukkan seberapa besar operasi BBTN dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 14.42x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 14.42x memberi gambaran skala leverage BBTN, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "BDMN",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja BDMN (Bank Danamon Indonesia) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BDMN",
+        "asset_name": "Bank Danamon Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 221304532000000.0,
+        "total_assets_fy2024_idr": 242334540000000.0,
+        "total_equity_fy2023_idr": 49959368000000.0,
+        "total_equity_fy2024_idr": 51825557000000.0,
+        "net_income_fy2023_idr": 3658045000000.0,
+        "net_income_fy2024_idr": 3290885000000.0,
+        "asset_growth_yoy_percent": 9.5,
+        "equity_growth_yoy_percent": 3.74,
+        "net_income_growth_yoy_percent": -10.04,
+        "roe_fy2023_percent": 7.32,
+        "roe_fy2024_percent": 6.35
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp221.30 Triliun -> Rp242.33 Triliun (+9.50%), Ekuitas Rp49.96 Triliun -> Rp51.83 Triliun (+3.74%), Laba Bersih Rp3.66 Triliun -> Rp3.29 Triliun (-10.04%).",
+      "step_2_correlation": "ROE bergerak dari 7.32% (FY2023) menjadi 6.35% (FY2024). Pertumbuhan laba bersih (-10.04%) dibandingkan pertumbuhan ekuitas (+3.74%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional BDMN dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Penurunan laba bersih YoY sebesar -10.04% adalah sinyal yang perlu diinvestigasi lebih lanjut — apakah disebabkan faktor musiman, peningkatan pencadangan/provisi, atau tekanan struktural pada bisnis inti."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "BDMN",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage BDMN (Bank Danamon Indonesia) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BDMN",
+        "asset_name": "Bank Danamon Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 242334540000000.0,
+        "total_equity_idr": 51825557000000.0,
+        "asset_to_equity_ratio": 4.68
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset BDMN FY2024 sebesar Rp242.33 Triliun dengan Total Ekuitas Rp51.83 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 4.68x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 4.68x menunjukkan seberapa besar operasi BDMN dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 4.68x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 4.68x memberi gambaran skala leverage BDMN, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "BFIN",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja BFIN (BFI Finance Indonesia) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BFIN",
+        "asset_name": "BFI Finance Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 23991435000000.0,
+        "total_assets_fy2024_idr": 25119820000000.0,
+        "total_equity_fy2023_idr": 9499796000000.0,
+        "total_equity_fy2024_idr": 10181665000000.0,
+        "net_income_fy2023_idr": 1643799000000.0,
+        "net_income_fy2024_idr": 1564674000000.0,
+        "asset_growth_yoy_percent": 4.7,
+        "equity_growth_yoy_percent": 7.18,
+        "net_income_growth_yoy_percent": -4.81,
+        "roe_fy2023_percent": 17.3,
+        "roe_fy2024_percent": 15.37
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp23.99 Triliun -> Rp25.12 Triliun (+4.70%), Ekuitas Rp9.50 Triliun -> Rp10.18 Triliun (+7.18%), Laba Bersih Rp1.64 Triliun -> Rp1.56 Triliun (-4.81%).",
+      "step_2_correlation": "ROE bergerak dari 17.30% (FY2023) menjadi 15.37% (FY2024). Pertumbuhan laba bersih (-4.81%) dibandingkan pertumbuhan ekuitas (+7.18%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional BFIN dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Penurunan laba bersih YoY sebesar -4.81% adalah sinyal yang perlu diinvestigasi lebih lanjut — apakah disebabkan faktor musiman, peningkatan pencadangan/provisi, atau tekanan struktural pada bisnis inti."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "BFIN",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage BFIN (BFI Finance Indonesia) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BFIN",
+        "asset_name": "BFI Finance Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 25119820000000.0,
+        "total_equity_idr": 10181665000000.0,
+        "asset_to_equity_ratio": 2.47
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset BFIN FY2024 sebesar Rp25.12 Triliun dengan Total Ekuitas Rp10.18 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 2.47x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 2.47x menunjukkan seberapa besar operasi BFIN dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 2.47x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 2.47x memberi gambaran skala leverage BFIN, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "BJBR",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja BJBR (Bank Pembangunan Daerah Jawa Barat dan Banten) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BJBR",
+        "asset_name": "Bank Pembangunan Daerah Jawa Barat dan Banten",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 188295488000000.0,
+        "total_assets_fy2024_idr": 219960693000000.0,
+        "total_equity_fy2023_idr": 15449018000000.0,
+        "total_equity_fy2024_idr": 19638701000000.0,
+        "net_income_fy2023_idr": 1681177000000.0,
+        "net_income_fy2024_idr": 1455186000000.0,
+        "asset_growth_yoy_percent": 16.82,
+        "equity_growth_yoy_percent": 27.12,
+        "net_income_growth_yoy_percent": -13.44,
+        "roe_fy2023_percent": 10.88,
+        "roe_fy2024_percent": 7.41
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp188.30 Triliun -> Rp219.96 Triliun (+16.82%), Ekuitas Rp15.45 Triliun -> Rp19.64 Triliun (+27.12%), Laba Bersih Rp1.68 Triliun -> Rp1.46 Triliun (-13.44%).",
+      "step_2_correlation": "ROE bergerak dari 10.88% (FY2023) menjadi 7.41% (FY2024). Pertumbuhan laba bersih (-13.44%) dibandingkan pertumbuhan ekuitas (+27.12%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional BJBR dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Penurunan laba bersih YoY sebesar -13.44% adalah sinyal yang perlu diinvestigasi lebih lanjut — apakah disebabkan faktor musiman, peningkatan pencadangan/provisi, atau tekanan struktural pada bisnis inti."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "BJBR",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage BJBR (Bank Pembangunan Daerah Jawa Barat dan Banten) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BJBR",
+        "asset_name": "Bank Pembangunan Daerah Jawa Barat dan Banten",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 219960693000000.0,
+        "total_equity_idr": 19638701000000.0,
+        "asset_to_equity_ratio": 11.2
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset BJBR FY2024 sebesar Rp219.96 Triliun dengan Total Ekuitas Rp19.64 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 11.20x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 11.20x menunjukkan seberapa besar operasi BJBR dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 11.20x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 11.20x memberi gambaran skala leverage BJBR, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "BNGA",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja BNGA (Bank CIMB Niaga) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BNGA",
+        "asset_name": "Bank CIMB Niaga",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 334369233000000.0,
+        "total_assets_fy2024_idr": 360220510000000.0,
+        "total_equity_fy2023_idr": 49337371000000.0,
+        "total_equity_fy2024_idr": 53196327000000.0,
+        "net_income_fy2023_idr": 6551401000000.0,
+        "net_income_fy2024_idr": 6898934000000.0,
+        "asset_growth_yoy_percent": 7.73,
+        "equity_growth_yoy_percent": 7.82,
+        "net_income_growth_yoy_percent": 5.3,
+        "roe_fy2023_percent": 13.28,
+        "roe_fy2024_percent": 12.97
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp334.37 Triliun -> Rp360.22 Triliun (+7.73%), Ekuitas Rp49.34 Triliun -> Rp53.20 Triliun (+7.82%), Laba Bersih Rp6.55 Triliun -> Rp6.90 Triliun (+5.30%).",
+      "step_2_correlation": "ROE bergerak dari 13.28% (FY2023) menjadi 12.97% (FY2024). Pertumbuhan laba bersih (+5.30%) dibandingkan pertumbuhan ekuitas (+7.82%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional BNGA dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Pertumbuhan laba bersih YoY yang positif (+5.30%) merupakan sinyal sehat, namun tetap perlu dibandingkan dengan pertumbuhan aset dan ekuitas untuk memastikan kualitas pertumbuhan (bukan sekadar ekspansi neraca tanpa efisiensi)."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "BNGA",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage BNGA (Bank CIMB Niaga) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BNGA",
+        "asset_name": "Bank CIMB Niaga",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 360220510000000.0,
+        "total_equity_idr": 53196327000000.0,
+        "asset_to_equity_ratio": 6.77
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset BNGA FY2024 sebesar Rp360.22 Triliun dengan Total Ekuitas Rp53.20 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 6.77x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 6.77x menunjukkan seberapa besar operasi BNGA dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 6.77x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 6.77x memberi gambaran skala leverage BNGA, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "BNLI",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja BNLI (Bank Permata) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BNLI",
+        "asset_name": "Bank Permata",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 257444147000000.0,
+        "total_assets_fy2024_idr": 259067503000000.0,
+        "total_equity_fy2023_idr": 39992322000000.0,
+        "total_equity_fy2024_idr": 42603182000000.0,
+        "net_income_fy2023_idr": 2585218000000.0,
+        "net_income_fy2024_idr": 3566519000000.0,
+        "asset_growth_yoy_percent": 0.63,
+        "equity_growth_yoy_percent": 6.53,
+        "net_income_growth_yoy_percent": 37.96,
+        "roe_fy2023_percent": 6.46,
+        "roe_fy2024_percent": 8.37
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp257.44 Triliun -> Rp259.07 Triliun (+0.63%), Ekuitas Rp39.99 Triliun -> Rp42.60 Triliun (+6.53%), Laba Bersih Rp2.59 Triliun -> Rp3.57 Triliun (+37.96%).",
+      "step_2_correlation": "ROE bergerak dari 6.46% (FY2023) menjadi 8.37% (FY2024). Pertumbuhan laba bersih (+37.96%) dibandingkan pertumbuhan ekuitas (+6.53%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional BNLI dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Pertumbuhan laba bersih YoY yang positif (+37.96%) merupakan sinyal sehat, namun tetap perlu dibandingkan dengan pertumbuhan aset dan ekuitas untuk memastikan kualitas pertumbuhan (bukan sekadar ekspansi neraca tanpa efisiensi)."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "BNLI",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage BNLI (Bank Permata) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BNLI",
+        "asset_name": "Bank Permata",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 259067503000000.0,
+        "total_equity_idr": 42603182000000.0,
+        "asset_to_equity_ratio": 6.08
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset BNLI FY2024 sebesar Rp259.07 Triliun dengan Total Ekuitas Rp42.60 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 6.08x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 6.08x menunjukkan seberapa besar operasi BNLI dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 6.08x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 6.08x memberi gambaran skala leverage BNLI, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "BRIS",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja BRIS (Bank Syariah Indonesia) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BRIS",
+        "asset_name": "Bank Syariah Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 353624124000000.0,
+        "total_assets_fy2024_idr": 408613432000000.0,
+        "total_equity_fy2023_idr": 38739121000000.0,
+        "total_equity_fy2024_idr": 45041572000000.0,
+        "net_income_fy2023_idr": 5703743000000.0,
+        "net_income_fy2024_idr": 7005888000000.0,
+        "asset_growth_yoy_percent": 15.55,
+        "equity_growth_yoy_percent": 16.27,
+        "net_income_growth_yoy_percent": 22.83,
+        "roe_fy2023_percent": 14.72,
+        "roe_fy2024_percent": 15.55
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp353.62 Triliun -> Rp408.61 Triliun (+15.55%), Ekuitas Rp38.74 Triliun -> Rp45.04 Triliun (+16.27%), Laba Bersih Rp5.70 Triliun -> Rp7.01 Triliun (+22.83%).",
+      "step_2_correlation": "ROE bergerak dari 14.72% (FY2023) menjadi 15.55% (FY2024). Pertumbuhan laba bersih (+22.83%) dibandingkan pertumbuhan ekuitas (+16.27%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional BRIS dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Pertumbuhan laba bersih YoY yang positif (+22.83%) merupakan sinyal sehat, namun tetap perlu dibandingkan dengan pertumbuhan aset dan ekuitas untuk memastikan kualitas pertumbuhan (bukan sekadar ekspansi neraca tanpa efisiensi)."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "BRIS",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage BRIS (Bank Syariah Indonesia) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BRIS",
+        "asset_name": "Bank Syariah Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 408613432000000.0,
+        "total_equity_idr": 45041572000000.0,
+        "asset_to_equity_ratio": 9.07
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset BRIS FY2024 sebesar Rp408.61 Triliun dengan Total Ekuitas Rp45.04 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 9.07x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 9.07x menunjukkan seberapa besar operasi BRIS dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 9.07x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 9.07x memberi gambaran skala leverage BRIS, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "BTPS",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja BTPS (Bank BTPN Syariah) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BTPS",
+        "asset_name": "Bank BTPN Syariah",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 21435366000000.0,
+        "total_assets_fy2024_idr": 21747580000000.0,
+        "total_equity_fy2023_idr": 8777133000000.0,
+        "total_equity_fy2024_idr": 9316594000000.0,
+        "net_income_fy2023_idr": 1080588000000.0,
+        "net_income_fy2024_idr": 1061160000000.0,
+        "asset_growth_yoy_percent": 1.46,
+        "equity_growth_yoy_percent": 6.15,
+        "net_income_growth_yoy_percent": -1.8,
+        "roe_fy2023_percent": 12.31,
+        "roe_fy2024_percent": 11.39
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp21.44 Triliun -> Rp21.75 Triliun (+1.46%), Ekuitas Rp8.78 Triliun -> Rp9.32 Triliun (+6.15%), Laba Bersih Rp1.08 Triliun -> Rp1.06 Triliun (-1.80%).",
+      "step_2_correlation": "ROE bergerak dari 12.31% (FY2023) menjadi 11.39% (FY2024). Pertumbuhan laba bersih (-1.80%) dibandingkan pertumbuhan ekuitas (+6.15%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional BTPS dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Penurunan laba bersih YoY sebesar -1.80% adalah sinyal yang perlu diinvestigasi lebih lanjut — apakah disebabkan faktor musiman, peningkatan pencadangan/provisi, atau tekanan struktural pada bisnis inti."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "BTPS",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage BTPS (Bank BTPN Syariah) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BTPS",
+        "asset_name": "Bank BTPN Syariah",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 21747580000000.0,
+        "total_equity_idr": 9316594000000.0,
+        "asset_to_equity_ratio": 2.33
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset BTPS FY2024 sebesar Rp21.75 Triliun dengan Total Ekuitas Rp9.32 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 2.33x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 2.33x menunjukkan seberapa besar operasi BTPS dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 2.33x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 2.33x memberi gambaran skala leverage BTPS, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "LPGI",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja LPGI (Lippo General Insurance) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "LPGI",
+        "asset_name": "Lippo General Insurance",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 2769428113972.0,
+        "total_assets_fy2024_idr": 3074044644967.0,
+        "total_equity_fy2023_idr": 843744702806.0,
+        "total_equity_fy2024_idr": 893803986316.0,
+        "net_income_fy2023_idr": 24885327757.0,
+        "net_income_fy2024_idr": 62274344673.0,
+        "asset_growth_yoy_percent": 11.0,
+        "equity_growth_yoy_percent": 5.93,
+        "net_income_growth_yoy_percent": 150.25,
+        "roe_fy2023_percent": 2.95,
+        "roe_fy2024_percent": 6.97
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp2.77 Triliun -> Rp3.07 Triliun (+11.00%), Ekuitas Rp0.84 Triliun -> Rp0.89 Triliun (+5.93%), Laba Bersih Rp0.02 Triliun -> Rp0.06 Triliun (+150.25%).",
+      "step_2_correlation": "ROE bergerak dari 2.95% (FY2023) menjadi 6.97% (FY2024). Pertumbuhan laba bersih (+150.25%) dibandingkan pertumbuhan ekuitas (+5.93%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional LPGI dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Pertumbuhan laba bersih YoY yang positif (+150.25%) merupakan sinyal sehat, namun tetap perlu dibandingkan dengan pertumbuhan aset dan ekuitas untuk memastikan kualitas pertumbuhan (bukan sekadar ekspansi neraca tanpa efisiensi)."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "LPGI",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage LPGI (Lippo General Insurance) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "LPGI",
+        "asset_name": "Lippo General Insurance",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 3074044644967.0,
+        "total_equity_idr": 893803986316.0,
+        "asset_to_equity_ratio": 3.44
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset LPGI FY2024 sebesar Rp3.07 Triliun dengan Total Ekuitas Rp0.89 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 3.44x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 3.44x menunjukkan seberapa besar operasi LPGI dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 3.44x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 3.44x memberi gambaran skala leverage LPGI, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "MEGA",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja MEGA (Bank Mega) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "MEGA",
+        "asset_name": "Bank Mega",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 132049591000000.0,
+        "total_assets_fy2024_idr": 134915494000000.0,
+        "total_equity_fy2023_idr": 21755443000000.0,
+        "total_equity_fy2024_idr": 21182201000000.0,
+        "net_income_fy2023_idr": 3510670000000.0,
+        "net_income_fy2024_idr": 2631054000000.0,
+        "asset_growth_yoy_percent": 2.17,
+        "equity_growth_yoy_percent": -2.63,
+        "net_income_growth_yoy_percent": -25.06,
+        "roe_fy2023_percent": 16.14,
+        "roe_fy2024_percent": 12.42
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp132.05 Triliun -> Rp134.92 Triliun (+2.17%), Ekuitas Rp21.76 Triliun -> Rp21.18 Triliun (-2.63%), Laba Bersih Rp3.51 Triliun -> Rp2.63 Triliun (-25.06%).",
+      "step_2_correlation": "ROE bergerak dari 16.14% (FY2023) menjadi 12.42% (FY2024). Pertumbuhan laba bersih (-25.06%) dibandingkan pertumbuhan ekuitas (-2.63%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional MEGA dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Penurunan laba bersih YoY sebesar -25.06% adalah sinyal yang perlu diinvestigasi lebih lanjut — apakah disebabkan faktor musiman, peningkatan pencadangan/provisi, atau tekanan struktural pada bisnis inti."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "MEGA",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage MEGA (Bank Mega) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "MEGA",
+        "asset_name": "Bank Mega",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 134915494000000.0,
+        "total_equity_idr": 21182201000000.0,
+        "asset_to_equity_ratio": 6.37
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset MEGA FY2024 sebesar Rp134.92 Triliun dengan Total Ekuitas Rp21.18 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 6.37x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 6.37x menunjukkan seberapa besar operasi MEGA dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 6.37x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 6.37x memberi gambaran skala leverage MEGA, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "NISP",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja NISP (Bank OCBC NISP) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "NISP",
+        "asset_name": "Bank OCBC NISP",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 249757139000000.0,
+        "total_assets_fy2024_idr": 281008237000000.0,
+        "total_equity_fy2023_idr": 37320268000000.0,
+        "total_equity_fy2024_idr": 40691379000000.0,
+        "net_income_fy2023_idr": 4091043000000.0,
+        "net_income_fy2024_idr": 4866750000000.0,
+        "asset_growth_yoy_percent": 12.51,
+        "equity_growth_yoy_percent": 9.03,
+        "net_income_growth_yoy_percent": 18.96,
+        "roe_fy2023_percent": 10.96,
+        "roe_fy2024_percent": 11.96
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp249.76 Triliun -> Rp281.01 Triliun (+12.51%), Ekuitas Rp37.32 Triliun -> Rp40.69 Triliun (+9.03%), Laba Bersih Rp4.09 Triliun -> Rp4.87 Triliun (+18.96%).",
+      "step_2_correlation": "ROE bergerak dari 10.96% (FY2023) menjadi 11.96% (FY2024). Pertumbuhan laba bersih (+18.96%) dibandingkan pertumbuhan ekuitas (+9.03%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional NISP dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Pertumbuhan laba bersih YoY yang positif (+18.96%) merupakan sinyal sehat, namun tetap perlu dibandingkan dengan pertumbuhan aset dan ekuitas untuk memastikan kualitas pertumbuhan (bukan sekadar ekspansi neraca tanpa efisiensi)."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "NISP",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage NISP (Bank OCBC NISP) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "NISP",
+        "asset_name": "Bank OCBC NISP",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 281008237000000.0,
+        "total_equity_idr": 40691379000000.0,
+        "asset_to_equity_ratio": 6.91
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset NISP FY2024 sebesar Rp281.01 Triliun dengan Total Ekuitas Rp40.69 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 6.91x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 6.91x menunjukkan seberapa besar operasi NISP dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 6.91x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 6.91x memberi gambaran skala leverage NISP, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "PANS",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja PANS (Panin Sekuritas) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "PANS",
+        "asset_name": "Panin Sekuritas",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 2235128553852.0,
+        "total_assets_fy2024_idr": 2000890508730.0,
+        "total_equity_fy2023_idr": 1566185333063.0,
+        "total_equity_fy2024_idr": 1555332597046.0,
+        "net_income_fy2023_idr": 138013677348.0,
+        "net_income_fy2024_idr": 118112167031.0,
+        "asset_growth_yoy_percent": -10.48,
+        "equity_growth_yoy_percent": -0.69,
+        "net_income_growth_yoy_percent": -14.42,
+        "roe_fy2023_percent": 8.81,
+        "roe_fy2024_percent": 7.59
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp2.24 Triliun -> Rp2.00 Triliun (-10.48%), Ekuitas Rp1.57 Triliun -> Rp1.56 Triliun (-0.69%), Laba Bersih Rp0.14 Triliun -> Rp0.12 Triliun (-14.42%).",
+      "step_2_correlation": "ROE bergerak dari 8.81% (FY2023) menjadi 7.59% (FY2024). Pertumbuhan laba bersih (-14.42%) dibandingkan pertumbuhan ekuitas (-0.69%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional PANS dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Penurunan laba bersih YoY sebesar -14.42% adalah sinyal yang perlu diinvestigasi lebih lanjut — apakah disebabkan faktor musiman, peningkatan pencadangan/provisi, atau tekanan struktural pada bisnis inti."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "PANS",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage PANS (Panin Sekuritas) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "PANS",
+        "asset_name": "Panin Sekuritas",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 2000890508730.0,
+        "total_equity_idr": 1555332597046.0,
+        "asset_to_equity_ratio": 1.29
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset PANS FY2024 sebesar Rp2.00 Triliun dengan Total Ekuitas Rp1.56 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 1.29x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 1.29x menunjukkan seberapa besar operasi PANS dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 1.29x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 1.29x memberi gambaran skala leverage PANS, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "PNBN",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja PNBN (Bank Pan Indonesia) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "PNBN",
+        "asset_name": "Bank Pan Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 222010050000000.0,
+        "total_assets_fy2024_idr": 243958575000000.0,
+        "total_equity_fy2023_idr": 53312485000000.0,
+        "total_equity_fy2024_idr": 56069616000000.0,
+        "net_income_fy2023_idr": 3005536000000.0,
+        "net_income_fy2024_idr": 2866763000000.0,
+        "asset_growth_yoy_percent": 9.89,
+        "equity_growth_yoy_percent": 5.17,
+        "net_income_growth_yoy_percent": -4.62,
+        "roe_fy2023_percent": 5.64,
+        "roe_fy2024_percent": 5.11
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp222.01 Triliun -> Rp243.96 Triliun (+9.89%), Ekuitas Rp53.31 Triliun -> Rp56.07 Triliun (+5.17%), Laba Bersih Rp3.01 Triliun -> Rp2.87 Triliun (-4.62%).",
+      "step_2_correlation": "ROE bergerak dari 5.64% (FY2023) menjadi 5.11% (FY2024). Pertumbuhan laba bersih (-4.62%) dibandingkan pertumbuhan ekuitas (+5.17%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional PNBN dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Penurunan laba bersih YoY sebesar -4.62% adalah sinyal yang perlu diinvestigasi lebih lanjut — apakah disebabkan faktor musiman, peningkatan pencadangan/provisi, atau tekanan struktural pada bisnis inti."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "PNBN",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage PNBN (Bank Pan Indonesia) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "PNBN",
+        "asset_name": "Bank Pan Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 243958575000000.0,
+        "total_equity_idr": 56069616000000.0,
+        "asset_to_equity_ratio": 4.35
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset PNBN FY2024 sebesar Rp243.96 Triliun dengan Total Ekuitas Rp56.07 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 4.35x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 4.35x menunjukkan seberapa besar operasi PNBN dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 4.35x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 4.35x memberi gambaran skala leverage PNBN, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "SRTG",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja SRTG (Saratoga Investama Sedaya) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "SRTG",
+        "asset_name": "Saratoga Investama Sedaya",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 50945120000000.0,
+        "total_assets_fy2024_idr": 57841857000000.0,
+        "total_equity_fy2023_idr": 48788224000000.0,
+        "total_equity_fy2024_idr": 51772808000000.0,
+        "net_income_fy2023_idr": -10151341000000.0,
+        "net_income_fy2024_idr": 3291496000000.0,
+        "asset_growth_yoy_percent": 13.54,
+        "equity_growth_yoy_percent": 6.12,
+        "net_income_growth_yoy_percent": 132.42,
+        "roe_fy2023_percent": -20.81,
+        "roe_fy2024_percent": 6.36
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp50.95 Triliun -> Rp57.84 Triliun (+13.54%), Ekuitas Rp48.79 Triliun -> Rp51.77 Triliun (+6.12%), Laba Bersih Rp-10.15 Triliun -> Rp3.29 Triliun (+132.42%).",
+      "step_2_correlation": "ROE bergerak dari -20.81% (FY2023) menjadi 6.36% (FY2024). Pertumbuhan laba bersih (+132.42%) dibandingkan pertumbuhan ekuitas (+6.12%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional SRTG dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Pertumbuhan laba bersih YoY yang positif (+132.42%) merupakan sinyal sehat, namun tetap perlu dibandingkan dengan pertumbuhan aset dan ekuitas untuk memastikan kualitas pertumbuhan (bukan sekadar ekspansi neraca tanpa efisiensi)."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "SRTG",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage SRTG (Saratoga Investama Sedaya) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "SRTG",
+        "asset_name": "Saratoga Investama Sedaya",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 57841857000000.0,
+        "total_equity_idr": 51772808000000.0,
+        "asset_to_equity_ratio": 1.12
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset SRTG FY2024 sebesar Rp57.84 Triliun dengan Total Ekuitas Rp51.77 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 1.12x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 1.12x menunjukkan seberapa besar operasi SRTG dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 1.12x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 1.12x memberi gambaran skala leverage SRTG, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  },
+  {
+    "asset_code": "TUGU",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Tren apa yang teridentifikasi dari perbandingan kinerja TUGU (Asuransi Tugu Pratama Indonesia) antara FY2023 dan FY2024, dan apakah ada sinyal risiko dari perubahan tersebut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "TUGU",
+        "asset_name": "Asuransi Tugu Pratama Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2023 vs FY2024 (YoY)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Persen"
+      },
+      "financial_metrics": {
+        "total_assets_fy2023_idr": 25137942615000.0,
+        "total_assets_fy2024_idr": 26350070532000.0,
+        "total_equity_fy2023_idr": 10279858233000.0,
+        "total_equity_fy2024_idr": 10508549572000.0,
+        "net_income_fy2023_idr": 1302101269000.0,
+        "net_income_fy2024_idr": 750512791000.0,
+        "asset_growth_yoy_percent": 4.82,
+        "equity_growth_yoy_percent": 2.22,
+        "net_income_growth_yoy_percent": -42.36,
+        "roe_fy2023_percent": 12.67,
+        "roe_fy2024_percent": 7.14
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Perbandingan FY2023->FY2024: Total Aset Rp25.14 Triliun -> Rp26.35 Triliun (+4.82%), Ekuitas Rp10.28 Triliun -> Rp10.51 Triliun (+2.22%), Laba Bersih Rp1.30 Triliun -> Rp0.75 Triliun (-42.36%).",
+      "step_2_correlation": "ROE bergerak dari 12.67% (FY2023) menjadi 7.14% (FY2024). Pertumbuhan laba bersih (-42.36%) dibandingkan pertumbuhan ekuitas (+2.22%) menunjukkan apakah profitabilitas tumbuh lebih cepat atau lebih lambat dari basis modal.",
+      "step_3_macro_contextualization": "Kedua periode berada dalam rezim BI Rate 6.00% yang relatif stabil, sehingga perubahan kinerja lebih mencerminkan faktor internal/operasional TUGU dibanding perubahan kebijakan moneter drastis.",
+      "step_4_synthesis": "Penurunan laba bersih YoY sebesar -42.36% adalah sinyal yang perlu diinvestigasi lebih lanjut — apakah disebabkan faktor musiman, peningkatan pencadangan/provisi, atau tekanan struktural pada bisnis inti."
+    },
+    "_source_note": "Data neraca/laba-rugi murni FY2023 & FY2024 dari financial_rows (database 4igen user). Semua rasio pertumbuhan dan ROE DIHITUNG LANGSUNG dari fakta (bukan diambil dari sumber lain)."
+  },
+  {
+    "asset_code": "TUGU",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana tingkat leverage TUGU (Asuransi Tugu Pratama Indonesia) pada FY2024 memengaruhi sensitivitasnya terhadap perubahan suku bunga BI Rate?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "TUGU",
+        "asset_name": "Asuransi Tugu Pratama Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Rasio"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 26350070532000.0,
+        "total_equity_idr": 10508549572000.0,
+        "asset_to_equity_ratio": 2.51
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Total Aset TUGU FY2024 sebesar Rp26.35 Triliun dengan Total Ekuitas Rp10.51 Triliun, menghasilkan rasio Aset/Ekuitas (proksi leverage) sebesar 2.51x.",
+      "step_2_correlation": "Rasio Aset/Ekuitas 2.51x menunjukkan seberapa besar operasi TUGU dibiayai oleh sumber dana selain ekuitas (utang/simpanan nasabah untuk institusi perbankan) — semakin tinggi rasio ini, semakin besar eksposur terhadap perubahan biaya dana.",
+      "step_3_macro_contextualization": "Dalam kondisi BI Rate 6.0% dan inflasi 2.12%, institusi dengan leverage tinggi seperti rasio 2.51x lebih sensitif terhadap perubahan biaya dana dibanding institusi dengan basis ekuitas yang lebih tebal.",
+      "step_4_synthesis": "Rasio Aset/Ekuitas 2.51x memberi gambaran skala leverage TUGU, namun data ini tidak merinci komposisi sumber dana (giro/tabungan murah vs deposito mahal untuk bank), sehingga kesimpulan sensitivitas suku bunga bersifat indikatif berdasarkan leverage agregat saja."
+    },
+    "_source_note": "Data neraca murni FY2024 dari financial_rows (database 4igen user). Rasio Aset/Ekuitas dihitung langsung dari fakta."
+  }
+]
