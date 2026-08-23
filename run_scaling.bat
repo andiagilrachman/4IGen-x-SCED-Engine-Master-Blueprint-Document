@@ -23,23 +23,28 @@ echo Folder kerja sekarang: %cd%
 echo.
 
 REM Cek kalau file SQL salah taruh (langsung di scripts\, bukan scripts\sql_dumps\)
-if exist "scripts\stocks_sectors.sql" (
-    echo PERINGATAN: ditemukan stocks_sectors.sql langsung di folder scripts\
-    echo Seharusnya ada di scripts\sql_dumps\stocks_sectors.sql
-    echo Memindahkan otomatis...
-    if not exist "scripts\sql_dumps" mkdir "scripts\sql_dumps"
-    move "scripts\stocks_sectors.sql" "scripts\sql_dumps\stocks_sectors.sql" >nul
-    echo Selesai dipindahkan.
-    echo.
+REM Pakai wildcard (stocks_sectors*) supaya toleran kalau nama filenya sedikit
+REM beda (misal ekstensi dobel karena Windows sembunyikan .sql -- lihat catatan
+REM di extract_fundamental_data.py)
+for %%f in (scripts\stocks_sectors*) do (
+    if exist "%%f" (
+        echo PERINGATAN: ditemukan %%f langsung di folder scripts\
+        echo Seharusnya ada di scripts\sql_dumps\
+        if not exist "scripts\sql_dumps" mkdir "scripts\sql_dumps"
+        move "%%f" "scripts\sql_dumps\" >nul
+        echo Dipindahkan ke scripts\sql_dumps\
+        echo.
+    )
 )
-if exist "scripts\indicator_snapshot_fundamental.sql" (
-    echo PERINGATAN: ditemukan indicator_snapshot_fundamental.sql langsung di folder scripts\
-    echo Seharusnya ada di scripts\sql_dumps\indicator_snapshot_fundamental.sql
-    echo Memindahkan otomatis...
-    if not exist "scripts\sql_dumps" mkdir "scripts\sql_dumps"
-    move "scripts\indicator_snapshot_fundamental.sql" "scripts\sql_dumps\indicator_snapshot_fundamental.sql" >nul
-    echo Selesai dipindahkan.
-    echo.
+for %%f in (scripts\indicator_snapshot_fundamental*) do (
+    if exist "%%f" (
+        echo PERINGATAN: ditemukan %%f langsung di folder scripts\
+        echo Seharusnya ada di scripts\sql_dumps\
+        if not exist "scripts\sql_dumps" mkdir "scripts\sql_dumps"
+        move "%%f" "scripts\sql_dumps\" >nul
+        echo Dipindahkan ke scripts\sql_dumps\
+        echo.
+    )
 )
 echo === LANGKAH 1: Ekstrak data fundamental dari SQL dump ===
 python scripts\extract_fundamental_data.py
