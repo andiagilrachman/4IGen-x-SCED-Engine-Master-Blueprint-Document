@@ -408,20 +408,70 @@ di `C:\4IGen-x-SCED-Engine`, lalu commit & push sendiri ke GitHub.
   user) ikut ter-commit tidak sengaja — tidak masalah, dibiarkan saja
   (bukan data sensitif).
 
-### 6s. Langkah selanjutnya
-- **User sekarang bisa scaling MANDIRI kapan saja** tanpa perlu sesi kerja
-  dengan Claude — cukup export SQL terbaru dari phpMyAdmin, taruh di
-  `scripts\sql_dumps\` (nama fleksibel, tidak perlu persis), lalu jalankan
-  `run_scaling.bat` dua kali (pertama bikin daftar kandidat, kedua generate
-  beneran).
-- **Rekomendasi kuat: coba smoke test training di Colab sekarang** —
-  dataset sudah 684 entri, pipeline scaling maupun training sudah
-  tervalidasi jalan. Ini titik yang sangat wajar untuk validasi ujung-ke-
-  ujung.
-- Tetap tunda data eksplisit Invezgo sampai ToS dikonfirmasi (poin 6b).
-- Kalau mau scaling lebih lanjut: edit `scripts\stocks_to_add.txt` dengan
-  kode saham pilihan sendiri, atau hapus filenya biar dibuatkan ulang
-  daftar kandidat otomatis.
+### 6t. ✅✅ MILESTONE BESAR: Smoke test training BERHASIL end-to-end pertama kali (2026-08-23)
+Setelah serangkaian debugging panjang, pipeline training **berhasil jalan
+lengkap dari Sel 1 sampai Sel 10** — adapter LoRA berhasil di-training,
+di-save, dan di-download ke PC user. Ini validasi pertama bahwa seluruh
+rantai (data → JSONL → training → adapter) benar-benar berfungsi.
+
+**Riwayat lengkap bug yang ditemukan & diperbaiki selama proses ini**
+(dicatat detail sebagai referensi kalau ada masalah serupa di masa depan):
+
+1. **Notebook bukan JSON valid** — file `.ipynb` dari awal cuma teks
+   biasa dengan komentar "# SEL N:", bukan format JSON struktural
+   Jupyter. Diperbaiki: dikonversi penuh ke `nbformat` 4.5 valid
+   (10 cell terpisah, tervalidasi resmi).
+2. **`bitsandbytes` belum kebaca setelah install** — perlu restart
+   runtime Colab setelah Sel 2 (install dependency), bukan cuma lanjut
+   ke sel berikutnya tanpa restart.
+3. **API `trl` berubah** — `dataset_text_field`/`max_seq_length` pindah
+   dari `SFTTrainer` langsung ke `SFTConfig`. Diperbaiki dengan
+   try/except fallback untuk 2 variasi API.
+4. **`NotImplementedError: BFloat16` saat `trainer.train()`** — masalah
+   PALING BANYAK memakan waktu. Percobaan pertama (paksa `torch_dtype=
+   float16` di Sel 4) TIDAK CUKUP. Percobaan kedua (cast manual parameter
+   LoRA ke `float16` di Sel 5) JUGA TIDAK CUKUP. **Akar masalah
+   sebenarnya**: `GradScaler` (mekanisme `fp16=True`) secara desain
+   memang tidak pernah kompatibel dengan `bfloat16` sama sekali — bukan
+   soal lupa cast. **Fix yang benar**: ganti total strategi dari `fp16`
+   ke `bf16` (Sel 4, 5, 7 semua diubah konsisten ke `bfloat16`) — `bf16`
+   tidak butuh `GradScaler` sama sekali sehingga masalah hilang dari
+   akarnya.
+5. **Estimasi waktu 10+ jam** — GPU T4 tidak punya akselerasi hardware
+   untuk `bf16` (beda dari GPU Ampere+), jadi lambat meski secara
+   fungsional benar. Diperbaiki bertahap: turunkan `max_seq_length`
+   2048→1024, turunkan `num_train_epochs` 3→1, dan akhirnya tambah
+   **`SMOKE_TEST_MODE`** di Sel 6 yang memangkas dataset ke 60 sampel
+   acak — supaya smoke test selesai dalam hitungan menit, bukan jam,
+   sambil tetap membuktikan pipeline lengkap berfungsi.
+6. **Interrupt training memicu reset runtime Colab diam-diam** (quirk
+   Colab dikenal luas, bukan bug kita) — beberapa kali proses interrupt
+   di tengah training GPU berat bikin semua dependency & variabel hilang
+   tanpa peringatan jelas, perlu ulang dari Sel 1.
+
+**Status:** Adapter `sced_adapter_v0.1` (hasil training 60 sampel, 1
+epoch, `bf16`, `max_seq_length=1024`) sudah di-download user ke PC rumah.
+**Belum dilihat hasil Sel 9** (Ujian Kelulusan ICBP) — ini penting untuk
+menilai kualitas jawaban model meski masih skala smoke test kecil.
+
+### 6u. Langkah selanjutnya
+- **Lihat & audit hasil Sel 9** (ujian ICBP) — apakah jawaban model masuk
+  akal, tidak halusinasi angka, format 4-langkah CoT terikuti dengan
+  benar. Ini validasi kualitas pertama, meski modelnya baru dilatih 60
+  sampel (jangan berekspektasi hasil sempurna, tapi harus terlihat
+  "belajar arah yang benar").
+- **Setelah smoke test dinilai OK**: set `SMOKE_TEST_MODE = False` di
+  Sel 6, dan pertimbangkan naikkan lagi `num_train_epochs` ke 3 di Sel 7
+  — jalankan training PENUH dengan semua data yang tersedia (684+ entri
+  tergantung scaling terakhir). Ini akan makan waktu lama (~beberapa jam
+  di T4 dengan `bf16`) — pertimbangkan Colab Pro untuk GPU lebih cepat
+  (misal A100/L4 yang punya akselerasi hardware `bf16`), atau jalankan
+  di sesi yang tidak akan di-interrupt di tengah jalan.
+- Adapter hasil smoke test (`sced_adapter_v0.1`, 60 sampel) sebaiknya
+  TIDAK dipakai untuk deployment sungguhan — cuma untuk validasi
+  pipeline. Adapter hasil training penuh nanti yang jadi kandidat asli.
+- Lanjut scaling data juga masih relevan paralel (via `run_scaling.bat`)
+  sambil menunggu kapan waktunya training penuh dijalankan.
 
 ### 7. Smoke test training run v0.1 di Colab
 - Jalankan notebook end-to-end (10 sel) sebagai uji pipeline teknis, BUKAN
