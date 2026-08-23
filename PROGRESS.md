@@ -167,20 +167,53 @@
   karena berisi data vendor mentah skala besar (bukan untuk didistribusi
   ulang, beda dengan hasil olahan/faktanya sendiri).
 
-### 6d. Langkah selanjutnya untuk scaling lebih lanjut
-- Perluas `generate_batch2.py` ke 3 lensa lain (Growth, Macro Sensitivity,
-  Risk/Red Flags) untuk 4 saham yang sudah ada datanya.
-- Perluas ke lebih banyak saham dari 1.203 yang tersedia di
-  `fundamental_snapshot_all.json` (saat ini baru dipakai 4 dari 1.203).
-- Manfaatkan juga `financial_rows` (data neraca/laba-rugi mentah historis
-  101 saham, Q1 2023 - Q2 2026) untuk pasangan data historis + 3 anchor
-  makro 2023/2024 yang sudah ada — ini akan memberi variasi periode yang
-  lebih kaya dibanding cuma snapshot terkini.
-- Tetap tunda pemakaian data eksplisit Invezgo (shareholder_composition,
-  dll) sampai ToS API-spesifik dikonfirmasi (lihat poin 6b).
-- Sebelum training final: audit manual sampel tiap batch baru, verifikasi
-  `sector` field yang sengaja dikosongkan di batch2 (perlu join ke tabel
-  `sectors`/`sector_id` agar lengkap).
+### 6d. ✅ Perluasan dataset: 3 lensa + 33 saham baru + data historis (2026-08-23)
+Total dataset sekarang **77 entri** (naik dari 20 di awal sesi). Rincian
+kerja tambahan:
+
+- **3 lensa tambahan untuk 4 saham existing** (`scripts/generate_batch2_3lenses.py`
+  → `batch2_fundamental_db_3lenses.json`, 12 entri): Growth & Business
+  Expansion, Macro & Interest Rate Sensitivity, Risk & Red Flags Detector
+  untuk BMRI/UNVR/ANTM/ASII. **Catatan penting:** field growth
+  rate/margin/current-quick ratio/dividend_yield/bvps NULL untuk 4 saham
+  ini di sumber data — lensa Growth/Macro/Risk disesuaikan memakai HANYA
+  field yang benar-benar terisi (ROE/ROA/DER/PER/PBV/EPS/Altman
+  Z/Piotroski F/Graham Number), bukan dipaksakan sesuai template asli
+  `teacher_master_prompt.md` yang minta NIM/growth YoY (Strict Fact
+  Adherence tetap dijaga, bukan dilanggar demi ikut template).
+- **33 saham baru dari 11 sektor** (`batch3_expanded_33stocks_value_risk.json`,
+  33 entri, lensa Value & Risk Margin) — dipilih dari `fundamental_snapshot_all.json`
+  (1.203 saham) dengan kriteria: top 3 `fundamental_score` per sektor
+  (proksi kelengkapan/kualitas data), skip warrant/right (`-W`/`-R`), skip
+  saham yang sudah dipakai sebelumnya. Sektor: Energi, Barang Konsumen
+  Primer/Non-Primer, Keuangan, Infrastruktur, Properti, Barang Baku,
+  Transportasi, Perindustrian, Teknologi, Kesehatan.
+- **Data historis dari `financial_rows`** (`batch4_historical_financial_rows.json`,
+  8 entri) — BBCA/BBNI/BDMN/BNGA, FY2023 & FY2024, lensa Growth & Business
+  Expansion. Ditemukan: data BS/IS di `financial_rows` formatnya **Tahunan
+  (FY)**, bukan kuartalan seperti dugaan awal. FY2023 dipasangkan anchor
+  makro Desember 2023, FY2024 dipasangkan anchor Q3 2024 (pendekatan
+  wajar karena rezim BI Rate 6.00% sama sepanjang kedua periode).
+  **Penting:** `financial_rows` HANYA mencakup 101 saham sektor Keuangan
+  (semua kategori IDXFINANCE) — tidak bisa dipakai untuk sektor lain.
+  ROE di batch ini dihitung langsung dari fakta (Net Income/Equity),
+  bukan diambil dari sumber lain.
+- Semua script disimpan di `scripts/` (reusable untuk scaling lanjutan):
+  `extract_fundamental_data.py`, `generate_batch2.py`,
+  `generate_batch2_3lenses.py`.
+
+### 6e. Langkah selanjutnya
+- Perluas 33 saham baru ke 4 lensa penuh (baru 1 lensa: Value & Risk Margin).
+- Perluas cakupan `financial_rows` ke lebih banyak bank/institusi keuangan
+  dari 101 yang tersedia (baru dipakai 4).
+- Untuk sektor non-keuangan, `financial_rows` tidak tersedia — kalau mau
+  data historis multi-tahun sektor lain, perlu sumber data tambahan atau
+  tanya user apakah ada tabel lain yang belum ter-export.
+- Audit kualitas: cek manual beberapa sampel acak dari 77 entri sebelum
+  dipakai training sungguhan (belum dilakukan review manual di sesi ini,
+  cuma validasi otomatis lewat script — lihat catatan Strict Fact
+  Adherence di atas).
+- Tetap tunda data eksplisit Invezgo sampai ToS dikonfirmasi (poin 6b).
 
 ### 7. Smoke test training run v0.1 di Colab
 - Jalankan notebook end-to-end (10 sel) sebagai uji pipeline teknis, BUKAN

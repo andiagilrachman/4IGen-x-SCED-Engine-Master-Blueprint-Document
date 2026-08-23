@@ -1,0 +1,286 @@
+[
+  {
+    "asset_code": "BBCA",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BBCA (Bank Central Asia) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BBCA",
+        "asset_name": "Bank Central Asia",
+        "sector": "Banking / Financials",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 1449301328000000.0,
+        "total_equity_idr": 262835087000000.0,
+        "net_income_idr": 54851274000000.0,
+        "interest_income_idr": 94796454000000.0,
+        "roe_percent_calculated": 20.87
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, BBCA mencatat Total Aset sebesar Rp1449.30 Triliun, Total Ekuitas Rp262.84 Triliun, Pendapatan Bunga Rp94.80 Triliun, dan Laba Bersih Rp54.85 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 20.87%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp1449.30 Triliun dan ROE 20.87% pada FY2024, BBCA menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity), bukan diambil dari sumber lain."
+  },
+  {
+    "asset_code": "BBCA",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BBCA (Bank Central Asia) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BBCA",
+        "asset_name": "Bank Central Asia",
+        "sector": "Banking / Financials",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 1408107010000000.0,
+        "total_equity_idr": 242537593000000.0,
+        "net_income_idr": 48658095000000.0,
+        "interest_income_idr": 87397774000000.0,
+        "roe_percent_calculated": 20.06
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, BBCA mencatat Total Aset sebesar Rp1408.11 Triliun, Total Ekuitas Rp242.54 Triliun, Pendapatan Bunga Rp87.40 Triliun, dan Laba Bersih Rp48.66 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 20.06%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp1408.11 Triliun dan ROE 20.06% pada FY2023, BBCA menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity), bukan diambil dari sumber lain."
+  },
+  {
+    "asset_code": "BBNI",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BBNI (Bank Negara Indonesia (Persero)) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BBNI",
+        "asset_name": "Bank Negara Indonesia (Persero)",
+        "sector": "Banking / Financials",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 1129805637000000.0,
+        "total_equity_idr": 167186553000000.0,
+        "net_income_idr": 21669397000000.0,
+        "interest_income_idr": 66583110000000.0,
+        "roe_percent_calculated": 12.96
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, BBNI mencatat Total Aset sebesar Rp1129.81 Triliun, Total Ekuitas Rp167.19 Triliun, Pendapatan Bunga Rp66.58 Triliun, dan Laba Bersih Rp21.67 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 12.96%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp1129.81 Triliun dan ROE 12.96% pada FY2024, BBNI menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity), bukan diambil dari sumber lain."
+  },
+  {
+    "asset_code": "BBNI",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BBNI (Bank Negara Indonesia (Persero)) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BBNI",
+        "asset_name": "Bank Negara Indonesia (Persero)",
+        "sector": "Banking / Financials",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 1086663986000000.0,
+        "total_equity_idr": 154732520000000.0,
+        "net_income_idr": 21106228000000.0,
+        "interest_income_idr": 61471696000000.0,
+        "roe_percent_calculated": 13.64
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, BBNI mencatat Total Aset sebesar Rp1086.66 Triliun, Total Ekuitas Rp154.73 Triliun, Pendapatan Bunga Rp61.47 Triliun, dan Laba Bersih Rp21.11 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 13.64%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp1086.66 Triliun dan ROE 13.64% pada FY2023, BBNI menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity), bukan diambil dari sumber lain."
+  },
+  {
+    "asset_code": "BDMN",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BDMN (Bank Danamon Indonesia) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BDMN",
+        "asset_name": "Bank Danamon Indonesia",
+        "sector": "Banking / Financials",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 242334540000000.0,
+        "total_equity_idr": 51825557000000.0,
+        "net_income_idr": 3290885000000.0,
+        "interest_income_idr": 22788935000000.0,
+        "roe_percent_calculated": 6.35
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, BDMN mencatat Total Aset sebesar Rp242.33 Triliun, Total Ekuitas Rp51.83 Triliun, Pendapatan Bunga Rp22.79 Triliun, dan Laba Bersih Rp3.29 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 6.35%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp242.33 Triliun dan ROE 6.35% pada FY2024, BDMN menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity), bukan diambil dari sumber lain."
+  },
+  {
+    "asset_code": "BDMN",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BDMN (Bank Danamon Indonesia) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BDMN",
+        "asset_name": "Bank Danamon Indonesia",
+        "sector": "Banking / Financials",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 221304532000000.0,
+        "total_equity_idr": 49959368000000.0,
+        "net_income_idr": 3658045000000.0,
+        "interest_income_idr": 20210346000000.0,
+        "roe_percent_calculated": 7.32
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, BDMN mencatat Total Aset sebesar Rp221.30 Triliun, Total Ekuitas Rp49.96 Triliun, Pendapatan Bunga Rp20.21 Triliun, dan Laba Bersih Rp3.66 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 7.32%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp221.30 Triliun dan ROE 7.32% pada FY2023, BDMN menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity), bukan diambil dari sumber lain."
+  },
+  {
+    "asset_code": "BNGA",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BNGA (Bank CIMB Niaga) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BNGA",
+        "asset_name": "Bank CIMB Niaga",
+        "sector": "Banking / Financials",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 360220510000000.0,
+        "total_equity_idr": 53196327000000.0,
+        "net_income_idr": 6898934000000.0,
+        "interest_income_idr": 24227316000000.0,
+        "roe_percent_calculated": 12.97
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, BNGA mencatat Total Aset sebesar Rp360.22 Triliun, Total Ekuitas Rp53.20 Triliun, Pendapatan Bunga Rp24.23 Triliun, dan Laba Bersih Rp6.90 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 12.97%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp360.22 Triliun dan ROE 12.97% pada FY2024, BNGA menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity), bukan diambil dari sumber lain."
+  },
+  {
+    "asset_code": "BNGA",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BNGA (Bank CIMB Niaga) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BNGA",
+        "asset_name": "Bank CIMB Niaga",
+        "sector": "Banking / Financials",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 334369233000000.0,
+        "total_equity_idr": 49337371000000.0,
+        "net_income_idr": 6551401000000.0,
+        "interest_income_idr": 22306000000000.0,
+        "roe_percent_calculated": 13.28
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, BNGA mencatat Total Aset sebesar Rp334.37 Triliun, Total Ekuitas Rp49.34 Triliun, Pendapatan Bunga Rp22.31 Triliun, dan Laba Bersih Rp6.55 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 13.28%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp334.37 Triliun dan ROE 13.28% pada FY2023, BNGA menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity), bukan diambil dari sumber lain."
+  }
+]

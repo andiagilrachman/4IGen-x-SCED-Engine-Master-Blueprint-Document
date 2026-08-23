@@ -1,0 +1,473 @@
+[
+  {
+    "asset_code": "BMRI",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana efisiensi profitabilitas BMRI jika ditinjau dari kemampuannya menghasilkan imbal balik atas ekuitas dan aset, mengingat data pertumbuhan pendapatan/laba periode ini tidak tersedia?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BMRI",
+        "asset_name": "Bank Mandiri (Persero)",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 18.7373,
+        "roa_percent": 2.1677,
+        "der_x": 6.759,
+        "per_x": 7.7593,
+        "pbv_x": 1.4539,
+        "eps": 657.28,
+        "altman_z_score": 1.8511,
+        "piotroski_f_score": 3.0,
+        "graham_number": 7202.59,
+        "fundamental_score": 55.42
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator efisiensi profitabilitas BMRI yang tersedia mencakup ROE sebesar 18.7373% dan ROA sebesar 2.1677%, dengan EPS 657.2800 dan fundamental_score komposit 55.4200.",
+      "step_2_correlation": "ROE 18.7373% dibandingkan ROA 2.1677% memberi gambaran seberapa besar leverage (utang) berkontribusi pada imbal hasil ekuitas — semakin lebar selisih keduanya (dengan DER 6.7590x), semakin besar peran leverage dalam mendongkrak ROE dibanding murni efisiensi aset.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), tingkat ROA 2.1677% perlu dibandingkan dengan biaya modal yang berlaku untuk menilai apakah profitabilitas aset masih mengungguli biaya dana.",
+      "step_4_synthesis": "Catatan penting: data pertumbuhan pendapatan/laba YoY tidak tersedia dalam Data Schema periode ini, sehingga analisis ini terbatas pada snapshot efisiensi (ROE 18.7373%, ROA 2.1677%) tanpa bisa menyimpulkan tren pertumbuhan bisnis secara historis."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field revenue_growth_yoy/net_income_growth_yoy/margin/current_ratio/quick_ratio/dividend_yield/bvps NULL di sumber data untuk saham ini sehingga TIDAK dipakai (Strict Fact Adherence) — lensa memakai field yang tersedia saja (ROE/ROA/DER/PER/PBV/EPS/Altman Z/Piotroski F/Graham Number/fundamental_score)."
+  },
+  {
+    "asset_code": "BMRI",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Sejauh mana struktur permodalan BMRI membuatnya rentan atau tahan terhadap dinamika suku bunga BI Rate saat ini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BMRI",
+        "asset_name": "Bank Mandiri (Persero)",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 18.7373,
+        "roa_percent": 2.1677,
+        "der_x": 6.759,
+        "per_x": 7.7593,
+        "pbv_x": 1.4539,
+        "eps": 657.28,
+        "altman_z_score": 1.8511,
+        "piotroski_f_score": 3.0,
+        "graham_number": 7202.59,
+        "fundamental_score": 55.42
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Variabel makro periode ini: BI Rate 4.75%, Inflasi YoY 4.76%, GDP Growth 5.12%. Dari sisi emiten, DER BMRI tercatat 6.7590x dengan ROA 2.1677%.",
+      "step_2_correlation": "DER 6.7590x menunjukkan proporsi utang terhadap ekuitas — semakin tinggi rasio ini, semakin sensitif beban bunga perusahaan terhadap perubahan BI Rate. ROA 2.1677% mengindikasikan kemampuan aset menghasilkan laba yang bisa menutup beban bunga tersebut.",
+      "step_3_macro_contextualization": "BI Rate saat ini 4.75% berada dalam tren penurunan kumulatif, namun inflasi 4.76% yang naik mendekati batas atas target bisa membatasi ruang pemangkasan suku bunga lebih lanjut oleh BI — situasi ini relevan bagi emiten dengan DER 6.7590x karena memengaruhi proyeksi beban bunga ke depan.",
+      "step_4_synthesis": "Dengan DER 6.7590x dan ROA 2.1677%, sensitivitas BMRI terhadap perubahan suku bunga bergantung pada seberapa besar porsi utang berbunga mengambang dalam struktur modalnya — data ini tidak merinci komposisi tersebut, sehingga kesimpulan bersifat indikatif berdasarkan rasio agregat saja."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field revenue_growth_yoy/net_income_growth_yoy/margin/current_ratio/quick_ratio/dividend_yield/bvps NULL di sumber data untuk saham ini sehingga TIDAK dipakai (Strict Fact Adherence) — lensa memakai field yang tersedia saja (ROE/ROA/DER/PER/PBV/EPS/Altman Z/Piotroski F/Graham Number/fundamental_score)."
+  },
+  {
+    "asset_code": "BMRI",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Potensi risiko atau kerentanan apa yang dapat diidentifikasi dari profil kesehatan keuangan BMRI berdasarkan skor-skor analitis yang tersedia?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BMRI",
+        "asset_name": "Bank Mandiri (Persero)",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 18.7373,
+        "roa_percent": 2.1677,
+        "der_x": 6.759,
+        "per_x": 7.7593,
+        "pbv_x": 1.4539,
+        "eps": 657.28,
+        "altman_z_score": 1.8511,
+        "piotroski_f_score": 3.0,
+        "graham_number": 7202.59,
+        "fundamental_score": 55.42
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Titik perhatian risiko mencakup Altman Z-Score sebesar 1.8511, Piotroski F-Score 3.0000 (skala 0-9), dan DER 6.7590x.",
+      "step_2_correlation": "Altman Z-Score 1.8511 adalah indikator prediksi risiko kebangkrutan (umumnya makin rendah/negatif, makin berisiko, meski ambang batas berbeda antar sektor terutama untuk sektor keuangan). Piotroski F-Score 3.0000 merangkum 9 kriteria kesehatan fundamental — skor rendah (mendekati 0) mengindikasikan lebih banyak sinyal negatif dibanding skor tinggi (mendekati 9).",
+      "step_3_macro_contextualization": "Dalam kondisi inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER tinggi seperti 6.7590x berpotensi menghadapi tekanan tambahan pada beban bunga jika BI menahan atau membalik arah kebijakan penurunan suku bunga.",
+      "step_4_synthesis": "Kombinasi Altman Z-Score 1.8511 dan Piotroski F-Score 3.0000 memberi dua sudut pandang berbeda (risiko kebangkrutan vs kekuatan fundamental) yang perlu dibaca bersama, bukan terpisah — perbedaan hasil antar kedua skor (jika ada) justru menandakan area yang perlu didalami lebih lanjut, bukan otomatis red flag."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field revenue_growth_yoy/net_income_growth_yoy/margin/current_ratio/quick_ratio/dividend_yield/bvps NULL di sumber data untuk saham ini sehingga TIDAK dipakai (Strict Fact Adherence) — lensa memakai field yang tersedia saja (ROE/ROA/DER/PER/PBV/EPS/Altman Z/Piotroski F/Graham Number/fundamental_score)."
+  },
+  {
+    "asset_code": "UNVR",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana efisiensi profitabilitas UNVR jika ditinjau dari kemampuannya menghasilkan imbal balik atas ekuitas dan aset, mengingat data pertumbuhan pendapatan/laba periode ini tidak tersedia?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "UNVR",
+        "asset_name": "Unilever Indonesia",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 170.7477,
+        "roa_percent": 38.1727,
+        "der_x": 3.473,
+        "per_x": 12.981,
+        "pbv_x": 22.1648,
+        "eps": 200.29,
+        "fundamental_score": 58.06
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator efisiensi profitabilitas UNVR yang tersedia mencakup ROE sebesar 170.7477% dan ROA sebesar 38.1727%, dengan EPS 200.2900 dan fundamental_score komposit 58.0600.",
+      "step_2_correlation": "ROE 170.7477% dibandingkan ROA 38.1727% memberi gambaran seberapa besar leverage (utang) berkontribusi pada imbal hasil ekuitas — semakin lebar selisih keduanya (dengan DER 3.4730x), semakin besar peran leverage dalam mendongkrak ROE dibanding murni efisiensi aset.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), tingkat ROA 38.1727% perlu dibandingkan dengan biaya modal yang berlaku untuk menilai apakah profitabilitas aset masih mengungguli biaya dana.",
+      "step_4_synthesis": "Catatan penting: data pertumbuhan pendapatan/laba YoY tidak tersedia dalam Data Schema periode ini, sehingga analisis ini terbatas pada snapshot efisiensi (ROE 170.7477%, ROA 38.1727%) tanpa bisa menyimpulkan tren pertumbuhan bisnis secara historis."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field revenue_growth_yoy/net_income_growth_yoy/margin/current_ratio/quick_ratio/dividend_yield/bvps NULL di sumber data untuk saham ini sehingga TIDAK dipakai (Strict Fact Adherence) — lensa memakai field yang tersedia saja (ROE/ROA/DER/PER/PBV/EPS/Altman Z/Piotroski F/Graham Number/fundamental_score)."
+  },
+  {
+    "asset_code": "UNVR",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Sejauh mana struktur permodalan UNVR membuatnya rentan atau tahan terhadap dinamika suku bunga BI Rate saat ini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "UNVR",
+        "asset_name": "Unilever Indonesia",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 170.7477,
+        "roa_percent": 38.1727,
+        "der_x": 3.473,
+        "per_x": 12.981,
+        "pbv_x": 22.1648,
+        "eps": 200.29,
+        "fundamental_score": 58.06
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Variabel makro periode ini: BI Rate 4.75%, Inflasi YoY 4.76%, GDP Growth 5.12%. Dari sisi emiten, DER UNVR tercatat 3.4730x dengan ROA 38.1727%.",
+      "step_2_correlation": "DER 3.4730x menunjukkan proporsi utang terhadap ekuitas — semakin tinggi rasio ini, semakin sensitif beban bunga perusahaan terhadap perubahan BI Rate. ROA 38.1727% mengindikasikan kemampuan aset menghasilkan laba yang bisa menutup beban bunga tersebut.",
+      "step_3_macro_contextualization": "BI Rate saat ini 4.75% berada dalam tren penurunan kumulatif, namun inflasi 4.76% yang naik mendekati batas atas target bisa membatasi ruang pemangkasan suku bunga lebih lanjut oleh BI — situasi ini relevan bagi emiten dengan DER 3.4730x karena memengaruhi proyeksi beban bunga ke depan.",
+      "step_4_synthesis": "Dengan DER 3.4730x dan ROA 38.1727%, sensitivitas UNVR terhadap perubahan suku bunga bergantung pada seberapa besar porsi utang berbunga mengambang dalam struktur modalnya — data ini tidak merinci komposisi tersebut, sehingga kesimpulan bersifat indikatif berdasarkan rasio agregat saja."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field revenue_growth_yoy/net_income_growth_yoy/margin/current_ratio/quick_ratio/dividend_yield/bvps NULL di sumber data untuk saham ini sehingga TIDAK dipakai (Strict Fact Adherence) — lensa memakai field yang tersedia saja (ROE/ROA/DER/PER/PBV/EPS/Altman Z/Piotroski F/Graham Number/fundamental_score)."
+  },
+  {
+    "asset_code": "UNVR",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Potensi risiko atau kerentanan apa yang dapat diidentifikasi dari profil kesehatan keuangan UNVR berdasarkan skor-skor analitis yang tersedia?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "UNVR",
+        "asset_name": "Unilever Indonesia",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 170.7477,
+        "roa_percent": 38.1727,
+        "der_x": 3.473,
+        "per_x": 12.981,
+        "pbv_x": 22.1648,
+        "eps": 200.29,
+        "fundamental_score": 58.06
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Titik perhatian risiko mencakup Altman Z-Score sebesar tidak tersedia di data, Piotroski F-Score tidak tersedia di data (skala 0-9), dan DER 3.4730x.",
+      "step_2_correlation": "Altman Z-Score tidak tersedia di data adalah indikator prediksi risiko kebangkrutan (umumnya makin rendah/negatif, makin berisiko, meski ambang batas berbeda antar sektor terutama untuk sektor keuangan). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental — skor rendah (mendekati 0) mengindikasikan lebih banyak sinyal negatif dibanding skor tinggi (mendekati 9).",
+      "step_3_macro_contextualization": "Dalam kondisi inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER tinggi seperti 3.4730x berpotensi menghadapi tekanan tambahan pada beban bunga jika BI menahan atau membalik arah kebijakan penurunan suku bunga.",
+      "step_4_synthesis": "Kombinasi Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data memberi dua sudut pandang berbeda (risiko kebangkrutan vs kekuatan fundamental) yang perlu dibaca bersama, bukan terpisah — perbedaan hasil antar kedua skor (jika ada) justru menandakan area yang perlu didalami lebih lanjut, bukan otomatis red flag."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field revenue_growth_yoy/net_income_growth_yoy/margin/current_ratio/quick_ratio/dividend_yield/bvps NULL di sumber data untuk saham ini sehingga TIDAK dipakai (Strict Fact Adherence) — lensa memakai field yang tersedia saja (ROE/ROA/DER/PER/PBV/EPS/Altman Z/Piotroski F/Graham Number/fundamental_score)."
+  },
+  {
+    "asset_code": "ANTM",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana efisiensi profitabilitas ANTM jika ditinjau dari kemampuannya menghasilkan imbal balik atas ekuitas dan aset, mengingat data pertumbuhan pendapatan/laba periode ini tidak tersedia?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ANTM",
+        "asset_name": "Aneka Tambang (Persero)",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 21.6405,
+        "roa_percent": 15.0778,
+        "der_x": 0.4353,
+        "per_x": 9.5572,
+        "pbv_x": 2.0682,
+        "eps": 329.59,
+        "altman_z_score": 5.1212,
+        "piotroski_f_score": 7.0,
+        "graham_number": 3360.76,
+        "fundamental_score": 90.67
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator efisiensi profitabilitas ANTM yang tersedia mencakup ROE sebesar 21.6405% dan ROA sebesar 15.0778%, dengan EPS 329.5900 dan fundamental_score komposit 90.6700.",
+      "step_2_correlation": "ROE 21.6405% dibandingkan ROA 15.0778% memberi gambaran seberapa besar leverage (utang) berkontribusi pada imbal hasil ekuitas — semakin lebar selisih keduanya (dengan DER 0.4353x), semakin besar peran leverage dalam mendongkrak ROE dibanding murni efisiensi aset.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), tingkat ROA 15.0778% perlu dibandingkan dengan biaya modal yang berlaku untuk menilai apakah profitabilitas aset masih mengungguli biaya dana.",
+      "step_4_synthesis": "Catatan penting: data pertumbuhan pendapatan/laba YoY tidak tersedia dalam Data Schema periode ini, sehingga analisis ini terbatas pada snapshot efisiensi (ROE 21.6405%, ROA 15.0778%) tanpa bisa menyimpulkan tren pertumbuhan bisnis secara historis."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field revenue_growth_yoy/net_income_growth_yoy/margin/current_ratio/quick_ratio/dividend_yield/bvps NULL di sumber data untuk saham ini sehingga TIDAK dipakai (Strict Fact Adherence) — lensa memakai field yang tersedia saja (ROE/ROA/DER/PER/PBV/EPS/Altman Z/Piotroski F/Graham Number/fundamental_score)."
+  },
+  {
+    "asset_code": "ANTM",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Sejauh mana struktur permodalan ANTM membuatnya rentan atau tahan terhadap dinamika suku bunga BI Rate saat ini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ANTM",
+        "asset_name": "Aneka Tambang (Persero)",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 21.6405,
+        "roa_percent": 15.0778,
+        "der_x": 0.4353,
+        "per_x": 9.5572,
+        "pbv_x": 2.0682,
+        "eps": 329.59,
+        "altman_z_score": 5.1212,
+        "piotroski_f_score": 7.0,
+        "graham_number": 3360.76,
+        "fundamental_score": 90.67
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Variabel makro periode ini: BI Rate 4.75%, Inflasi YoY 4.76%, GDP Growth 5.12%. Dari sisi emiten, DER ANTM tercatat 0.4353x dengan ROA 15.0778%.",
+      "step_2_correlation": "DER 0.4353x menunjukkan proporsi utang terhadap ekuitas — semakin tinggi rasio ini, semakin sensitif beban bunga perusahaan terhadap perubahan BI Rate. ROA 15.0778% mengindikasikan kemampuan aset menghasilkan laba yang bisa menutup beban bunga tersebut.",
+      "step_3_macro_contextualization": "BI Rate saat ini 4.75% berada dalam tren penurunan kumulatif, namun inflasi 4.76% yang naik mendekati batas atas target bisa membatasi ruang pemangkasan suku bunga lebih lanjut oleh BI — situasi ini relevan bagi emiten dengan DER 0.4353x karena memengaruhi proyeksi beban bunga ke depan.",
+      "step_4_synthesis": "Dengan DER 0.4353x dan ROA 15.0778%, sensitivitas ANTM terhadap perubahan suku bunga bergantung pada seberapa besar porsi utang berbunga mengambang dalam struktur modalnya — data ini tidak merinci komposisi tersebut, sehingga kesimpulan bersifat indikatif berdasarkan rasio agregat saja."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field revenue_growth_yoy/net_income_growth_yoy/margin/current_ratio/quick_ratio/dividend_yield/bvps NULL di sumber data untuk saham ini sehingga TIDAK dipakai (Strict Fact Adherence) — lensa memakai field yang tersedia saja (ROE/ROA/DER/PER/PBV/EPS/Altman Z/Piotroski F/Graham Number/fundamental_score)."
+  },
+  {
+    "asset_code": "ANTM",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Potensi risiko atau kerentanan apa yang dapat diidentifikasi dari profil kesehatan keuangan ANTM berdasarkan skor-skor analitis yang tersedia?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ANTM",
+        "asset_name": "Aneka Tambang (Persero)",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 21.6405,
+        "roa_percent": 15.0778,
+        "der_x": 0.4353,
+        "per_x": 9.5572,
+        "pbv_x": 2.0682,
+        "eps": 329.59,
+        "altman_z_score": 5.1212,
+        "piotroski_f_score": 7.0,
+        "graham_number": 3360.76,
+        "fundamental_score": 90.67
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Titik perhatian risiko mencakup Altman Z-Score sebesar 5.1212, Piotroski F-Score 7.0000 (skala 0-9), dan DER 0.4353x.",
+      "step_2_correlation": "Altman Z-Score 5.1212 adalah indikator prediksi risiko kebangkrutan (umumnya makin rendah/negatif, makin berisiko, meski ambang batas berbeda antar sektor terutama untuk sektor keuangan). Piotroski F-Score 7.0000 merangkum 9 kriteria kesehatan fundamental — skor rendah (mendekati 0) mengindikasikan lebih banyak sinyal negatif dibanding skor tinggi (mendekati 9).",
+      "step_3_macro_contextualization": "Dalam kondisi inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER tinggi seperti 0.4353x berpotensi menghadapi tekanan tambahan pada beban bunga jika BI menahan atau membalik arah kebijakan penurunan suku bunga.",
+      "step_4_synthesis": "Kombinasi Altman Z-Score 5.1212 dan Piotroski F-Score 7.0000 memberi dua sudut pandang berbeda (risiko kebangkrutan vs kekuatan fundamental) yang perlu dibaca bersama, bukan terpisah — perbedaan hasil antar kedua skor (jika ada) justru menandakan area yang perlu didalami lebih lanjut, bukan otomatis red flag."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field revenue_growth_yoy/net_income_growth_yoy/margin/current_ratio/quick_ratio/dividend_yield/bvps NULL di sumber data untuk saham ini sehingga TIDAK dipakai (Strict Fact Adherence) — lensa memakai field yang tersedia saja (ROE/ROA/DER/PER/PBV/EPS/Altman Z/Piotroski F/Graham Number/fundamental_score)."
+  },
+  {
+    "asset_code": "ASII",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana efisiensi profitabilitas ASII jika ditinjau dari kemampuannya menghasilkan imbal balik atas ekuitas dan aset, mengingat data pertumbuhan pendapatan/laba periode ini tidak tersedia?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ASII",
+        "asset_name": "Astra International",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 13.8251,
+        "roa_percent": 7.9243,
+        "der_x": 0.7447,
+        "per_x": 6.7464,
+        "pbv_x": 0.9327,
+        "eps": 993.12,
+        "altman_z_score": 2.4169,
+        "piotroski_f_score": 3.0,
+        "graham_number": 12669.48,
+        "fundamental_score": 80.79
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator efisiensi profitabilitas ASII yang tersedia mencakup ROE sebesar 13.8251% dan ROA sebesar 7.9243%, dengan EPS 993.1200 dan fundamental_score komposit 80.7900.",
+      "step_2_correlation": "ROE 13.8251% dibandingkan ROA 7.9243% memberi gambaran seberapa besar leverage (utang) berkontribusi pada imbal hasil ekuitas — semakin lebar selisih keduanya (dengan DER 0.7447x), semakin besar peran leverage dalam mendongkrak ROE dibanding murni efisiensi aset.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), tingkat ROA 7.9243% perlu dibandingkan dengan biaya modal yang berlaku untuk menilai apakah profitabilitas aset masih mengungguli biaya dana.",
+      "step_4_synthesis": "Catatan penting: data pertumbuhan pendapatan/laba YoY tidak tersedia dalam Data Schema periode ini, sehingga analisis ini terbatas pada snapshot efisiensi (ROE 13.8251%, ROA 7.9243%) tanpa bisa menyimpulkan tren pertumbuhan bisnis secara historis."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field revenue_growth_yoy/net_income_growth_yoy/margin/current_ratio/quick_ratio/dividend_yield/bvps NULL di sumber data untuk saham ini sehingga TIDAK dipakai (Strict Fact Adherence) — lensa memakai field yang tersedia saja (ROE/ROA/DER/PER/PBV/EPS/Altman Z/Piotroski F/Graham Number/fundamental_score)."
+  },
+  {
+    "asset_code": "ASII",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Sejauh mana struktur permodalan ASII membuatnya rentan atau tahan terhadap dinamika suku bunga BI Rate saat ini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ASII",
+        "asset_name": "Astra International",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 13.8251,
+        "roa_percent": 7.9243,
+        "der_x": 0.7447,
+        "per_x": 6.7464,
+        "pbv_x": 0.9327,
+        "eps": 993.12,
+        "altman_z_score": 2.4169,
+        "piotroski_f_score": 3.0,
+        "graham_number": 12669.48,
+        "fundamental_score": 80.79
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Variabel makro periode ini: BI Rate 4.75%, Inflasi YoY 4.76%, GDP Growth 5.12%. Dari sisi emiten, DER ASII tercatat 0.7447x dengan ROA 7.9243%.",
+      "step_2_correlation": "DER 0.7447x menunjukkan proporsi utang terhadap ekuitas — semakin tinggi rasio ini, semakin sensitif beban bunga perusahaan terhadap perubahan BI Rate. ROA 7.9243% mengindikasikan kemampuan aset menghasilkan laba yang bisa menutup beban bunga tersebut.",
+      "step_3_macro_contextualization": "BI Rate saat ini 4.75% berada dalam tren penurunan kumulatif, namun inflasi 4.76% yang naik mendekati batas atas target bisa membatasi ruang pemangkasan suku bunga lebih lanjut oleh BI — situasi ini relevan bagi emiten dengan DER 0.7447x karena memengaruhi proyeksi beban bunga ke depan.",
+      "step_4_synthesis": "Dengan DER 0.7447x dan ROA 7.9243%, sensitivitas ASII terhadap perubahan suku bunga bergantung pada seberapa besar porsi utang berbunga mengambang dalam struktur modalnya — data ini tidak merinci komposisi tersebut, sehingga kesimpulan bersifat indikatif berdasarkan rasio agregat saja."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field revenue_growth_yoy/net_income_growth_yoy/margin/current_ratio/quick_ratio/dividend_yield/bvps NULL di sumber data untuk saham ini sehingga TIDAK dipakai (Strict Fact Adherence) — lensa memakai field yang tersedia saja (ROE/ROA/DER/PER/PBV/EPS/Altman Z/Piotroski F/Graham Number/fundamental_score)."
+  },
+  {
+    "asset_code": "ASII",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Potensi risiko atau kerentanan apa yang dapat diidentifikasi dari profil kesehatan keuangan ASII berdasarkan skor-skor analitis yang tersedia?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ASII",
+        "asset_name": "Astra International",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 13.8251,
+        "roa_percent": 7.9243,
+        "der_x": 0.7447,
+        "per_x": 6.7464,
+        "pbv_x": 0.9327,
+        "eps": 993.12,
+        "altman_z_score": 2.4169,
+        "piotroski_f_score": 3.0,
+        "graham_number": 12669.48,
+        "fundamental_score": 80.79
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Titik perhatian risiko mencakup Altman Z-Score sebesar 2.4169, Piotroski F-Score 3.0000 (skala 0-9), dan DER 0.7447x.",
+      "step_2_correlation": "Altman Z-Score 2.4169 adalah indikator prediksi risiko kebangkrutan (umumnya makin rendah/negatif, makin berisiko, meski ambang batas berbeda antar sektor terutama untuk sektor keuangan). Piotroski F-Score 3.0000 merangkum 9 kriteria kesehatan fundamental — skor rendah (mendekati 0) mengindikasikan lebih banyak sinyal negatif dibanding skor tinggi (mendekati 9).",
+      "step_3_macro_contextualization": "Dalam kondisi inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER tinggi seperti 0.7447x berpotensi menghadapi tekanan tambahan pada beban bunga jika BI menahan atau membalik arah kebijakan penurunan suku bunga.",
+      "step_4_synthesis": "Kombinasi Altman Z-Score 2.4169 dan Piotroski F-Score 3.0000 memberi dua sudut pandang berbeda (risiko kebangkrutan vs kekuatan fundamental) yang perlu dibaca bersama, bukan terpisah — perbedaan hasil antar kedua skor (jika ada) justru menandakan area yang perlu didalami lebih lanjut, bukan otomatis red flag."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field revenue_growth_yoy/net_income_growth_yoy/margin/current_ratio/quick_ratio/dividend_yield/bvps NULL di sumber data untuk saham ini sehingga TIDAK dipakai (Strict Fact Adherence) — lensa memakai field yang tersedia saja (ROE/ROA/DER/PER/PBV/EPS/Altman Z/Piotroski F/Graham Number/fundamental_score)."
+  }
+]

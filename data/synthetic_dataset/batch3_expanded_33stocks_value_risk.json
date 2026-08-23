@@ -1,0 +1,1326 @@
+[
+  {
+    "asset_code": "AADI",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko AADI (Energi) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "AADI",
+        "asset_name": "Adaro Andalan Indonesia",
+        "sector": "Energi",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 23.2677,
+        "roa_percent": 14.8816,
+        "der_x": 0.5635,
+        "per_x": 3.1048,
+        "pbv_x": 0.7224,
+        "eps": 2246.51,
+        "altman_z_score": 3.8991,
+        "piotroski_f_score": 5.0,
+        "graham_number": 22091.43,
+        "fundamental_score": 97.28
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci AADI mencakup PER sebesar 3.1048x, PBV sebesar 0.7224x, dan EPS sebesar 2246.5100. ROE tercatat 23.2677% dan ROA 14.8816%.",
+      "step_2_correlation": "Rasio DER sebesar 0.5635x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 3.8991 dan Piotroski F-Score 5.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 3.1048x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Energi.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 22091.4300, salah satu acuan margin keselamatan investor value. Fundamental score komposit 97.2800 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "BSSR",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko BSSR (Energi) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BSSR",
+        "asset_name": "Baramulti Suksessarana",
+        "sector": "Energi",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 30.7609,
+        "roa_percent": 22.6852,
+        "der_x": 0.356,
+        "per_x": 7.4734,
+        "pbv_x": 2.2989,
+        "eps": 537.9,
+        "altman_z_score": 6.5499,
+        "piotroski_f_score": 6.0,
+        "graham_number": 4600.41,
+        "fundamental_score": 95.0
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci BSSR mencakup PER sebesar 7.4734x, PBV sebesar 2.2989x, dan EPS sebesar 537.9000. ROE tercatat 30.7609% dan ROA 22.6852%.",
+      "step_2_correlation": "Rasio DER sebesar 0.3560x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 6.5499 dan Piotroski F-Score 6.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 7.4734x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Energi.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 4600.4100, salah satu acuan margin keselamatan investor value. Fundamental score komposit 95.0000 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "LEAD",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko LEAD (Energi) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "LEAD",
+        "asset_name": "Logindo Samudramakmur",
+        "sector": "Energi",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 22.2402,
+        "roa_percent": 11.5597,
+        "der_x": 0.9239,
+        "per_x": 4.1651,
+        "pbv_x": 0.9263,
+        "eps": 36.97,
+        "altman_z_score": 2.3756,
+        "piotroski_f_score": 9.0,
+        "graham_number": 371.89,
+        "fundamental_score": 92.69
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci LEAD mencakup PER sebesar 4.1651x, PBV sebesar 0.9263x, dan EPS sebesar 36.9700. ROE tercatat 22.2402% dan ROA 11.5597%.",
+      "step_2_correlation": "Rasio DER sebesar 0.9239x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 2.3756 dan Piotroski F-Score 9.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 4.1651x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Energi.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 371.8900, salah satu acuan margin keselamatan investor value. Fundamental score komposit 92.6900 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "STAA",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko STAA (Barang Konsumen Primer) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "STAA",
+        "asset_name": "Sumber Tani Agung Resources",
+        "sector": "Barang Konsumen Primer",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 26.0792,
+        "roa_percent": 19.0965,
+        "der_x": 0.3657,
+        "per_x": 7.9708,
+        "pbv_x": 2.0787,
+        "eps": 167.49,
+        "fundamental_score": 95.85
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci STAA mencakup PER sebesar 7.9708x, PBV sebesar 2.0787x, dan EPS sebesar 167.4900. ROE tercatat 26.0792% dan ROA 19.0965%.",
+      "step_2_correlation": "Rasio DER sebesar 0.3657x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 7.9708x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Barang Konsumen Primer.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat tidak tersedia di data, salah satu acuan margin keselamatan investor value. Fundamental score komposit 95.8500 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "TAPG",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko TAPG (Barang Konsumen Primer) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "TAPG",
+        "asset_name": "Triputra Agro Persada",
+        "sector": "Barang Konsumen Primer",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 32.9014,
+        "roa_percent": 26.1649,
+        "der_x": 0.2575,
+        "per_x": 7.7441,
+        "pbv_x": 2.5479,
+        "eps": 193.7,
+        "fundamental_score": 94.05
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci TAPG mencakup PER sebesar 7.7441x, PBV sebesar 2.5479x, dan EPS sebesar 193.7000. ROE tercatat 32.9014% dan ROA 26.1649%.",
+      "step_2_correlation": "Rasio DER sebesar 0.2575x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 7.7441x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Barang Konsumen Primer.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat tidak tersedia di data, salah satu acuan margin keselamatan investor value. Fundamental score komposit 94.0500 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "TLDN",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko TLDN (Barang Konsumen Primer) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "TLDN",
+        "asset_name": "Teladan Prima Agro",
+        "sector": "Barang Konsumen Primer",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 30.3606,
+        "roa_percent": 18.3883,
+        "der_x": 0.6511,
+        "per_x": 8.1895,
+        "pbv_x": 2.4864,
+        "eps": 85.48,
+        "fundamental_score": 92.76
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci TLDN mencakup PER sebesar 8.1895x, PBV sebesar 2.4864x, dan EPS sebesar 85.4800. ROE tercatat 30.3606% dan ROA 18.3883%.",
+      "step_2_correlation": "Rasio DER sebesar 0.6511x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 8.1895x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Barang Konsumen Primer.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat tidak tersedia di data, salah satu acuan margin keselamatan investor value. Fundamental score komposit 92.7600 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "SMSM",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko SMSM (Barang Konsumen Non-Primer) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "SMSM",
+        "asset_name": "Selamat Sempurna",
+        "sector": "Barang Konsumen Non-Primer",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 28.335,
+        "roa_percent": 23.6351,
+        "der_x": 0.1989,
+        "per_x": 8.2346,
+        "pbv_x": 2.3333,
+        "eps": 211.91,
+        "fundamental_score": 94.71
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci SMSM mencakup PER sebesar 8.2346x, PBV sebesar 2.3333x, dan EPS sebesar 211.9100. ROE tercatat 28.3350% dan ROA 23.6351%.",
+      "step_2_correlation": "Rasio DER sebesar 0.1989x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 8.2346x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Barang Konsumen Non-Primer.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat tidak tersedia di data, salah satu acuan margin keselamatan investor value. Fundamental score komposit 94.7100 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "BAYU",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko BAYU (Barang Konsumen Non-Primer) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BAYU",
+        "asset_name": "Bayu Buana",
+        "sector": "Barang Konsumen Non-Primer",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 18.8931,
+        "roa_percent": 10.9664,
+        "der_x": 0.7228,
+        "per_x": 4.5888,
+        "pbv_x": 0.867,
+        "eps": 298.55,
+        "altman_z_score": 5.4106,
+        "piotroski_f_score": 6.0,
+        "graham_number": 3258.09,
+        "fundamental_score": 90.43
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci BAYU mencakup PER sebesar 4.5888x, PBV sebesar 0.8670x, dan EPS sebesar 298.5500. ROE tercatat 18.8931% dan ROA 10.9664%.",
+      "step_2_correlation": "Rasio DER sebesar 0.7228x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 5.4106 dan Piotroski F-Score 6.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 4.5888x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Barang Konsumen Non-Primer.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 3258.0900, salah satu acuan margin keselamatan investor value. Fundamental score komposit 90.4300 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "AUTO",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko AUTO (Barang Konsumen Non-Primer) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "AUTO",
+        "asset_name": "Astra Otoparts",
+        "sector": "Barang Konsumen Non-Primer",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 13.8395,
+        "roa_percent": 10.3814,
+        "der_x": 0.3331,
+        "per_x": 5.5222,
+        "pbv_x": 0.7643,
+        "eps": 487.12,
+        "altman_z_score": 4.747,
+        "piotroski_f_score": 6.0,
+        "graham_number": 6211.08,
+        "fundamental_score": 86.26
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci AUTO mencakup PER sebesar 5.5222x, PBV sebesar 0.7643x, dan EPS sebesar 487.1200. ROE tercatat 13.8395% dan ROA 10.3814%.",
+      "step_2_correlation": "Rasio DER sebesar 0.3331x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 4.7470 dan Piotroski F-Score 6.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 5.5222x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Barang Konsumen Non-Primer.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 6211.0800, salah satu acuan margin keselamatan investor value. Fundamental score komposit 86.2600 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "PALM",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko PALM (Keuangan) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "PALM",
+        "asset_name": "Provident Investasi Bersama",
+        "sector": "Keuangan",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 31.097,
+        "roa_percent": 20.0896,
+        "der_x": 0.5479,
+        "per_x": 3.2367,
+        "pbv_x": 1.0065,
+        "eps": 117.4,
+        "altman_z_score": 3.266,
+        "piotroski_f_score": 4.0,
+        "graham_number": 998.64,
+        "fundamental_score": 99.53
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci PALM mencakup PER sebesar 3.2367x, PBV sebesar 1.0065x, dan EPS sebesar 117.4000. ROE tercatat 31.0970% dan ROA 20.0896%.",
+      "step_2_correlation": "Rasio DER sebesar 0.5479x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 3.2660 dan Piotroski F-Score 4.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 3.2367x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Keuangan.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 998.6400, salah satu acuan margin keselamatan investor value. Fundamental score komposit 99.5300 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "NICK",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko NICK (Keuangan) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "NICK",
+        "asset_name": "Charnic Capital",
+        "sector": "Keuangan",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 34.7565,
+        "roa_percent": 34.4345,
+        "der_x": 0.0094,
+        "per_x": 7.3371,
+        "pbv_x": 2.5501,
+        "eps": 166.28,
+        "fundamental_score": 94.04
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci NICK mencakup PER sebesar 7.3371x, PBV sebesar 2.5501x, dan EPS sebesar 166.2800. ROE tercatat 34.7565% dan ROA 34.4345%.",
+      "step_2_correlation": "Rasio DER sebesar 0.0094x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 7.3371x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Keuangan.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat tidak tersedia di data, salah satu acuan margin keselamatan investor value. Fundamental score komposit 94.0400 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "SRTG",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko SRTG (Keuangan) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "SRTG",
+        "asset_name": "Saratoga Investama Sedaya",
+        "sector": "Keuangan",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 12.4278,
+        "roa_percent": 11.7137,
+        "der_x": 0.061,
+        "per_x": 2.927,
+        "pbv_x": 0.3638,
+        "eps": 539.8,
+        "fundamental_score": 84.53
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci SRTG mencakup PER sebesar 2.9270x, PBV sebesar 0.3638x, dan EPS sebesar 539.8000. ROE tercatat 12.4278% dan ROA 11.7137%.",
+      "step_2_correlation": "Rasio DER sebesar 0.0610x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 2.9270x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Keuangan.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat tidak tersedia di data, salah satu acuan margin keselamatan investor value. Fundamental score komposit 84.5300 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "CASS",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko CASS (Infrastruktur) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "CASS",
+        "asset_name": "Cardig Aero Services",
+        "sector": "Infrastruktur",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 37.2904,
+        "roa_percent": 25.9902,
+        "der_x": 0.4348,
+        "per_x": 6.3639,
+        "pbv_x": 2.3731,
+        "eps": 402.27,
+        "altman_z_score": 5.5208,
+        "piotroski_f_score": 7.0,
+        "graham_number": 3124.71,
+        "fundamental_score": 94.72
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci CASS mencakup PER sebesar 6.3639x, PBV sebesar 2.3731x, dan EPS sebesar 402.2700. ROE tercatat 37.2904% dan ROA 25.9902%.",
+      "step_2_correlation": "Rasio DER sebesar 0.4348x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 5.5208 dan Piotroski F-Score 7.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 6.3639x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Infrastruktur.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 3124.7100, salah satu acuan margin keselamatan investor value. Fundamental score komposit 94.7200 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "IPCC",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko IPCC (Infrastruktur) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "IPCC",
+        "asset_name": "Indonesia Kendaraan Terminal",
+        "sector": "Infrastruktur",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 18.8501,
+        "roa_percent": 12.4628,
+        "der_x": 0.5125,
+        "per_x": 9.8181,
+        "pbv_x": 1.8507,
+        "eps": 141.07,
+        "altman_z_score": 5.7566,
+        "piotroski_f_score": 6.0,
+        "graham_number": 1541.19,
+        "fundamental_score": 87.77
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci IPCC mencakup PER sebesar 9.8181x, PBV sebesar 1.8507x, dan EPS sebesar 141.0700. ROE tercatat 18.8501% dan ROA 12.4628%.",
+      "step_2_correlation": "Rasio DER sebesar 0.5125x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 5.7566 dan Piotroski F-Score 6.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 9.8181x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Infrastruktur.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 1541.1900, salah satu acuan margin keselamatan investor value. Fundamental score komposit 87.7700 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "ACST",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko ACST (Infrastruktur) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ACST",
+        "asset_name": "Acset Indonusa",
+        "sector": "Infrastruktur",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 208.0321,
+        "roa_percent": -23.0201,
+        "der_x": -10.037,
+        "per_x": -3.4981,
+        "pbv_x": -7.2772,
+        "eps": -38.88,
+        "altman_z_score": -2.7691,
+        "piotroski_f_score": 0.0,
+        "fundamental_score": 84.62
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci ACST mencakup PER sebesar -3.4981x, PBV sebesar -7.2772x, dan EPS sebesar -38.8800. ROE tercatat 208.0321% dan ROA -23.0201%.",
+      "step_2_correlation": "Rasio DER sebesar -10.0370x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score -2.7691 dan Piotroski F-Score 0.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER -3.4981x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Infrastruktur.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat tidak tersedia di data, salah satu acuan margin keselamatan investor value. Fundamental score komposit 84.6200 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "LPLI",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko LPLI (Properti & Real Estat) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "LPLI",
+        "asset_name": "Star Pacific",
+        "sector": "Properti & Real Estat",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 28.6798,
+        "roa_percent": 28.4653,
+        "der_x": 0.0075,
+        "per_x": 0.4798,
+        "pbv_x": 0.1376,
+        "eps": 729.53,
+        "altman_z_score": 144.0856,
+        "piotroski_f_score": 5.0,
+        "graham_number": 6461.68,
+        "fundamental_score": 100.0
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci LPLI mencakup PER sebesar 0.4798x, PBV sebesar 0.1376x, dan EPS sebesar 729.5300. ROE tercatat 28.6798% dan ROA 28.4653%.",
+      "step_2_correlation": "Rasio DER sebesar 0.0075x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 144.0856 dan Piotroski F-Score 5.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 0.4798x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Properti & Real Estat.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 6461.6800, salah satu acuan margin keselamatan investor value. Fundamental score komposit 100.0000 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "CBPE",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko CBPE (Properti & Real Estat) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "CBPE",
+        "asset_name": "Citra Buana Prasida",
+        "sector": "Properti & Real Estat",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 14.5476,
+        "roa_percent": 12.642,
+        "der_x": 0.1507,
+        "per_x": 8.7532,
+        "pbv_x": 1.2734,
+        "eps": 34.96,
+        "altman_z_score": 10.2168,
+        "piotroski_f_score": 6.0,
+        "graham_number": 434.76,
+        "fundamental_score": 85.56
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci CBPE mencakup PER sebesar 8.7532x, PBV sebesar 1.2734x, dan EPS sebesar 34.9600. ROE tercatat 14.5476% dan ROA 12.6420%.",
+      "step_2_correlation": "Rasio DER sebesar 0.1507x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 10.2168 dan Piotroski F-Score 6.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 8.7532x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Properti & Real Estat.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 434.7600, salah satu acuan margin keselamatan investor value. Fundamental score komposit 85.5600 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "DMAS",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko DMAS (Properti & Real Estat) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "DMAS",
+        "asset_name": "Puradelta Lestari",
+        "sector": "Properti & Real Estat",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 12.111,
+        "roa_percent": 11.2462,
+        "der_x": 0.0769,
+        "per_x": 7.7627,
+        "pbv_x": 0.9401,
+        "eps": 16.62,
+        "fundamental_score": 84.14
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci DMAS mencakup PER sebesar 7.7627x, PBV sebesar 0.9401x, dan EPS sebesar 16.6200. ROE tercatat 12.1110% dan ROA 11.2462%.",
+      "step_2_correlation": "Rasio DER sebesar 0.0769x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 7.7627x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Properti & Real Estat.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat tidak tersedia di data, salah satu acuan margin keselamatan investor value. Fundamental score komposit 84.1400 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "NCKL",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko NCKL (Barang Baku) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "NCKL",
+        "asset_name": "Trimegah Bangun Persada",
+        "sector": "Barang Baku",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 23.463,
+        "roa_percent": 17.7599,
+        "der_x": 0.3211,
+        "per_x": 5.7271,
+        "pbv_x": 1.3438,
+        "eps": 196.43,
+        "altman_z_score": 5.2617,
+        "piotroski_f_score": 6.0,
+        "graham_number": 1923.61,
+        "fundamental_score": 96.79
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci NCKL mencakup PER sebesar 5.7271x, PBV sebesar 1.3438x, dan EPS sebesar 196.4300. ROE tercatat 23.4630% dan ROA 17.7599%.",
+      "step_2_correlation": "Rasio DER sebesar 0.3211x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 5.2617 dan Piotroski F-Score 6.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 5.7271x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Barang Baku.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 1923.6100, salah satu acuan margin keselamatan investor value. Fundamental score komposit 96.7900 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "CITA",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko CITA (Barang Baku) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "CITA",
+        "asset_name": "Cita Mineral Investindo",
+        "sector": "Barang Baku",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 27.364,
+        "roa_percent": 26.2829,
+        "der_x": 0.0411,
+        "per_x": 7.3791,
+        "pbv_x": 2.0192,
+        "eps": 605.77,
+        "fundamental_score": 96.08
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci CITA mencakup PER sebesar 7.3791x, PBV sebesar 2.0192x, dan EPS sebesar 605.7700. ROE tercatat 27.3640% dan ROA 26.2829%.",
+      "step_2_correlation": "Rasio DER sebesar 0.0411x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 7.3791x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Barang Baku.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat tidak tersedia di data, salah satu acuan margin keselamatan investor value. Fundamental score komposit 96.0800 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "PNGO",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko PNGO (Barang Baku) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "PNGO",
+        "asset_name": "Pinago Utama",
+        "sector": "Barang Baku",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 27.5606,
+        "roa_percent": 18.4795,
+        "der_x": 0.4914,
+        "per_x": 7.484,
+        "pbv_x": 2.0626,
+        "eps": 412.88,
+        "altman_z_score": 3.6596,
+        "piotroski_f_score": 9.0,
+        "graham_number": 3730.56,
+        "fundamental_score": 95.91
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci PNGO mencakup PER sebesar 7.4840x, PBV sebesar 2.0626x, dan EPS sebesar 412.8800. ROE tercatat 27.5606% dan ROA 18.4795%.",
+      "step_2_correlation": "Rasio DER sebesar 0.4914x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 3.6596 dan Piotroski F-Score 9.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 7.4840x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Barang Baku.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 3730.5600, salah satu acuan margin keselamatan investor value. Fundamental score komposit 95.9100 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "HELI",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko HELI (Transportasi & Logistik) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "HELI",
+        "asset_name": "Jaya Trishindo",
+        "sector": "Transportasi & Logistik",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 29.7363,
+        "roa_percent": 13.5993,
+        "der_x": 1.1866,
+        "per_x": 6.9072,
+        "pbv_x": 2.054,
+        "eps": 31.85,
+        "altman_z_score": 0.9896,
+        "piotroski_f_score": 8.0,
+        "graham_number": 277.05,
+        "fundamental_score": 89.61
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci HELI mencakup PER sebesar 6.9072x, PBV sebesar 2.0540x, dan EPS sebesar 31.8500. ROE tercatat 29.7363% dan ROA 13.5993%.",
+      "step_2_correlation": "Rasio DER sebesar 1.1866x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 0.9896 dan Piotroski F-Score 8.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 6.9072x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Transportasi & Logistik.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 277.0500, salah satu acuan margin keselamatan investor value. Fundamental score komposit 89.6100 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "BLOG",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko BLOG (Transportasi & Logistik) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BLOG",
+        "asset_name": "Trimitra Trans Persada",
+        "sector": "Transportasi & Logistik",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 23.2768,
+        "roa_percent": 14.0038,
+        "der_x": 0.6622,
+        "per_x": 10.4336,
+        "pbv_x": 2.4286,
+        "eps": 42.75,
+        "altman_z_score": 3.6249,
+        "piotroski_f_score": 3.0,
+        "graham_number": 420.27,
+        "fundamental_score": 89.19
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci BLOG mencakup PER sebesar 10.4336x, PBV sebesar 2.4286x, dan EPS sebesar 42.7500. ROE tercatat 23.2768% dan ROA 14.0038%.",
+      "step_2_correlation": "Rasio DER sebesar 0.6622x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 3.6249 dan Piotroski F-Score 3.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 10.4336x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Transportasi & Logistik.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 420.2700, salah satu acuan margin keselamatan investor value. Fundamental score komposit 89.1900 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "TMAS",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko TMAS (Transportasi & Logistik) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "TMAS",
+        "asset_name": "Temas",
+        "sector": "Transportasi & Logistik",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 17.5469,
+        "roa_percent": 10.4539,
+        "der_x": 0.6785,
+        "per_x": 13.8217,
+        "pbv_x": 2.4253,
+        "eps": 9.69,
+        "fundamental_score": 79.63
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci TMAS mencakup PER sebesar 13.8217x, PBV sebesar 2.4253x, dan EPS sebesar 9.6900. ROE tercatat 17.5469% dan ROA 10.4539%.",
+      "step_2_correlation": "Rasio DER sebesar 0.6785x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 13.8217x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Transportasi & Logistik.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat tidak tersedia di data, salah satu acuan margin keselamatan investor value. Fundamental score komposit 79.6300 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "MARK",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko MARK (Perindustrian) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "MARK",
+        "asset_name": "Mark Dynamics Indonesia",
+        "sector": "Perindustrian",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 31.4537,
+        "roa_percent": 27.7595,
+        "der_x": 0.1331,
+        "per_x": 8.8634,
+        "pbv_x": 2.7879,
+        "eps": 93.08,
+        "altman_z_score": 12.2284,
+        "piotroski_f_score": 4.0,
+        "graham_number": 787.24,
+        "fundamental_score": 92.52
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci MARK mencakup PER sebesar 8.8634x, PBV sebesar 2.7879x, dan EPS sebesar 93.0800. ROE tercatat 31.4537% dan ROA 27.7595%.",
+      "step_2_correlation": "Rasio DER sebesar 0.1331x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 12.2284 dan Piotroski F-Score 4.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 8.8634x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Perindustrian.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 787.2400, salah satu acuan margin keselamatan investor value. Fundamental score komposit 92.5200 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "LABA",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko LABA (Perindustrian) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "LABA",
+        "asset_name": "Green Power Group",
+        "sector": "Perindustrian",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 20.582,
+        "roa_percent": 11.3861,
+        "der_x": 0.8076,
+        "per_x": 4.1939,
+        "pbv_x": 0.8632,
+        "eps": 37.91,
+        "altman_z_score": 2.8195,
+        "piotroski_f_score": 3.0,
+        "graham_number": 396.39,
+        "fundamental_score": 91.72
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci LABA mencakup PER sebesar 4.1939x, PBV sebesar 0.8632x, dan EPS sebesar 37.9100. ROE tercatat 20.5820% dan ROA 11.3861%.",
+      "step_2_correlation": "Rasio DER sebesar 0.8076x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 2.8195 dan Piotroski F-Score 3.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 4.1939x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Perindustrian.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 396.3900, salah satu acuan margin keselamatan investor value. Fundamental score komposit 91.7200 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "ARNA",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko ARNA (Perindustrian) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ARNA",
+        "asset_name": "Arwana Citramulia",
+        "sector": "Perindustrian",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 20.9792,
+        "roa_percent": 14.0741,
+        "der_x": 0.4906,
+        "per_x": 9.5865,
+        "pbv_x": 2.0112,
+        "eps": 55.29,
+        "altman_z_score": 6.8945,
+        "piotroski_f_score": 5.0,
+        "graham_number": 572.55,
+        "fundamental_score": 90.05
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci ARNA mencakup PER sebesar 9.5865x, PBV sebesar 2.0112x, dan EPS sebesar 55.2900. ROE tercatat 20.9792% dan ROA 14.0741%.",
+      "step_2_correlation": "Rasio DER sebesar 0.4906x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 6.8945 dan Piotroski F-Score 5.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 9.5865x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Perindustrian.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 572.5500, salah satu acuan margin keselamatan investor value. Fundamental score komposit 90.0500 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "MSTI",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko MSTI (Teknologi) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "MSTI",
+        "asset_name": "Mastersystem Infotama",
+        "sector": "Teknologi",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 23.9622,
+        "roa_percent": 15.8619,
+        "der_x": 0.5107,
+        "per_x": 8.864,
+        "pbv_x": 2.124,
+        "eps": 174.87,
+        "altman_z_score": 7.226,
+        "piotroski_f_score": 4.0,
+        "graham_number": 1694.46,
+        "fundamental_score": 93.7
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci MSTI mencakup PER sebesar 8.8640x, PBV sebesar 2.1240x, dan EPS sebesar 174.8700. ROE tercatat 23.9622% dan ROA 15.8619%.",
+      "step_2_correlation": "Rasio DER sebesar 0.5107x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 7.2260 dan Piotroski F-Score 4.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 8.8640x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Teknologi.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 1694.4600, salah satu acuan margin keselamatan investor value. Fundamental score komposit 93.7000 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "EMTK",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko EMTK (Teknologi) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "EMTK",
+        "asset_name": "Elang Mahkota Teknologi",
+        "sector": "Teknologi",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 16.6408,
+        "roa_percent": 14.6203,
+        "der_x": 0.1382,
+        "per_x": 7.5014,
+        "pbv_x": 1.2483,
+        "eps": 144.64,
+        "altman_z_score": 10.7244,
+        "piotroski_f_score": 7.0,
+        "graham_number": 1681.88,
+        "fundamental_score": 88.76
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci EMTK mencakup PER sebesar 7.5014x, PBV sebesar 1.2483x, dan EPS sebesar 144.6400. ROE tercatat 16.6408% dan ROA 14.6203%.",
+      "step_2_correlation": "Rasio DER sebesar 0.1382x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 10.7244 dan Piotroski F-Score 7.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 7.5014x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Teknologi.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 1681.8800, salah satu acuan margin keselamatan investor value. Fundamental score komposit 88.7600 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "PGJO",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko PGJO (Teknologi) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "PGJO",
+        "asset_name": "Bahtera Bumi Raya",
+        "sector": "Teknologi",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 340.8026,
+        "roa_percent": -22.4289,
+        "der_x": -16.1948,
+        "per_x": -118.4834,
+        "pbv_x": -403.7872,
+        "eps": -8.57,
+        "altman_z_score": -7.4993,
+        "piotroski_f_score": 3.0,
+        "fundamental_score": 84.62
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci PGJO mencakup PER sebesar -118.4834x, PBV sebesar -403.7872x, dan EPS sebesar -8.5700. ROE tercatat 340.8026% dan ROA -22.4289%.",
+      "step_2_correlation": "Rasio DER sebesar -16.1948x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score -7.4993 dan Piotroski F-Score 3.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER -118.4834x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Teknologi.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat tidak tersedia di data, salah satu acuan margin keselamatan investor value. Fundamental score komposit 84.6200 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "MERK",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko MERK (Kesehatan) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "MERK",
+        "asset_name": "Merck",
+        "sector": "Kesehatan",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 24.9967,
+        "roa_percent": 19.1712,
+        "der_x": 0.3039,
+        "per_x": 6.1534,
+        "pbv_x": 1.5382,
+        "eps": 544.41,
+        "altman_z_score": 8.8879,
+        "piotroski_f_score": 5.0,
+        "graham_number": 5165.08,
+        "fundamental_score": 97.93
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci MERK mencakup PER sebesar 6.1534x, PBV sebesar 1.5382x, dan EPS sebesar 544.4100. ROE tercatat 24.9967% dan ROA 19.1712%.",
+      "step_2_correlation": "Rasio DER sebesar 0.3039x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 8.8879 dan Piotroski F-Score 5.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 6.1534x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Kesehatan.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 5165.0800, salah satu acuan margin keselamatan investor value. Fundamental score komposit 97.9300 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "SCPI",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko SCPI (Kesehatan) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "SCPI",
+        "asset_name": "Organon Pharma Indonesia",
+        "sector": "Kesehatan",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 21.8415,
+        "roa_percent": 12.7713,
+        "der_x": 0.7102,
+        "per_x": 0.3591,
+        "pbv_x": 0.0784,
+        "eps": 80751.56,
+        "altman_z_score": 5.4729,
+        "piotroski_f_score": 6.0,
+        "graham_number": 819597.98,
+        "fundamental_score": 94.17
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci SCPI mencakup PER sebesar 0.3591x, PBV sebesar 0.0784x, dan EPS sebesar 80751.5600. ROE tercatat 21.8415% dan ROA 12.7713%.",
+      "step_2_correlation": "Rasio DER sebesar 0.7102x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 5.4729 dan Piotroski F-Score 6.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 0.3591x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Kesehatan.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 819597.9800, salah satu acuan margin keselamatan investor value. Fundamental score komposit 94.1700 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  },
+  {
+    "asset_code": "OBAT",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko OBAT (Kesehatan) berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "OBAT",
+        "asset_name": "Brigit Biofarmaka Teknologi",
+        "sector": "Kesehatan",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 23.2532,
+        "roa_percent": 19.5277,
+        "der_x": 0.1908,
+        "per_x": 9.21,
+        "pbv_x": 2.1416,
+        "eps": 42.13,
+        "altman_z_score": 9.9301,
+        "piotroski_f_score": 5.0,
+        "graham_number": 414.4,
+        "fundamental_score": 92.61
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci OBAT mencakup PER sebesar 9.2100x, PBV sebesar 2.1416x, dan EPS sebesar 42.1300. ROE tercatat 23.2532% dan ROA 19.5277%.",
+      "step_2_correlation": "Rasio DER sebesar 0.1908x menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score 9.9301 dan Piotroski F-Score 5.0000 (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 9.2100x perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor Kesehatan.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 414.4000, salah satu acuan margin keselamatan investor value. Fundamental score komposit 92.6100 merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), sektor dari tabel sectors/stocks (database aigen_db). vendor_insight_score proprietary SENGAJA TIDAK diikutkan. Field bernilai NULL di sumber data untuk saham ini tidak disertakan (Strict Fact Adherence)."
+  }
+]
