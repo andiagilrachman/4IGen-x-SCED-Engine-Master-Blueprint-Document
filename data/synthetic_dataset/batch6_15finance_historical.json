@@ -1,0 +1,1051 @@
+[
+  {
+    "asset_code": "ADMF",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas ADMF (Adira Dinamika Multi Finance) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ADMF",
+        "asset_name": "Adira Dinamika Multi Finance",
+        "sector": "Financial Services",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 32588191000000.0,
+        "total_equity_idr": 11555744000000.0,
+        "net_income_idr": 1406682000000.0,
+        "roe_percent_calculated": 12.17
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, ADMF mencatat Total Aset sebesar Rp32.59 Triliun, Total Ekuitas Rp11.56 Triliun, dan Laba Bersih Rp1.41 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 12.17%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp32.59 Triliun dan ROE 12.17% pada FY2024, ADMF menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "ADMF",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas ADMF (Adira Dinamika Multi Finance) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ADMF",
+        "asset_name": "Adira Dinamika Multi Finance",
+        "sector": "Financial Services",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 31007222000000.0,
+        "total_equity_idr": 11112186000000.0,
+        "net_income_idr": 1944047000000.0,
+        "roe_percent_calculated": 17.49
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, ADMF mencatat Total Aset sebesar Rp31.01 Triliun, Total Ekuitas Rp11.11 Triliun, dan Laba Bersih Rp1.94 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 17.49%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp31.01 Triliun dan ROE 17.49% pada FY2023, ADMF menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "ASDM",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas ASDM (Asuransi Dayin Mitra) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ASDM",
+        "asset_name": "Asuransi Dayin Mitra",
+        "sector": "Financial Services",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 1082550737000.0,
+        "total_equity_idr": 398470362000.0,
+        "net_income_idr": 30125811000.0,
+        "roe_percent_calculated": 7.56
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, ASDM mencatat Total Aset sebesar Rp1.08 Triliun, Total Ekuitas Rp0.40 Triliun, dan Laba Bersih Rp0.03 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 7.56%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp1.08 Triliun dan ROE 7.56% pada FY2024, ASDM menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "ASDM",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas ASDM (Asuransi Dayin Mitra) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ASDM",
+        "asset_name": "Asuransi Dayin Mitra",
+        "sector": "Financial Services",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 982940217000.0,
+        "total_equity_idr": 371724043000.0,
+        "net_income_idr": 21037991000.0,
+        "roe_percent_calculated": 5.66
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, ASDM mencatat Total Aset sebesar Rp0.98 Triliun, Total Ekuitas Rp0.37 Triliun, dan Laba Bersih Rp0.02 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 5.66%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp0.98 Triliun dan ROE 5.66% pada FY2023, ASDM menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "BBTN",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BBTN (Bank Tabungan Negara (Persero)) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BBTN",
+        "asset_name": "Bank Tabungan Negara (Persero)",
+        "sector": "Financial Services",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 469614502000000.0,
+        "total_equity_idr": 32571889000000.0,
+        "net_income_idr": 3007328000000.0,
+        "roe_percent_calculated": 9.23,
+        "interest_income_idr": 25472625000000.0
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, BBTN mencatat Total Aset sebesar Rp469.61 Triliun, Total Ekuitas Rp32.57 Triliun, Pendapatan Bunga Rp25.47 Triliun, dan Laba Bersih Rp3.01 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 9.23%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp469.61 Triliun dan ROE 9.23% pada FY2024, BBTN menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "BBTN",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BBTN (Bank Tabungan Negara (Persero)) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BBTN",
+        "asset_name": "Bank Tabungan Negara (Persero)",
+        "sector": "Financial Services",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 438749736000000.0,
+        "total_equity_idr": 30479152000000.0,
+        "net_income_idr": 3500988000000.0,
+        "roe_percent_calculated": 11.49,
+        "interest_income_idr": 24722529000000.0
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, BBTN mencatat Total Aset sebesar Rp438.75 Triliun, Total Ekuitas Rp30.48 Triliun, Pendapatan Bunga Rp24.72 Triliun, dan Laba Bersih Rp3.50 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 11.49%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp438.75 Triliun dan ROE 11.49% pada FY2023, BBTN menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "BFIN",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BFIN (BFI Finance Indonesia) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BFIN",
+        "asset_name": "BFI Finance Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 25119820000000.0,
+        "total_equity_idr": 10181665000000.0,
+        "net_income_idr": 1564674000000.0,
+        "roe_percent_calculated": 15.37
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, BFIN mencatat Total Aset sebesar Rp25.12 Triliun, Total Ekuitas Rp10.18 Triliun, dan Laba Bersih Rp1.56 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 15.37%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp25.12 Triliun dan ROE 15.37% pada FY2024, BFIN menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "BFIN",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BFIN (BFI Finance Indonesia) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BFIN",
+        "asset_name": "BFI Finance Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 23991435000000.0,
+        "total_equity_idr": 9499796000000.0,
+        "net_income_idr": 1643799000000.0,
+        "roe_percent_calculated": 17.3
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, BFIN mencatat Total Aset sebesar Rp23.99 Triliun, Total Ekuitas Rp9.50 Triliun, dan Laba Bersih Rp1.64 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 17.30%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp23.99 Triliun dan ROE 17.30% pada FY2023, BFIN menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "BJBR",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BJBR (Bank Pembangunan Daerah Jawa Barat dan Banten) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BJBR",
+        "asset_name": "Bank Pembangunan Daerah Jawa Barat dan Banten",
+        "sector": "Financial Services",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 219960693000000.0,
+        "total_equity_idr": 19638701000000.0,
+        "net_income_idr": 1455186000000.0,
+        "roe_percent_calculated": 7.41,
+        "interest_income_idr": 15872485000000.0
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, BJBR mencatat Total Aset sebesar Rp219.96 Triliun, Total Ekuitas Rp19.64 Triliun, Pendapatan Bunga Rp15.87 Triliun, dan Laba Bersih Rp1.46 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 7.41%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp219.96 Triliun dan ROE 7.41% pada FY2024, BJBR menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "BJBR",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BJBR (Bank Pembangunan Daerah Jawa Barat dan Banten) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BJBR",
+        "asset_name": "Bank Pembangunan Daerah Jawa Barat dan Banten",
+        "sector": "Financial Services",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 188295488000000.0,
+        "total_equity_idr": 15449018000000.0,
+        "net_income_idr": 1681177000000.0,
+        "roe_percent_calculated": 10.88,
+        "interest_income_idr": 14258209000000.0
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, BJBR mencatat Total Aset sebesar Rp188.30 Triliun, Total Ekuitas Rp15.45 Triliun, Pendapatan Bunga Rp14.26 Triliun, dan Laba Bersih Rp1.68 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 10.88%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp188.30 Triliun dan ROE 10.88% pada FY2023, BJBR menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "BNLI",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BNLI (Bank Permata) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BNLI",
+        "asset_name": "Bank Permata",
+        "sector": "Financial Services",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 259067503000000.0,
+        "total_equity_idr": 42603182000000.0,
+        "net_income_idr": 3566519000000.0,
+        "roe_percent_calculated": 8.37,
+        "interest_income_idr": 17213039000000.0
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, BNLI mencatat Total Aset sebesar Rp259.07 Triliun, Total Ekuitas Rp42.60 Triliun, Pendapatan Bunga Rp17.21 Triliun, dan Laba Bersih Rp3.57 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 8.37%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp259.07 Triliun dan ROE 8.37% pada FY2024, BNLI menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "BNLI",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BNLI (Bank Permata) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BNLI",
+        "asset_name": "Bank Permata",
+        "sector": "Financial Services",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 257444147000000.0,
+        "total_equity_idr": 39992322000000.0,
+        "net_income_idr": 2585218000000.0,
+        "roe_percent_calculated": 6.46,
+        "interest_income_idr": 16039144000000.0
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, BNLI mencatat Total Aset sebesar Rp257.44 Triliun, Total Ekuitas Rp39.99 Triliun, Pendapatan Bunga Rp16.04 Triliun, dan Laba Bersih Rp2.59 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 6.46%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp257.44 Triliun dan ROE 6.46% pada FY2023, BNLI menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "BRIS",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BRIS (Bank Syariah Indonesia) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BRIS",
+        "asset_name": "Bank Syariah Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 408613432000000.0,
+        "total_equity_idr": 45041572000000.0,
+        "net_income_idr": 7005888000000.0,
+        "roe_percent_calculated": 15.55
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, BRIS mencatat Total Aset sebesar Rp408.61 Triliun, Total Ekuitas Rp45.04 Triliun, dan Laba Bersih Rp7.01 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 15.55%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp408.61 Triliun dan ROE 15.55% pada FY2024, BRIS menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "BRIS",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BRIS (Bank Syariah Indonesia) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BRIS",
+        "asset_name": "Bank Syariah Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 353624124000000.0,
+        "total_equity_idr": 38739121000000.0,
+        "net_income_idr": 5703743000000.0,
+        "roe_percent_calculated": 14.72
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, BRIS mencatat Total Aset sebesar Rp353.62 Triliun, Total Ekuitas Rp38.74 Triliun, dan Laba Bersih Rp5.70 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 14.72%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp353.62 Triliun dan ROE 14.72% pada FY2023, BRIS menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "BTPS",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BTPS (Bank BTPN Syariah) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BTPS",
+        "asset_name": "Bank BTPN Syariah",
+        "sector": "Financial Services",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 21747580000000.0,
+        "total_equity_idr": 9316594000000.0,
+        "net_income_idr": 1061160000000.0,
+        "roe_percent_calculated": 11.39
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, BTPS mencatat Total Aset sebesar Rp21.75 Triliun, Total Ekuitas Rp9.32 Triliun, dan Laba Bersih Rp1.06 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 11.39%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp21.75 Triliun dan ROE 11.39% pada FY2024, BTPS menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "BTPS",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas BTPS (Bank BTPN Syariah) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BTPS",
+        "asset_name": "Bank BTPN Syariah",
+        "sector": "Financial Services",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 21435366000000.0,
+        "total_equity_idr": 8777133000000.0,
+        "net_income_idr": 1080588000000.0,
+        "roe_percent_calculated": 12.31
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, BTPS mencatat Total Aset sebesar Rp21.44 Triliun, Total Ekuitas Rp8.78 Triliun, dan Laba Bersih Rp1.08 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 12.31%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp21.44 Triliun dan ROE 12.31% pada FY2023, BTPS menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "LPGI",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas LPGI (Lippo General Insurance) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "LPGI",
+        "asset_name": "Lippo General Insurance",
+        "sector": "Financial Services",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 3074044644967.0,
+        "total_equity_idr": 893803986316.0,
+        "net_income_idr": 62274344673.0,
+        "roe_percent_calculated": 6.97
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, LPGI mencatat Total Aset sebesar Rp3.07 Triliun, Total Ekuitas Rp0.89 Triliun, dan Laba Bersih Rp0.06 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 6.97%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp3.07 Triliun dan ROE 6.97% pada FY2024, LPGI menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "LPGI",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas LPGI (Lippo General Insurance) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "LPGI",
+        "asset_name": "Lippo General Insurance",
+        "sector": "Financial Services",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 2769428113972.0,
+        "total_equity_idr": 843744702806.0,
+        "net_income_idr": 24885327757.0,
+        "roe_percent_calculated": 2.95
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, LPGI mencatat Total Aset sebesar Rp2.77 Triliun, Total Ekuitas Rp0.84 Triliun, dan Laba Bersih Rp0.02 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 2.95%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp2.77 Triliun dan ROE 2.95% pada FY2023, LPGI menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "MEGA",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas MEGA (Bank Mega) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "MEGA",
+        "asset_name": "Bank Mega",
+        "sector": "Financial Services",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 134915494000000.0,
+        "total_equity_idr": 21182201000000.0,
+        "net_income_idr": 2631054000000.0,
+        "roe_percent_calculated": 12.42,
+        "interest_income_idr": 10289306000000.0
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, MEGA mencatat Total Aset sebesar Rp134.92 Triliun, Total Ekuitas Rp21.18 Triliun, Pendapatan Bunga Rp10.29 Triliun, dan Laba Bersih Rp2.63 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 12.42%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp134.92 Triliun dan ROE 12.42% pada FY2024, MEGA menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "MEGA",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas MEGA (Bank Mega) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "MEGA",
+        "asset_name": "Bank Mega",
+        "sector": "Financial Services",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 132049591000000.0,
+        "total_equity_idr": 21755443000000.0,
+        "net_income_idr": 3510670000000.0,
+        "roe_percent_calculated": 16.14,
+        "interest_income_idr": 10217532000000.0
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, MEGA mencatat Total Aset sebesar Rp132.05 Triliun, Total Ekuitas Rp21.76 Triliun, Pendapatan Bunga Rp10.22 Triliun, dan Laba Bersih Rp3.51 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 16.14%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp132.05 Triliun dan ROE 16.14% pada FY2023, MEGA menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "NISP",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas NISP (Bank OCBC NISP) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "NISP",
+        "asset_name": "Bank OCBC NISP",
+        "sector": "Financial Services",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 281008237000000.0,
+        "total_equity_idr": 40691379000000.0,
+        "net_income_idr": 4866750000000.0,
+        "roe_percent_calculated": 11.96,
+        "interest_income_idr": 17819661000000.0
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, NISP mencatat Total Aset sebesar Rp281.01 Triliun, Total Ekuitas Rp40.69 Triliun, Pendapatan Bunga Rp17.82 Triliun, dan Laba Bersih Rp4.87 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 11.96%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp281.01 Triliun dan ROE 11.96% pada FY2024, NISP menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "NISP",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas NISP (Bank OCBC NISP) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "NISP",
+        "asset_name": "Bank OCBC NISP",
+        "sector": "Financial Services",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 249757139000000.0,
+        "total_equity_idr": 37320268000000.0,
+        "net_income_idr": 4091043000000.0,
+        "roe_percent_calculated": 10.96,
+        "interest_income_idr": 15532562000000.0
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, NISP mencatat Total Aset sebesar Rp249.76 Triliun, Total Ekuitas Rp37.32 Triliun, Pendapatan Bunga Rp15.53 Triliun, dan Laba Bersih Rp4.09 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 10.96%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp249.76 Triliun dan ROE 10.96% pada FY2023, NISP menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "PANS",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas PANS (Panin Sekuritas) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "PANS",
+        "asset_name": "Panin Sekuritas",
+        "sector": "Financial Services",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 2000890508730.0,
+        "total_equity_idr": 1555332597046.0,
+        "net_income_idr": 118112167031.0,
+        "roe_percent_calculated": 7.59
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, PANS mencatat Total Aset sebesar Rp2.00 Triliun, Total Ekuitas Rp1.56 Triliun, dan Laba Bersih Rp0.12 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 7.59%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp2.00 Triliun dan ROE 7.59% pada FY2024, PANS menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "PANS",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas PANS (Panin Sekuritas) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "PANS",
+        "asset_name": "Panin Sekuritas",
+        "sector": "Financial Services",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 2235128553852.0,
+        "total_equity_idr": 1566185333063.0,
+        "net_income_idr": 138013677348.0,
+        "roe_percent_calculated": 8.81
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, PANS mencatat Total Aset sebesar Rp2.24 Triliun, Total Ekuitas Rp1.57 Triliun, dan Laba Bersih Rp0.14 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 8.81%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp2.24 Triliun dan ROE 8.81% pada FY2023, PANS menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "PNBN",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas PNBN (Bank Pan Indonesia) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "PNBN",
+        "asset_name": "Bank Pan Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 243958575000000.0,
+        "total_equity_idr": 56069616000000.0,
+        "net_income_idr": 2866763000000.0,
+        "roe_percent_calculated": 5.11,
+        "interest_income_idr": 15453970000000.0
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, PNBN mencatat Total Aset sebesar Rp243.96 Triliun, Total Ekuitas Rp56.07 Triliun, Pendapatan Bunga Rp15.45 Triliun, dan Laba Bersih Rp2.87 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 5.11%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp243.96 Triliun dan ROE 5.11% pada FY2024, PNBN menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "PNBN",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas PNBN (Bank Pan Indonesia) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "PNBN",
+        "asset_name": "Bank Pan Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 222010050000000.0,
+        "total_equity_idr": 53312485000000.0,
+        "net_income_idr": 3005536000000.0,
+        "roe_percent_calculated": 5.64,
+        "interest_income_idr": 14588381000000.0
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, PNBN mencatat Total Aset sebesar Rp222.01 Triliun, Total Ekuitas Rp53.31 Triliun, Pendapatan Bunga Rp14.59 Triliun, dan Laba Bersih Rp3.01 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 5.64%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp222.01 Triliun dan ROE 5.64% pada FY2023, PNBN menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "SRTG",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas SRTG (Saratoga Investama Sedaya) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "SRTG",
+        "asset_name": "Saratoga Investama Sedaya",
+        "sector": "Financial Services",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 57841857000000.0,
+        "total_equity_idr": 51772808000000.0,
+        "net_income_idr": 3291496000000.0,
+        "roe_percent_calculated": 6.36,
+        "interest_income_idr": 62459000000.0
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, SRTG mencatat Total Aset sebesar Rp57.84 Triliun, Total Ekuitas Rp51.77 Triliun, Pendapatan Bunga Rp0.06 Triliun, dan Laba Bersih Rp3.29 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 6.36%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp57.84 Triliun dan ROE 6.36% pada FY2024, SRTG menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "SRTG",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas SRTG (Saratoga Investama Sedaya) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "SRTG",
+        "asset_name": "Saratoga Investama Sedaya",
+        "sector": "Financial Services",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 50945120000000.0,
+        "total_equity_idr": 48788224000000.0,
+        "net_income_idr": -10151341000000.0,
+        "roe_percent_calculated": -20.81,
+        "interest_income_idr": 24540000000.0
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, SRTG mencatat Total Aset sebesar Rp50.95 Triliun, Total Ekuitas Rp48.79 Triliun, Pendapatan Bunga Rp0.02 Triliun, dan Laba Bersih Rp-10.15 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar -20.81%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp50.95 Triliun dan ROE -20.81% pada FY2023, SRTG menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "TUGU",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas TUGU (Asuransi Tugu Pratama Indonesia) pada FY2024 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "TUGU",
+        "asset_name": "Asuransi Tugu Pratama Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2024 (data tahunan, dipasangkan konteks makro Q3 2024)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 26350070532000.0,
+        "total_equity_idr": 10508549572000.0,
+        "net_income_idr": 750512791000.0,
+        "roe_percent_calculated": 7.14
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2024, TUGU mencatat Total Aset sebesar Rp26.35 Triliun, Total Ekuitas Rp10.51 Triliun, dan Laba Bersih Rp0.75 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 7.14%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2024.",
+      "step_3_macro_contextualization": "Periode FY2024 berada dalam konteks BI Rate 6.0% dan inflasi 2.12% — BI Rate bertahan di 6.00%, inflasi tetap rendah dan stabil di 2.12%",
+      "step_4_synthesis": "Dengan Total Aset Rp26.35 Triliun dan ROE 7.14% pada FY2024, TUGU menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2024). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  },
+  {
+    "asset_code": "TUGU",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana kinerja pertumbuhan aset dan profitabilitas TUGU (Asuransi Tugu Pratama Indonesia) pada FY2023 berdasarkan data laporan keuangan tahunan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "TUGU",
+        "asset_name": "Asuransi Tugu Pratama Indonesia",
+        "sector": "Financial Services",
+        "period": "FY2023 (data tahunan, dipasangkan konteks makro Desember 2023)",
+        "currency": "IDR",
+        "scale": "Absolut (IDR) & Triliun"
+      },
+      "financial_metrics": {
+        "total_assets_idr": 25137942615000.0,
+        "total_equity_idr": 10279858233000.0,
+        "net_income_idr": 1302101269000.0,
+        "roe_percent_calculated": 12.67
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.0,
+        "inflation_yoy_percent": 2.61,
+        "usd_idr_exchange_rate": 15500,
+        "sector_trend": "BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Pada FY2023, TUGU mencatat Total Aset sebesar Rp25.14 Triliun, Total Ekuitas Rp10.28 Triliun, dan Laba Bersih Rp1.30 Triliun.",
+      "step_2_correlation": "ROE terhitung dari data (Laba Bersih / Ekuitas) sebesar 12.67%, menunjukkan efisiensi penggunaan modal pemegang saham untuk menghasilkan laba pada periode FY2023.",
+      "step_3_macro_contextualization": "Periode FY2023 berada dalam konteks BI Rate 6.0% dan inflasi 2.61% — BI Rate naik ke 6.00% (tertinggi 4 tahun) untuk stabilkan Rupiah, inflasi domestik melandai ke 2.61%",
+      "step_4_synthesis": "Dengan Total Aset Rp25.14 Triliun dan ROE 12.67% pada FY2023, TUGU menunjukkan skala dan profitabilitas yang bisa dibandingkan dengan periode lain untuk menilai tren pertumbuhan dari waktu ke waktu."
+    },
+    "_source_note": "Data neraca/laba-rugi murni dari financial_rows (database 4igen user, statement BS/IS periode FY 2023). ROE dihitung langsung dari fakta (Net Income/Equity)."
+  }
+]

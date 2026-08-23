@@ -232,19 +232,49 @@ sebelumnya).
   `selected_stocks_batch3.json` sebagai input — file kerja lokal, tidak
   di-commit).
 
-### 6g. Langkah selanjutnya
-- **Rekomendasi cleanup:** terapkan `severity_note()` yang sama ke
-  4 saham batch2 (BMRI/UNVR/ANTM/ASII) dan cek juga apakah ada di antara
-  keduanya yang kondisinya ekstrem (belum dicek).
-- Audit manual (baca langsung, bukan cuma script) untuk minimal beberapa
-  sampel dari tiap batch sebelum training sungguhan — audit sesi ini baru
-  otomatis (cek angka), belum baca kualitas narasi bahasa secara manual.
-- Perluas cakupan `financial_rows` ke lebih banyak bank (baru 4 dari 101
-  saham sektor Keuangan yang tersedia).
-- Pertimbangkan generate lensa untuk lebih banyak saham lagi dari 1.203
-  yang tersedia di `fundamental_snapshot_all.json` (baru dipakai 37 saham:
-  4 dari batch2 + 33 dari batch3/5).
+### 6h. ✅ Fix bug narasi + audit manual + 15 institusi keuangan baru (2026-08-23)
+Total dataset sekarang **206 entri** (naik dari 176 di akhir sesi
+sebelumnya).
+
+- **Cek kondisi ekstrem 4 saham batch2** (BMRI/UNVR/ANTM/ASII): semua
+  normal (tidak ada PER/PBV/Altman Z negatif) — tidak perlu perbaikan,
+  narasi generik yang sudah ada sudah sesuai.
+- **Bug ditemukan & diperbaiki** di `generate_batch5_33stocks_3lenses.py`:
+  kalimat step_2 lensa Risk selalu bilang "PBV yang negatif (jika ada)
+  umumnya mengindikasikan ekuitas negatif" TANPA CEK apakah PBV memang
+  negatif — untuk saham normal (PBV positif) kalimat ini jadi tidak
+  relevan/membingungkan. Diperbaiki jadi kondisional: kalau PBV negatif ->
+  jelaskan implikasinya; kalau PBV positif -> jelaskan itu wajar, bukan
+  masalah. Script sudah dijalankan ulang, `batch5_33stocks_3lenses.json`
+  ter-update dengan perbaikan ini (masih 99 entri, isi diperbaiki).
+- **Audit manual** (baca langsung 5 sampel dari berbagai batch, bukan cuma
+  cek angka otomatis): semua bersih — angka konsisten, narasi masuk akal,
+  tidak ada frasa aneh lain ditemukan setelah fix bug PBV di atas.
+- **15 institusi keuangan baru dari `financial_rows`**
+  (`batch6_15finance_historical.json`, 30 entri: 15 institusi x FY2023 &
+  FY2024) — ADMF, ASDM, BBTN, BFIN, BJBR, BNLI, BRIS, BTPS, LPGI, MEGA,
+  NISP, PANS, PNBN, SRTG, TUGU. Cakupan beragam: bank umum, bank syariah
+  (BRIS/BTPS), multifinance (ADMF/BFIN), asuransi (ASDM/LPGI/TUGU),
+  sekuritas (PANS), holding investasi (SRTG). Beberapa entri (sekuritas/
+  asuransi) tidak selalu punya field "Pendapatan bunga" — script
+  `generate_batch6_15finance.py` menangani ini secara kondisional (field
+  di-skip kalau tidak ada, bukan diisi 0/dikarang).
+  **Total bank/institusi keuangan dari financial_rows sekarang: 19 dari
+  101 yang tersedia** (4 dari batch4 + 15 dari batch6).
+
+### 6i. Langkah selanjutnya
+- Perluas `financial_rows` ke sisa institusi keuangan (82 dari 101 belum
+  dipakai).
+- Perluas cakupan saham non-keuangan lagi dari 1.203 yang tersedia di
+  `fundamental_snapshot_all.json` (baru dipakai 37 saham).
+- Pertimbangkan tambah lensa Value & Risk Margin untuk 15 institusi
+  keuangan baru ini juga (saat ini baru lensa Growth saja, beda dengan 33
+  saham batch3/5 yang sudah 4 lensa lengkap) — supaya konsisten cakupan
+  lensa antar semua saham di dataset.
 - Tetap tunda data eksplisit Invezgo sampai ToS dikonfirmasi (poin 6b).
+- Mulai pertimbangkan kapan waktunya jalankan smoke test training di
+  Colab (roadmap poin #7) — dataset sudah 206 entri, jauh lebih besar dari
+  pilot 20 baris awal.
 
 ### 7. Smoke test training run v0.1 di Colab
 - Jalankan notebook end-to-end (10 sel) sebagai uji pipeline teknis, BUKAN

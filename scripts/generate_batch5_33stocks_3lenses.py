@@ -96,13 +96,19 @@ def build_macro(code, sector, d):
 def build_risk(code, sector, d):
     extreme = severity_note(d)
     opening_tone = "signifikan dan memerlukan perhatian serius" if extreme else "yang perlu dipantau secara rutin"
+    pbv = d.get("pbv_x")
+    pbv_sentence = (
+        f"PBV {fmt(pbv, 'x')} yang negatif mengindikasikan kemungkinan ekuitas negatif, sinyal risiko struktural yang serius."
+        if (pbv is not None and pbv < 0) else
+        f"PBV {fmt(pbv, 'x')} berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif."
+    )
     return {
         "asset_code": code, "lens": "Risk & Red Flags Detector",
         "instruction": f"Potensi risiko atau kerentanan apa yang dapat diidentifikasi dari profil kesehatan keuangan {code} ({sector}) berdasarkan skor analitis yang tersedia?",
         "input_data": base_input_data(code, sector, d),
         "chain_of_thought": {
             "step_1_identification": f"Titik risiko: Altman Z-Score {fmt(d['altman_z_score'])}, Piotroski F-Score {fmt(d['piotroski_f_score'])} (skala 0-9), DER {fmt(d['der_x'], 'x')}, PBV {fmt(d['pbv_x'], 'x')}.",
-            "step_2_correlation": f"Altman Z-Score {fmt(d['altman_z_score'])} mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score {fmt(d['piotroski_f_score'])} merangkum 9 kriteria kesehatan fundamental. PBV {fmt(d['pbv_x'], 'x')} yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+            "step_2_correlation": f"Altman Z-Score {fmt(d['altman_z_score'])} mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score {fmt(d['piotroski_f_score'])} merangkum 9 kriteria kesehatan fundamental. {pbv_sentence}",
             "step_3_macro_contextualization": f"Dalam inflasi {MACRO_ANCHOR['inflation_yoy_percent']}% yang naik mendekati batas atas target BI, perusahaan dengan DER {fmt(d['der_x'], 'x')} berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
             "step_4_synthesis": f"Kombinasi Altman Z-Score {fmt(d['altman_z_score'])} dan Piotroski F-Score {fmt(d['piotroski_f_score'])} menunjukkan tingkat risiko {opening_tone} — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
         },

@@ -116,7 +116,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 3.8991, Piotroski F-Score 5.0000 (skala 0-9), DER 0.5635x, PBV 0.7224x.",
-      "step_2_correlation": "Altman Z-Score 3.8991 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 5.0000 merangkum 9 kriteria kesehatan fundamental. PBV 0.7224x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 3.8991 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 5.0000 merangkum 9 kriteria kesehatan fundamental. PBV 0.7224x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.5635x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 3.8991 dan Piotroski F-Score 5.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -239,7 +239,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 6.5499, Piotroski F-Score 6.0000 (skala 0-9), DER 0.3560x, PBV 2.2989x.",
-      "step_2_correlation": "Altman Z-Score 6.5499 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 6.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.2989x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 6.5499 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 6.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.2989x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.3560x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 6.5499 dan Piotroski F-Score 6.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -362,7 +362,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 2.3756, Piotroski F-Score 9.0000 (skala 0-9), DER 0.9239x, PBV 0.9263x.",
-      "step_2_correlation": "Altman Z-Score 2.3756 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 9.0000 merangkum 9 kriteria kesehatan fundamental. PBV 0.9263x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 2.3756 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 9.0000 merangkum 9 kriteria kesehatan fundamental. PBV 0.9263x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.9239x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 2.3756 dan Piotroski F-Score 9.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -476,7 +476,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score tidak tersedia di data, Piotroski F-Score tidak tersedia di data (skala 0-9), DER 0.3657x, PBV 2.0787x.",
-      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 2.0787x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 2.0787x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.3657x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -590,7 +590,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score tidak tersedia di data, Piotroski F-Score tidak tersedia di data (skala 0-9), DER 0.2575x, PBV 2.5479x.",
-      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 2.5479x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 2.5479x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.2575x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -704,7 +704,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score tidak tersedia di data, Piotroski F-Score tidak tersedia di data (skala 0-9), DER 0.6511x, PBV 2.4864x.",
-      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 2.4864x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 2.4864x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.6511x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -818,7 +818,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score tidak tersedia di data, Piotroski F-Score tidak tersedia di data (skala 0-9), DER 0.1989x, PBV 2.3333x.",
-      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 2.3333x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 2.3333x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.1989x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -941,7 +941,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 5.4106, Piotroski F-Score 6.0000 (skala 0-9), DER 0.7228x, PBV 0.8670x.",
-      "step_2_correlation": "Altman Z-Score 5.4106 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 6.0000 merangkum 9 kriteria kesehatan fundamental. PBV 0.8670x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 5.4106 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 6.0000 merangkum 9 kriteria kesehatan fundamental. PBV 0.8670x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.7228x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 5.4106 dan Piotroski F-Score 6.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -1064,7 +1064,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 4.7470, Piotroski F-Score 6.0000 (skala 0-9), DER 0.3331x, PBV 0.7643x.",
-      "step_2_correlation": "Altman Z-Score 4.7470 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 6.0000 merangkum 9 kriteria kesehatan fundamental. PBV 0.7643x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 4.7470 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 6.0000 merangkum 9 kriteria kesehatan fundamental. PBV 0.7643x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.3331x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 4.7470 dan Piotroski F-Score 6.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -1187,7 +1187,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 3.2660, Piotroski F-Score 4.0000 (skala 0-9), DER 0.5479x, PBV 1.0065x.",
-      "step_2_correlation": "Altman Z-Score 3.2660 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 4.0000 merangkum 9 kriteria kesehatan fundamental. PBV 1.0065x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 3.2660 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 4.0000 merangkum 9 kriteria kesehatan fundamental. PBV 1.0065x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.5479x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 3.2660 dan Piotroski F-Score 4.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -1301,7 +1301,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score tidak tersedia di data, Piotroski F-Score tidak tersedia di data (skala 0-9), DER 0.0094x, PBV 2.5501x.",
-      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 2.5501x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 2.5501x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.0094x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -1415,7 +1415,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score tidak tersedia di data, Piotroski F-Score tidak tersedia di data (skala 0-9), DER 0.0610x, PBV 0.3638x.",
-      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 0.3638x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 0.3638x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.0610x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -1538,7 +1538,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 5.5208, Piotroski F-Score 7.0000 (skala 0-9), DER 0.4348x, PBV 2.3731x.",
-      "step_2_correlation": "Altman Z-Score 5.5208 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 7.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.3731x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 5.5208 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 7.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.3731x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.4348x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 5.5208 dan Piotroski F-Score 7.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -1661,7 +1661,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 5.7566, Piotroski F-Score 6.0000 (skala 0-9), DER 0.5125x, PBV 1.8507x.",
-      "step_2_correlation": "Altman Z-Score 5.7566 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 6.0000 merangkum 9 kriteria kesehatan fundamental. PBV 1.8507x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 5.7566 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 6.0000 merangkum 9 kriteria kesehatan fundamental. PBV 1.8507x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.5125x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 5.7566 dan Piotroski F-Score 6.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -1781,7 +1781,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score -2.7691, Piotroski F-Score 0.0000 (skala 0-9), DER -10.0370x, PBV -7.2772x.",
-      "step_2_correlation": "Altman Z-Score -2.7691 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 0.0000 merangkum 9 kriteria kesehatan fundamental. PBV -7.2772x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score -2.7691 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 0.0000 merangkum 9 kriteria kesehatan fundamental. PBV -7.2772x yang negatif mengindikasikan kemungkinan ekuitas negatif, sinyal risiko struktural yang serius.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER -10.0370x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score -2.7691 dan Piotroski F-Score 0.0000 menunjukkan tingkat risiko signifikan dan memerlukan perhatian serius — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -1904,7 +1904,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 144.0856, Piotroski F-Score 5.0000 (skala 0-9), DER 0.0075x, PBV 0.1376x.",
-      "step_2_correlation": "Altman Z-Score 144.0856 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 5.0000 merangkum 9 kriteria kesehatan fundamental. PBV 0.1376x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 144.0856 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 5.0000 merangkum 9 kriteria kesehatan fundamental. PBV 0.1376x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.0075x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 144.0856 dan Piotroski F-Score 5.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -2027,7 +2027,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 10.2168, Piotroski F-Score 6.0000 (skala 0-9), DER 0.1507x, PBV 1.2734x.",
-      "step_2_correlation": "Altman Z-Score 10.2168 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 6.0000 merangkum 9 kriteria kesehatan fundamental. PBV 1.2734x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 10.2168 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 6.0000 merangkum 9 kriteria kesehatan fundamental. PBV 1.2734x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.1507x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 10.2168 dan Piotroski F-Score 6.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -2141,7 +2141,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score tidak tersedia di data, Piotroski F-Score tidak tersedia di data (skala 0-9), DER 0.0769x, PBV 0.9401x.",
-      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 0.9401x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 0.9401x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.0769x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -2264,7 +2264,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 5.2617, Piotroski F-Score 6.0000 (skala 0-9), DER 0.3211x, PBV 1.3438x.",
-      "step_2_correlation": "Altman Z-Score 5.2617 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 6.0000 merangkum 9 kriteria kesehatan fundamental. PBV 1.3438x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 5.2617 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 6.0000 merangkum 9 kriteria kesehatan fundamental. PBV 1.3438x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.3211x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 5.2617 dan Piotroski F-Score 6.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -2378,7 +2378,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score tidak tersedia di data, Piotroski F-Score tidak tersedia di data (skala 0-9), DER 0.0411x, PBV 2.0192x.",
-      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 2.0192x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 2.0192x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.0411x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -2501,7 +2501,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 3.6596, Piotroski F-Score 9.0000 (skala 0-9), DER 0.4914x, PBV 2.0626x.",
-      "step_2_correlation": "Altman Z-Score 3.6596 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 9.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.0626x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 3.6596 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 9.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.0626x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.4914x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 3.6596 dan Piotroski F-Score 9.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -2624,7 +2624,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 0.9896, Piotroski F-Score 8.0000 (skala 0-9), DER 1.1866x, PBV 2.0540x.",
-      "step_2_correlation": "Altman Z-Score 0.9896 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 8.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.0540x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 0.9896 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 8.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.0540x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 1.1866x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 0.9896 dan Piotroski F-Score 8.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -2747,7 +2747,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 3.6249, Piotroski F-Score 3.0000 (skala 0-9), DER 0.6622x, PBV 2.4286x.",
-      "step_2_correlation": "Altman Z-Score 3.6249 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 3.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.4286x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 3.6249 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 3.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.4286x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.6622x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 3.6249 dan Piotroski F-Score 3.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -2861,7 +2861,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score tidak tersedia di data, Piotroski F-Score tidak tersedia di data (skala 0-9), DER 0.6785x, PBV 2.4253x.",
-      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 2.4253x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score tidak tersedia di data mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score tidak tersedia di data merangkum 9 kriteria kesehatan fundamental. PBV 2.4253x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.6785x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score tidak tersedia di data dan Piotroski F-Score tidak tersedia di data menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -2984,7 +2984,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 12.2284, Piotroski F-Score 4.0000 (skala 0-9), DER 0.1331x, PBV 2.7879x.",
-      "step_2_correlation": "Altman Z-Score 12.2284 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 4.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.7879x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 12.2284 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 4.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.7879x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.1331x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 12.2284 dan Piotroski F-Score 4.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -3107,7 +3107,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 2.8195, Piotroski F-Score 3.0000 (skala 0-9), DER 0.8076x, PBV 0.8632x.",
-      "step_2_correlation": "Altman Z-Score 2.8195 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 3.0000 merangkum 9 kriteria kesehatan fundamental. PBV 0.8632x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 2.8195 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 3.0000 merangkum 9 kriteria kesehatan fundamental. PBV 0.8632x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.8076x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 2.8195 dan Piotroski F-Score 3.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -3230,7 +3230,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 6.8945, Piotroski F-Score 5.0000 (skala 0-9), DER 0.4906x, PBV 2.0112x.",
-      "step_2_correlation": "Altman Z-Score 6.8945 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 5.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.0112x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 6.8945 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 5.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.0112x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.4906x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 6.8945 dan Piotroski F-Score 5.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -3353,7 +3353,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 7.2260, Piotroski F-Score 4.0000 (skala 0-9), DER 0.5107x, PBV 2.1240x.",
-      "step_2_correlation": "Altman Z-Score 7.2260 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 4.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.1240x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 7.2260 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 4.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.1240x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.5107x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 7.2260 dan Piotroski F-Score 4.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -3476,7 +3476,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 10.7244, Piotroski F-Score 7.0000 (skala 0-9), DER 0.1382x, PBV 1.2483x.",
-      "step_2_correlation": "Altman Z-Score 10.7244 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 7.0000 merangkum 9 kriteria kesehatan fundamental. PBV 1.2483x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 10.7244 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 7.0000 merangkum 9 kriteria kesehatan fundamental. PBV 1.2483x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.1382x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 10.7244 dan Piotroski F-Score 7.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -3596,7 +3596,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score -7.4993, Piotroski F-Score 3.0000 (skala 0-9), DER -16.1948x, PBV -403.7872x.",
-      "step_2_correlation": "Altman Z-Score -7.4993 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 3.0000 merangkum 9 kriteria kesehatan fundamental. PBV -403.7872x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score -7.4993 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 3.0000 merangkum 9 kriteria kesehatan fundamental. PBV -403.7872x yang negatif mengindikasikan kemungkinan ekuitas negatif, sinyal risiko struktural yang serius.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER -16.1948x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score -7.4993 dan Piotroski F-Score 3.0000 menunjukkan tingkat risiko signifikan dan memerlukan perhatian serius — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -3719,7 +3719,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 8.8879, Piotroski F-Score 5.0000 (skala 0-9), DER 0.3039x, PBV 1.5382x.",
-      "step_2_correlation": "Altman Z-Score 8.8879 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 5.0000 merangkum 9 kriteria kesehatan fundamental. PBV 1.5382x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 8.8879 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 5.0000 merangkum 9 kriteria kesehatan fundamental. PBV 1.5382x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.3039x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 8.8879 dan Piotroski F-Score 5.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -3842,7 +3842,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 5.4729, Piotroski F-Score 6.0000 (skala 0-9), DER 0.7102x, PBV 0.0784x.",
-      "step_2_correlation": "Altman Z-Score 5.4729 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 6.0000 merangkum 9 kriteria kesehatan fundamental. PBV 0.0784x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 5.4729 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 6.0000 merangkum 9 kriteria kesehatan fundamental. PBV 0.0784x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.7102x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 5.4729 dan Piotroski F-Score 6.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
@@ -3965,7 +3965,7 @@
     },
     "chain_of_thought": {
       "step_1_identification": "Titik risiko: Altman Z-Score 9.9301, Piotroski F-Score 5.0000 (skala 0-9), DER 0.1908x, PBV 2.1416x.",
-      "step_2_correlation": "Altman Z-Score 9.9301 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 5.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.1416x yang negatif (jika ada) umumnya mengindikasikan ekuitas negatif.",
+      "step_2_correlation": "Altman Z-Score 9.9301 mengindikasikan risiko kebangkrutan (makin rendah/negatif makin berisiko). Piotroski F-Score 5.0000 merangkum 9 kriteria kesehatan fundamental. PBV 2.1416x berada dalam kisaran wajar (positif), tidak mengindikasikan masalah ekuitas negatif.",
       "step_3_macro_contextualization": "Dalam inflasi 4.76% yang naik mendekati batas atas target BI, perusahaan dengan DER 0.1908x berpotensi hadapi tekanan tambahan bila BI menahan/membalik arah penurunan suku bunga.",
       "step_4_synthesis": "Kombinasi Altman Z-Score 9.9301 dan Piotroski F-Score 5.0000 menunjukkan tingkat risiko yang perlu dipantau secara rutin — kedua skor sebaiknya dibaca bersama, bukan terpisah, sebelum kesimpulan investasi diambil."
     },
