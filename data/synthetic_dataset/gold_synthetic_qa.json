@@ -1,0 +1,154 @@
+[
+  {
+    "asset_code": "GOLD",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan ketahanan modal dan nilai lindung nilai (hedging), bagaimana Anda menilai profil imbal-hasil dan risiko emas (XAU-USD) pada level harga saat ini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "GOLD",
+        "asset_name": "Gold / XAU-USD Spot",
+        "market_category": "Commodity / Safe Haven Asset",
+        "period": "Q3-2024 / Spot Rate Context",
+        "currency": "USD",
+        "scale": "USD per Troy Ounce"
+      },
+      "commodity_metrics": {
+        "current_price_usd_oz": 2680.0,
+        "daily_change_percent": 0.45,
+        "weekly_change_percent": 1.80,
+        "ytd_change_percent": 28.5,
+        "high_52_week": 2740.0,
+        "low_52_week": 1980.0
+      },
+      "macro_monetary_context": {
+        "fed_fund_rate_percent": 5.25,
+        "us_10y_real_yield_percent": 1.85,
+        "us_dxy_index": 105.8,
+        "us_inflation_yoy_percent": 2.60,
+        "central_bank_net_buying_tonnes": 850.0,
+        "geopolitical_risk_index": "High (Timur Tengah & Konflik Geopolitik Global)",
+        "market_sentiment": "Risk-off & Hedging Aset Moneter"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci valuasi dan posisi spot emas mencakup harga terkini USD 2,680.0/oz (YTD Change +28.5%), rentang 52-week Low USD 1,980.0/oz hingga 52-week High USD 2,740.0/oz, akumulasi Central Bank Net Buying sebesar 850.0 ton, dan US 10Y Real Yield sebesar 1.85%.",
+      "step_2_correlation": "Meskipun US 10Y Real Yield berada di level positif 1.85% yang secara historis menekan aset non-yielding, harga emas bertahan tinggi di USD 2,680.0/oz berkat dukungan permintaan struktural fisik dari aksi beli bank sentral (850.0 ton). Hal ini memperkuat nilai lindung nilai dan proteksi nilai riil modal.",
+      "step_3_macro_contextualization": "Di tengah Geopolitical Risk Index kategori High dan ketidakpastian moneter global, emas berfungsi sebagai aset pembanding terhadap inflasi AS (2.60%) dan penguatan DXY Index (105.8). Sentimen pasar yang bergeser ke Risk-off & Hedging Aset Moneter menopang kestabilan harga mendekati level resis 52-week High.",
+      "step_4_synthesis": "Emas (XAU-USD) menawarkan ketahanan modal yang sangat solid ditopang oleh akumulasi bank sentral sebesar 850.0 ton dan fungsi safe haven. Namun, posisinya yang mendekati puncak tahunan (USD 2,680.0/oz) menyempitkan margin keselamatan jangka pendek terhadap potensi koreksi teknis."
+    }
+  },
+  {
+    "asset_code": "GOLD",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana Anda menganalisis tren akumulasi pembelian dan momentum pertumbuhan harga emas dalam merespons dinamika permintaan institusional?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "GOLD",
+        "asset_name": "Gold / XAU-USD Spot",
+        "market_category": "Commodity / Safe Haven Asset",
+        "period": "Q3-2024 / Spot Rate Context",
+        "currency": "USD",
+        "scale": "USD per Troy Ounce"
+      },
+      "commodity_metrics": {
+        "current_price_usd_oz": 2680.0,
+        "daily_change_percent": 0.45,
+        "weekly_change_percent": 1.80,
+        "ytd_change_percent": 28.5,
+        "high_52_week": 2740.0,
+        "low_52_week": 1980.0
+      },
+      "macro_monetary_context": {
+        "fed_fund_rate_percent": 5.25,
+        "us_10y_real_yield_percent": 1.85,
+        "us_dxy_index": 105.8,
+        "us_inflation_yoy_percent": 2.60,
+        "central_bank_net_buying_tonnes": 850.0,
+        "geopolitical_risk_index": "High (Timur Tengah & Konflik Geopolitik Global)",
+        "market_sentiment": "Risk-off & Hedging Aset Moneter"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Metrik momentum dan permintaan mencakup harga spot USD 2,680.0/oz, Daily Change +0.45%, Weekly Change +1.80%, YTD Change +28.5%, serta Central Bank Net Buying yang mencapai 850.0 ton.",
+      "step_2_correlation": "Laju apresiasi YTD sebesar +28.5% yang konsisten hingga rentang mingguan (+1.80%) mengindikasikan ekspansi tren bullish yang kuat. Akselerasi ini dikorelasikan langsung dengan akumulasi masif bank sentral dunia (850.0 ton) sebagai langkah diversifikasi cadangan devisa nondolar.",
+      "step_3_macro_contextualization": "Tingginya inflasi AS (2.60%) di tengah ekspektasi perubahan arah kebijakan Fed Fund Rate (5.25%) mendorong reinstitusionalisasi komoditas sebagai pengembali imbal hasil riil di luar pasar obligasi.",
+      "step_4_synthesis": "Emas menunjukkan momentum pertumbuhan harga yang relatif superior (+28.5% YTD) yang didorong oleh akumulasi fisik institusional sebesar 850.0 ton. Keberlanjutan tren ini sangat bergantung pada konsistensi arus pembelian bank sentral global."
+    }
+  },
+  {
+    "asset_code": "GOLD",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Sejauh mana pergerakan harga emas terpengaruh oleh kebijakan suku bunga Fed Fund Rate, imbal hasil obligasi riil AS, dan indeks Dolar AS?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "GOLD",
+        "asset_name": "Gold / XAU-USD Spot",
+        "market_category": "Commodity / Safe Haven Asset",
+        "period": "Q3-2024 / Spot Rate Context",
+        "currency": "USD",
+        "scale": "USD per Troy Ounce"
+      },
+      "commodity_metrics": {
+        "current_price_usd_oz": 2680.0,
+        "daily_change_percent": 0.45,
+        "weekly_change_percent": 1.80,
+        "ytd_change_percent": 28.5,
+        "high_52_week": 2740.0,
+        "low_52_week": 1980.0
+      },
+      "macro_monetary_context": {
+        "fed_fund_rate_percent": 5.25,
+        "us_10y_real_yield_percent": 1.85,
+        "us_dxy_index": 105.8,
+        "us_inflation_yoy_percent": 2.60,
+        "central_bank_net_buying_tonnes": 850.0,
+        "geopolitical_risk_index": "High (Timur Tengah & Konflik Geopolitik Global)",
+        "market_sentiment": "Risk-off & Hedging Aset Moneter"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Konteks moneter makro mencakup Fed Fund Rate sebesar 5.25%, US 10Y Real Yield 1.85%, US DXY Index 105.8, US Inflation 2.60%, dan harga spot Emas USD 2,680.0/oz.",
+      "step_2_correlation": "Terdapat anomali ketahanan harga di mana emas tetap menguat ke USD 2,680.0/oz meskipun dihadapkan pada headwinds makro berupa DXY Index yang kuat (105.8) dan US 10Y Real Yield yang tinggi (1.85%). Hal ini mengindikasikan bahwa premi risiko geopolitik dan inflasi (2.60%) saat ini mengungguli pengaruh oportunitas biaya suku bunga tinggi (Fed Fund Rate 5.25%).",
+      "step_3_macro_contextualization": "Ekspektasi siklus pelonggaran moneter AS di masa depan membuat pasar mulai memfaktorkan penurunan suku bunga acuan, sehingga harga emas mendahului arah kebijakan riil di tengah tingginya Geopolitical Risk Index.",
+      "step_4_synthesis": "Emas memiliki sensitivitas tinggi terhadap ekspektasi arah Fed Fund Rate (5.25%) dan pergerakan DXY Index (105.8). Tekanan makro dari suku bunga riil positif (1.85%) saat ini terkonpensasi oleh dominasi permintaan safe-haven dan lindung nilai inflasi."
+    }
+  },
+  {
+    "asset_code": "GOLD",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Sinyal risiko atau potensi titik balik penurunan apa yang perlu diwaspadai dari posisi harga emas yang berada dekat dengan level tertinggi tahunannya?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "GOLD",
+        "asset_name": "Gold / XAU-USD Spot",
+        "market_category": "Commodity / Safe Haven Asset",
+        "period": "Q3-2024 / Spot Rate Context",
+        "currency": "USD",
+        "scale": "USD per Troy Ounce"
+      },
+      "commodity_metrics": {
+        "current_price_usd_oz": 2680.0,
+        "daily_change_percent": 0.45,
+        "weekly_change_percent": 1.80,
+        "ytd_change_percent": 28.5,
+        "high_52_week": 2740.0,
+        "low_52_week": 1980.0
+      },
+      "macro_monetary_context": {
+        "fed_fund_rate_percent": 5.25,
+        "us_10y_real_yield_percent": 1.85,
+        "us_dxy_index": 105.8,
+        "us_inflation_yoy_percent": 2.60,
+        "central_bank_net_buying_tonnes": 850.0,
+        "geopolitical_risk_index": "High (Timur Tengah & Konflik Geopolitik Global)",
+        "market_sentiment": "Risk-off & Hedging Aset Moneter"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kerentanan mencakup harga spot USD 2,680.0/oz yang mendekati 52-week High (USD 2,740.0/oz), YTD Change yang sudah tinggi (+28.5%), US 10Y Real Yield sebesar 1.85%, dan Fed Fund Rate di level 5.25%.",
+      "step_2_correlation": "Kedekatan harga ke batas tertinggi 52 minggu (USD 2,740.0/oz) setelah kenaikan YTD +28.5% meningkatkan risiko aksi untung (profit taking). Jika tensi geopolitik mereda, kombinasi US 10Y Real Yield 1.85% dan Fed Fund Rate 5.25% berpotensi menjadi pemicu koreksi tajam karena biaya peluang memegang emas tetap tinggi.",
+      "step_3_macro_contextualization": "Penguatan DXY Index ke 105.8 memperbesar beban apresiasi teknis emas bagi pemegang mata uang non-USD, yang berpotensi menahan laju permintaan ritel fisik global.",
+      "step_4_synthesis": "Risiko utama emas terletak pada potensi de-eskalasi geopolitik yang dapat memicu pembongkaran posisi safe haven di tengah valuasi yang jenuh beli (USD 2,680.0/oz). Kendati demikian, penurunannya dibatasi oleh fundamental net buying bank sentral sebesar 850.0 ton."
+    }
+  }
+]
