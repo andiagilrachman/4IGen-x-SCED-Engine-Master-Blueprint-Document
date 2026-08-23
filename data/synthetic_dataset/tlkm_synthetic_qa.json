@@ -1,0 +1,170 @@
+[
+  {
+    "asset_code": "TLKM",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang berorientasi pada nilai, keandalan arus kas, dan dividen, bagaimana Anda menilai margin keselamatan (margin of safety) serta profil risiko TLKM berdasarkan valuasinya saat ini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "TLKM",
+        "asset_name": "Telkom Indonesia (Persero) Tbk",
+        "sector": "Telecommunication / Infrastructure",
+        "period": "Q3-2024 (TTM)",
+        "currency": "IDR",
+        "scale": "In Trillion IDR (except ratios)"
+      },
+      "financial_metrics": {
+        "total_assets": 287.0,
+        "total_revenue": 112.5,
+        "net_income": 19.5,
+        "revenue_growth_yoy_percent": 2.5,
+        "net_income_growth_yoy_percent": -1.5,
+        "roe_percent": 18.2,
+        "ebitda_margin_percent": 51.0,
+        "der_x": 0.72,
+        "capex_to_revenue_percent": 22.0,
+        "per_x": 14.2,
+        "pbv_x": 2.4,
+        "dividend_yield_percent": 5.2
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.00,
+        "inflation_yoy_percent": 2.12,
+        "indonesia_gdp_growth_percent": 4.95,
+        "indis_consumer_confidence_index": 123.5,
+        "sector_trend": "Kompetisi harga data mereda, integrasi IndiHome ke Telkomsel dorong efisiensi, namun beban CapEx data center tetap tinggi"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci valuasi dan struktur modal TLKM mencakup PER sebesar 14.2x, PBV sebesar 2.4x, Dividend Yield sebesar 5.2%, DER sebesar 0.72x, serta EBITDA Margin yang solid mencapai 51.0%.",
+      "step_2_correlation": "Valuasi PBV 2.4x dan PER 14.2x ditopang oleh efisiensi arus kas operasional dengan EBITDA Margin 51.0% dan ROE sebesar 18.2%. Kebijakan struktur modal dengan DER terukur di level 0.72x memberikan fleksibilitas solvabilitas yang memadai untuk mendukung keterbagian dividen secara konsisten (Dividend Yield 5.2%).",
+      "step_3_macro_contextualization": "Di tengah suku bunga acuan BI Rate 6.00% dan inflasi terkendali 2.12%, Dividend Yield TLKM sebesar 5.2% menawarkan imbal hasil yang relatif kompetitif terhadap instrumen pasar uang, sementara posisi fundamental emiten yang defended oleh indeks keyakinan konsumen (123.5) menjaga stabilitas arus kas.",
+      "step_4_synthesis": "TLKM memberikan margin keselamatan yang wajar melalui kombinasi EBITDA Margin 51.0%, DER terkontrol 0.72x, dan Dividend Yield 5.2%. Risiko utama terletak pada tingginya alokasi CapEx to Revenue (22.0%), tetapi valuasi PER 14.2x menawarkan titik masuk yang relatif defensif bagi investor berperspektif nilai."
+    }
+  },
+  {
+    "asset_code": "TLKM",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana Anda menganalisis prospek ekspansi bisnis dan efisiensi operasional TLKM di tengah tren pertumbuhan pendapatan serta beban investasi modalnya saat ini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "TLKM",
+        "asset_name": "Telkom Indonesia (Persero) Tbk",
+        "sector": "Telecommunication / Infrastructure",
+        "period": "Q3-2024 (TTM)",
+        "currency": "IDR",
+        "scale": "In Trillion IDR (except ratios)"
+      },
+      "financial_metrics": {
+        "total_assets": 287.0,
+        "total_revenue": 112.5,
+        "net_income": 19.5,
+        "revenue_growth_yoy_percent": 2.5,
+        "net_income_growth_yoy_percent": -1.5,
+        "roe_percent": 18.2,
+        "ebitda_margin_percent": 51.0,
+        "der_x": 0.72,
+        "capex_to_revenue_percent": 22.0,
+        "per_x": 14.2,
+        "pbv_x": 2.4,
+        "dividend_yield_percent": 5.2
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.00,
+        "inflation_yoy_percent": 2.12,
+        "indonesia_gdp_growth_percent": 4.95,
+        "indis_consumer_confidence_index": 123.5,
+        "sector_trend": "Kompetisi harga data mereda, integrasi IndiHome ke Telkomsel dorong efisiensi, namun beban CapEx data center tetap tinggi"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Metrik ekspansi dan kinerja TLKM mencakup Total Revenue IDR 112.5 Triliun (Revenue Growth YoY 2.5%), Net Income IDR 19.5 Triliun (Net Income Growth YoY -1.5%), CapEx to Revenue sebesar 22.0%, dan ROE sebesar 18.2%.",
+      "step_2_correlation": "Pertumbuhan pendapatan positif sebesar 2.5% YoY dikombinasikan dengan alokasi intensitas modal (CapEx to Revenue 22.0%) mencerminkan fokus perusahaan pada ekspansi infrastruktur seperti data center dan jaringan. Namun, adanya depresiasi dari investasi modal tersebut memicu kontraksi tipis laba bersih (-1.5% YoY), meski ROE tetap terjaga tinggi di level 18.2%.",
+      "step_3_macro_contextualization": "Di tengah pertumbuhan ekonomi Indonesia sebesar 4.95% dan Indeks Keyakinan Konsumen sebesar 123.5, permintaan akan layanan konektivitas dan data tetap kuat, mendukung efisiensi ekspansi bisnis dari integrasi IndiHome ke Telkomsel seiring meredanya perang harga industri.",
+      "step_4_synthesis": "TLKM menunjukkan fase pertumbuhan yang terukur dengan profitabilitas yang tetap solid (ROE 18.2%). Tantangan jangka pendek bersumber dari penyerapan beban akumulasi CapEx (22.0% dari pendapatan), tetapi strategi ekspansi infrastruktur memperkuat daya saing jangka panjang."
+    }
+  },
+  {
+    "asset_code": "TLKM",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Sejauh mana kinerja keuangan dan ekspansi modal TLKM terpengaruh oleh tingkat suku bunga BI Rate serta indikator makroekonomi domestik?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "TLKM",
+        "asset_name": "Telkom Indonesia (Persero) Tbk",
+        "sector": "Telecommunication / Infrastructure",
+        "period": "Q3-2024 (TTM)",
+        "currency": "IDR",
+        "scale": "In Trillion IDR (except ratios)"
+      },
+      "financial_metrics": {
+        "total_assets": 287.0,
+        "total_revenue": 112.5,
+        "net_income": 19.5,
+        "revenue_growth_yoy_percent": 2.5,
+        "net_income_growth_yoy_percent": -1.5,
+        "roe_percent": 18.2,
+        "ebitda_margin_percent": 51.0,
+        "der_x": 0.72,
+        "capex_to_revenue_percent": 22.0,
+        "per_x": 14.2,
+        "pbv_x": 2.4,
+        "dividend_yield_percent": 5.2
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.00,
+        "inflation_yoy_percent": 2.12,
+        "indonesia_gdp_growth_percent": 4.95,
+        "indis_consumer_confidence_index": 123.5,
+        "sector_trend": "Kompetisi harga data mereda, integrasi IndiHome ke Telkomsel dorong efisiensi, namun beban CapEx data center tetap tinggi"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Konteks makroekonomi mencakup BI Rate sebesar 6.00%, Inflasi YoY 2.12%, GDP Growth 4.95%, dan Indeks Keyakinan Konsumen 123.5. Dari sisi keuangan emiten, DER tercatat sebesar 0.72x, CapEx to Revenue 22.0%, dan Total Assets IDR 287.0 Triliun.",
+      "step_2_correlation": "Tingkat BI Rate sebesar 6.00% berpotensi meningkatkan Cost of Debt untuk pembiayaan CapEx (22.0% dari pendapatan). Kendati demikian, struktur permodalan yang sehat dengan DER 0.72x membatasi transmisi risiko suku bunga terhadap beban keuangan perusahaan.",
+      "step_3_macro_contextualization": "Indeks Keyakinan Konsumen yang tinggi di level 123.5 dan Inflasi yang stabil di 2.12% menopang daya beli masyarakat terhadap konsumsi daya data, sehingga tren industri yang membaik mampu memitigasi dampak pengetatan moneter.",
+      "step_4_synthesis": "Sensitivitas TLKM terhadap kebijakan suku bunga BI Rate 6.00% relatif moderat dan terkendali berkat rasio utang yang aman (DER 0.72x). Dukungan konsumsi domestik yang solid (IKK 123.5) menjadi penopang utama stabilitas kinerja keuangan."
+    }
+  },
+  {
+    "asset_code": "TLKM",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Sinyal risiko atau indikator tekanan keuangan apa yang perlu diwaspadai dari laporan keuangan TLKM yang berpotensi menghambat profitabilitas ke depan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "TLKM",
+        "asset_name": "Telkom Indonesia (Persero) Tbk",
+        "sector": "Telecommunication / Infrastructure",
+        "period": "Q3-2024 (TTM)",
+        "currency": "IDR",
+        "scale": "In Trillion IDR (except ratios)"
+      },
+      "financial_metrics": {
+        "total_assets": 287.0,
+        "total_revenue": 112.5,
+        "net_income": 19.5,
+        "revenue_growth_yoy_percent": 2.5,
+        "net_income_growth_yoy_percent": -1.5,
+        "roe_percent": 18.2,
+        "ebitda_margin_percent": 51.0,
+        "der_x": 0.72,
+        "capex_to_revenue_percent": 22.0,
+        "per_x": 14.2,
+        "pbv_x": 2.4,
+        "dividend_yield_percent": 5.2
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.00,
+        "inflation_yoy_percent": 2.12,
+        "indonesia_gdp_growth_percent": 4.95,
+        "indis_consumer_confidence_index": 123.5,
+        "sector_trend": "Kompetisi harga data mereda, integrasi IndiHome ke Telkomsel dorong efisiensi, namun beban CapEx data center tetap tinggi"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Titik perhatian risiko mencakup penurunan Net Income Growth YoY sebesar -1.5% di saat Revenue Growth tumbuh 2.5%, alokasi CapEx to Revenue yang tinggi sebesar 22.0%, dan BI Rate pada level 6.00%.",
+      "step_2_correlation": "Adanya divergensi antara pertumbuhan top-line (2.5%) dan bottom-line (-1.5%) mengindikasikan tekanan efisiensi biaya. Tingginya porsi CapEx to Revenue (22.0%) untuk proyek intensif modal seperti data center meningkatkan beban penyusutan (depresiasi) dan amortisasi yang menekan pertumbuhan laba bersih.",
+      "step_3_macro_contextualization": "Kondisi suku bunga tinggi (BI Rate 6.00%) memperbesar biaya peluang modal (opportunity cost of capital) atas pengeluaran CapEx yang agresif jika monetisasi proyek infrastruktur membutuhkan waktu lebih lama.",
+      "step_4_synthesis": "Risiko utama TLKM berpusat pada erosi margin akibat beban depresiasi dan biaya operasional dari CapEx yang tinggi (22.0%), yang memicu pertumbuhan laba negatif (-1.5% YoY). Meskipun demikian, risiko solvabilitas tetap terukur dengan bantalan EBITDA Margin sebesar 51.0%."
+    }
+  }
+]
