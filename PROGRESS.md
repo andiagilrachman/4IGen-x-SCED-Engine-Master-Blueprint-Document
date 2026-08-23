@@ -141,15 +141,46 @@
   DataSectors, tapi perlu keputusan/klarifikasi user untuk data Invezgo
   sebelum dipakai skala besar.
 
-### 6c. Scaling dataset 20 → 500 Q&A (lanjutan setelah 6b selesai)
-- Setelah ToS vendor data dikonfirmasi aman, bangun script ekstraksi dari
-  `financial_rows`/`indicator_snapshot_fundamental` → format schema SCED
-  (`financial_metrics` + `macro_context` dari `data/macro_anchors.json`)
-  → generate Q&A 4 lensa via `teacher_master_prompt.md`.
-- Proof-of-concept BMRI manual (`bmri_synthetic_qa_PROOF_OF_CONCEPT.json`)
-  bisa dijadikan referensi format, tapi datanya sebaiknya diganti dari
-  `financial_rows`/`indicator_snapshot_fundamental` yang lebih presisi
-  begitu sudah boleh dipakai.
+### 6c. ✅ Batch 2 dataset sintetis dibangun dari data database (2026-08-23)
+- Tambah **anchor makro ke-4** di `data/macro_anchors.json`
+  (`periode_agustus_2026_terkini`: BI Rate 4.75%, inflasi 4.76%,
+  USD/IDR ~16.985, GDP 5.12%) — dibutuhkan karena snapshot
+  `indicator_snapshot_fundamental` bertanggal 2026-08-21 (terkini),
+  tidak konsisten kalau dipasangkan anchor 2023/2024.
+- Dibangun 2 script reusable di `scripts/`:
+  - `extract_fundamental_data.py` — parse `Database_Stock_1.sql` (mapping
+    stock_id->symbol) + `aigen_db.sql` (indicator_snapshot_fundamental) jadi
+    `fundamental_snapshot_all.json` (1.203 saham, HANYA field aman: ROE,
+    ROA, DER, PER, PBV, EPS, BVPS, dividend_yield, growth rates, margins,
+    current/quick ratio, Altman Z, Piotroski F, Graham Number,
+    fundamental_score — `vendor_insight_score` proprietary SENGAJA di-skip).
+  - `generate_batch2.py` — generate Q&A lensa "Value & Risk Margin" dari
+    hasil ekstraksi ke format schema SCED.
+- **Hasil:** `data/synthetic_dataset/batch2_fundamental_db_value_risk.json`
+  — 4 entri baru (BMRI, UNVR, ANTM, ASII), semua dari data real database,
+  BUKAN riset manual. ICBP sengaja dilewati (tetap reserved sebagai unseen
+  eval data di `eval/icbp_test_schema.json`).
+- Proof-of-concept manual (`bmri_synthetic_qa_PROOF_OF_CONCEPT.json`) DIHAPUS
+  karena sudah tergantikan data yang lebih akurat dari database.
+- **File SQL sumber (`Database_Stock_1.sql`, `aigen_db.sql`, dll) TIDAK
+  di-commit ke GitHub** — cuma dipakai lokal di sesi kerja untuk ekstraksi,
+  karena berisi data vendor mentah skala besar (bukan untuk didistribusi
+  ulang, beda dengan hasil olahan/faktanya sendiri).
+
+### 6d. Langkah selanjutnya untuk scaling lebih lanjut
+- Perluas `generate_batch2.py` ke 3 lensa lain (Growth, Macro Sensitivity,
+  Risk/Red Flags) untuk 4 saham yang sudah ada datanya.
+- Perluas ke lebih banyak saham dari 1.203 yang tersedia di
+  `fundamental_snapshot_all.json` (saat ini baru dipakai 4 dari 1.203).
+- Manfaatkan juga `financial_rows` (data neraca/laba-rugi mentah historis
+  101 saham, Q1 2023 - Q2 2026) untuk pasangan data historis + 3 anchor
+  makro 2023/2024 yang sudah ada — ini akan memberi variasi periode yang
+  lebih kaya dibanding cuma snapshot terkini.
+- Tetap tunda pemakaian data eksplisit Invezgo (shareholder_composition,
+  dll) sampai ToS API-spesifik dikonfirmasi (lihat poin 6b).
+- Sebelum training final: audit manual sampel tiap batch baru, verifikasi
+  `sector` field yang sengaja dikosongkan di batch2 (perlu join ke tabel
+  `sectors`/`sector_id` agar lengkap).
 
 ### 7. Smoke test training run v0.1 di Colab
 - Jalankan notebook end-to-end (10 sel) sebagai uji pipeline teknis, BUKAN

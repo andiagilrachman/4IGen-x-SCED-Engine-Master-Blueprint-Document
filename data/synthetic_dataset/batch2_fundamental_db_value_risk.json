@@ -1,0 +1,159 @@
+[
+  {
+    "asset_code": "BMRI",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko BMRI berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BMRI",
+        "asset_name": "Bank Mandiri (Persero)",
+        "sector": "Lihat data 4igen (tidak disertakan di sample ini)",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 18.7373,
+        "roa_percent": 2.1677,
+        "der_x": 6.759,
+        "per_x": 7.7593,
+        "pbv_x": 1.4539,
+        "eps": 657.28,
+        "altman_z_score": 1.8511,
+        "piotroski_f_score": 3.0,
+        "graham_number": 7202.59
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci BMRI mencakup PER sebesar 7.7593x, PBV sebesar 1.4539x, dan EPS sebesar 657.2800. ROE tercatat 18.7373% dan ROA 2.1677%.",
+      "step_2_correlation": "Rasio DER sebesar 6.7590x menunjukkan struktur permodalan perusahaan terhadap ekuitas. Altman Z-Score sebesar 1.8511 memberi indikasi tingkat kesehatan keuangan (semakin tinggi umumnya semakin sehat), sementara Piotroski F-Score 3.0000 (skala 0-9) mengukur kekuatan fundamental berdasarkan 9 kriteria.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 7.7593x perlu dibandingkan dengan biaya modal yang berlaku saat ini.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 7202.5900, memberi salah satu acuan margin keselamatan bagi investor value. Kombinasi Altman Z-Score dan Piotroski F-Score membantu menilai risiko kebangkrutan dan kekuatan fundamental secara lebih menyeluruh sebelum mengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), field vendor_insight_score SENGAJA TIDAK diikutkan (proprietary vendor). Field yang bernilai NULL di sumber data (bvps, dividend_yield, growth rates, margins, current/quick ratio) tidak disertakan di input_data."
+  },
+  {
+    "asset_code": "UNVR",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko UNVR berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "UNVR",
+        "asset_name": "Unilever Indonesia",
+        "sector": "Lihat data 4igen (tidak disertakan di sample ini)",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 170.7477,
+        "roa_percent": 38.1727,
+        "der_x": 3.473,
+        "per_x": 12.981,
+        "pbv_x": 22.1648,
+        "eps": 200.29
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci UNVR mencakup PER sebesar 12.9810x, PBV sebesar 22.1648x, dan EPS sebesar 200.2900. ROE tercatat 170.7477% dan ROA 38.1727%.",
+      "step_2_correlation": "Rasio DER sebesar 3.4730x menunjukkan struktur permodalan perusahaan terhadap ekuitas. Altman Z-Score sebesar tidak tersedia memberi indikasi tingkat kesehatan keuangan (semakin tinggi umumnya semakin sehat), sementara Piotroski F-Score tidak tersedia (skala 0-9) mengukur kekuatan fundamental berdasarkan 9 kriteria.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 12.9810x perlu dibandingkan dengan biaya modal yang berlaku saat ini.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat tidak tersedia, memberi salah satu acuan margin keselamatan bagi investor value. Kombinasi Altman Z-Score dan Piotroski F-Score membantu menilai risiko kebangkrutan dan kekuatan fundamental secara lebih menyeluruh sebelum mengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), field vendor_insight_score SENGAJA TIDAK diikutkan (proprietary vendor). Field yang bernilai NULL di sumber data (bvps, dividend_yield, growth rates, margins, current/quick ratio) tidak disertakan di input_data."
+  },
+  {
+    "asset_code": "ANTM",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko ANTM berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ANTM",
+        "asset_name": "Aneka Tambang (Persero)",
+        "sector": "Lihat data 4igen (tidak disertakan di sample ini)",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 21.6405,
+        "roa_percent": 15.0778,
+        "der_x": 0.4353,
+        "per_x": 9.5572,
+        "pbv_x": 2.0682,
+        "eps": 329.59,
+        "altman_z_score": 5.1212,
+        "piotroski_f_score": 7.0,
+        "graham_number": 3360.76
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci ANTM mencakup PER sebesar 9.5572x, PBV sebesar 2.0682x, dan EPS sebesar 329.5900. ROE tercatat 21.6405% dan ROA 15.0778%.",
+      "step_2_correlation": "Rasio DER sebesar 0.4353x menunjukkan struktur permodalan perusahaan terhadap ekuitas. Altman Z-Score sebesar 5.1212 memberi indikasi tingkat kesehatan keuangan (semakin tinggi umumnya semakin sehat), sementara Piotroski F-Score 7.0000 (skala 0-9) mengukur kekuatan fundamental berdasarkan 9 kriteria.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 9.5572x perlu dibandingkan dengan biaya modal yang berlaku saat ini.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 3360.7600, memberi salah satu acuan margin keselamatan bagi investor value. Kombinasi Altman Z-Score dan Piotroski F-Score membantu menilai risiko kebangkrutan dan kekuatan fundamental secara lebih menyeluruh sebelum mengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), field vendor_insight_score SENGAJA TIDAK diikutkan (proprietary vendor). Field yang bernilai NULL di sumber data (bvps, dividend_yield, growth rates, margins, current/quick ratio) tidak disertakan di input_data."
+  },
+  {
+    "asset_code": "ASII",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko ASII berdasarkan data rasio terkini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ASII",
+        "asset_name": "Astra International",
+        "sector": "Lihat data 4igen (tidak disertakan di sample ini)",
+        "period": "Agustus 2026 (snapshot terkini)",
+        "currency": "IDR",
+        "scale": "Rasio & per-lembar saham"
+      },
+      "financial_metrics": {
+        "roe_percent": 13.8251,
+        "roa_percent": 7.9243,
+        "der_x": 0.7447,
+        "per_x": 6.7464,
+        "pbv_x": 0.9327,
+        "eps": 993.12,
+        "altman_z_score": 2.4169,
+        "piotroski_f_score": 3.0,
+        "graham_number": 12669.48
+      },
+      "macro_context": {
+        "bi_rate_percent": 4.75,
+        "inflation_yoy_percent": 4.76,
+        "usd_idr_exchange_rate": 16985,
+        "economic_growth_gdp_percent": 5.12,
+        "sector_trend": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022, tapi inflasi kembali naik mendekati batas atas target BI"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci ASII mencakup PER sebesar 6.7464x, PBV sebesar 0.9327x, dan EPS sebesar 993.1200. ROE tercatat 13.8251% dan ROA 7.9243%.",
+      "step_2_correlation": "Rasio DER sebesar 0.7447x menunjukkan struktur permodalan perusahaan terhadap ekuitas. Altman Z-Score sebesar 2.4169 memberi indikasi tingkat kesehatan keuangan (semakin tinggi umumnya semakin sehat), sementara Piotroski F-Score 3.0000 (skala 0-9) mengukur kekuatan fundamental berdasarkan 9 kriteria.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 4.75% dan inflasi 4.76% (periode Agustus 2026 (snapshot terkini)), valuasi PER 6.7464x perlu dibandingkan dengan biaya modal yang berlaku saat ini.",
+      "step_4_synthesis": "Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat 12669.4800, memberi salah satu acuan margin keselamatan bagi investor value. Kombinasi Altman Z-Score dan Piotroski F-Score membantu menilai risiko kebangkrutan dan kekuatan fundamental secara lebih menyeluruh sebelum mengambil keputusan."
+    },
+    "_source_note": "Data rasio dari indicator_snapshot_fundamental (database aigen_db user, snapshot 2026-08-21), field vendor_insight_score SENGAJA TIDAK diikutkan (proprietary vendor). Field yang bernilai NULL di sumber data (bvps, dividend_yield, growth rates, margins, current/quick ratio) tidak disertakan di input_data."
+  }
+]

@@ -29,8 +29,20 @@
     "source": "Sudah dipakai di data/synthetic_dataset/*.json sebelumnya — dipertahankan sebagai salah satu dari 3 anchor."
   },
 
+  "periode_agustus_2026_terkini": {
+    "label": "Agustus 2026 (terkini) — siklus penurunan suku bunga, inflasi naik dari rendahnya",
+    "bi_rate_percent": 4.75,
+    "inflation_yoy_percent": 4.76,
+    "usd_idr_exchange_rate_approx": 16985,
+    "economic_growth_gdp_percent": 5.12,
+    "sector_trend_context": "BI Rate turun kumulatif 150 bps sejak September 2024 ke level terendah sejak Oktober 2022 untuk dorong pertumbuhan, tapi inflasi kembali naik ke 4.76% (Februari 2026, tertinggi sejak Maret 2023) mendekati batas atas target BI 2.5%±1%. Rupiah melemah ke sekitar 16.985/USD akibat ketegangan geopolitik global. GDP tumbuh kuat 5.12% YoY.",
+    "source": "BI Rate & GDP: Trading Economics (rilis RDG Maret 2026, level bertahan sejak). Inflasi: rilis BI Februari 2026 (4.76% yoy, data terbaru yang tersedia saat audit 2026-08-23 — kemungkinan sudah berubah sedikit per Agustus 2026 aktual, perlu verifikasi ulang kalau presisi kritis).",
+    "catatan_khusus": "Anchor ini ditambahkan agar konsisten dengan snapshot data fundamental TERKINI (indicator_snapshot_fundamental, snapshot_date 2026-08-21) dari database 4igen/aigen_db user — supaya data fundamental dan konteks makro tidak lintas-periode yang salah (fundamental 2026 dipasangkan makro 2023/2024)."
+  },
+
   "catatan_penggunaan": [
-    "Gunakan salah satu dari 3 anchor ini (bukan bikin angka makro baru sembarangan) saat generate data sintetis aset baru, supaya variasi makro tetap grounded pada kejadian riil.",
+    "Gunakan salah satu dari 4 anchor ini (bukan bikin angka makro baru sembarangan) saat generate data sintetis aset baru, supaya variasi makro tetap grounded pada kejadian riil.",
+    "PENTING: cocokkan anchor dengan PERIODE data fundamental yang dipakai — data fundamental snapshot terkini (2026) HARUS dipasangkan dengan periode_agustus_2026_terkini, bukan anchor 2023/2024 (lihat data/synthetic_dataset/dari_database_aigen/ untuk data periode ini).",
     "Untuk skenario sintetis tambahan (misal 'seandainya BI Rate naik ke 7%'), turunkan dari salah satu anchor ini dengan modifikasi eksplisit dan tandai jelas sebagai skenario hipotetis di metadata, jangan dicampur seolah data riil.",
     "usd_idr_exchange_rate_approx dan economic_growth_gdp_percent masih perlu verifikasi lebih presisi per-periode sebelum dipakai untuk scaling besar (500-10000 data) — saat ini masih estimasi mendekati."
   ]
