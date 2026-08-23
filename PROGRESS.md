@@ -284,20 +284,48 @@ Total dataset sekarang **244 entri** (naik dari 206).
   - Semua rasio growth/ROE DIHITUNG LANGSUNG dari fakta (Net Income/
     Equity, YoY %), bukan diambil dari sumber lain manapun.
 
-### 6k. Langkah selanjutnya
-- 19 institusi keuangan sekarang punya: Growth (batch4/6) + Risk + Macro
-  (batch7) = 3 lensa. Masih kurang 1 lensa (Value & Risk Margin) untuk
-  konsisten dengan 33 saham batch3/5 yang sudah 4 lensa penuh — tapi lensa
-  ini butuh PER/PBV/dividend_yield yang datanya dari sumber berbeda
-  (snapshot 2026, bukan financial_rows FY2023/2024) sehingga perlu
-  pendekatan berbeda atau diterima saja 3 lensa untuk grup ini.
-- Perluas `financial_rows` ke sisa 82 institusi keuangan yang belum
-  dipakai (masih banyak ruang: sudah 19/101).
-- Perluas saham non-keuangan lagi dari 1.203 yang tersedia di
-  `fundamental_snapshot_all.json` (baru dipakai 37 saham).
+### 6l. ✅ KRUSIAL: Konsolidasi 244 entri ke format JSONL training (2026-08-23)
+**Temuan penting sebelum tugas ini:** 224 entri hasil scaling (batch2 s/d
+batch7) TERNYATA belum pernah dikonversi ke format `messages` (system/
+user/assistant) yang benar-benar dipakai notebook training — yang
+terpakai training selama ini masih file pilot lama 20 baris saja
+(`sced_pilot_train.jsonl`). Semua kerja scaling sebelumnya tersimpan rapi
+di `data/synthetic_dataset/` tapi belum "tersambung" ke pipeline training.
+Ini sudah diperbaiki:
+
+- **`scripts/build_training_jsonl.py`**: baca SEMUA file di
+  `data/synthetic_dataset/*.json`, konversi tiap entri ke format
+  `messages` (system prompt tetap sama seperti pilot asli, user content =
+  `[LENSA]/[ASET]/[INSTRUCTION]/[INPUT DATA]` dengan `metadata` di-strip
+  dari input_data biar konsisten dengan format pilot, assistant content =
+  4 section CoT + disclaimer baku).
+- **Output: `data/training_jsonl/sced_scaled_train_v1.jsonl`** — 244 baris,
+  semua tervalidasi strukturnya benar. `sced_pilot_train.jsonl` (20 baris)
+  TIDAK dihapus/ditimpa, tetap ada sebagai referensi historis v0.1.
+- **Notebook `SCED_Engine_v0_1_Training.ipynb` Sel 6 di-update**:
+  `DATASET_PATH` sekarang menunjuk ke `sced_scaled_train_v1.jsonl`, bukan
+  file pilot lama.
+- **Verifikasi token length**: maksimum ~779 token estimasi (dari 244
+  sampel), masih aman jauh di bawah `max_seq_length=2048` — tidak perlu
+  ubah konfigurasi training.
+- **Status sekarang: pipeline training benar-benar siap dipakai dengan
+  244 entri**, bukan cuma 20 seperti sebelumnya.
+
+### 6m. Langkah selanjutnya
+- **User bisa mulai smoke test training di Colab kapan saja** — notebook
+  sudah update, tinggal jalankan 10 sel seperti biasa (perlu clone repo
+  terbaru dulu di Colab, atau pull kalau sudah pernah clone).
+- Terus perluas cakupan data (financial_rows sisa 82 institusi, saham
+  non-keuangan lain dari 1.203 yang tersedia) — setiap kali nambah file
+  baru ke `data/synthetic_dataset/`, JALANKAN ULANG
+  `scripts/build_training_jsonl.py` supaya `sced_scaled_train_v1.jsonl`
+  ikut ter-update (BUKAN otomatis, perlu dijalankan manual/lewat sesi ini
+  tiap kali ada data baru).
 - Tetap tunda data eksplisit Invezgo sampai ToS dikonfirmasi (poin 6b).
-- Mulai pertimbangkan kapan waktunya jalankan smoke test training di
-  Colab (roadmap poin #7) — dataset sudah 244 entri.
+- Setelah smoke test training selesai (baik berhasil maupun ada error),
+  laporkan hasilnya untuk audit kualitas output model — apakah halusinasi
+  angka, konsistensi gaya bahasa, dll (kriteria sukses di `BLUEPRINT.md`
+  bagian 12).
 
 ### 7. Smoke test training run v0.1 di Colab
 - Jalankan notebook end-to-end (10 sel) sebagai uji pipeline teknis, BUKAN
