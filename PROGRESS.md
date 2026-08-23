@@ -50,26 +50,34 @@
 
 ## 🔜 BELUM DIKERJAKAN (urutan prioritas)
 
-### 5. ⚠️ Klarifikasi Model Guru (Teacher Model) API — TEMUAN BERISIKO, BELUM SELESAI
+### 5. ✅ Klarifikasi Model Guru (Teacher Model) API — RISIKO DITURUNKAN (2026-08-23)
 - **Model Guru yang dipakai:** Gemini (Google).
-- **Temuan riset (2026-08-23):** ditemukan pola konsisten di beberapa dokumen
-  ToS resmi Google untuk produk generative AI lain (ML Kit GenAI API Additional
-  Terms, dan "Google Model Terms" yang didokumentasikan Databricks) yang
-  melarang: (a) menggunakan output model untuk mengembangkan produk/model
-  yang serupa atau bersaing, dan (b) menggunakan output untuk "menciptakan
-  atau meningkatkan model yang serupa" dengan model Google.
-- **Belum terverifikasi langsung** di halaman resmi `ai.google.dev/gemini-api/terms`
-  (halaman spesifik ToS Gemini API standar, bukan Gemini consumer chat) —
-  perlu user buka & baca sendiri bagian "Use Restrictions"/"Prohibited Uses".
-- **Risiko:** kalau ketentuan serupa berlaku di Gemini API standar, memakai
-  output Gemini untuk fine-tuning model Qwen 2.5 7B yang akan dikomersialkan
-  berpotensi melanggar ToS.
-- **Opsi mitigasi yang didiskusikan** (belum diputuskan): (1) ganti Model
-  Guru ke provider lain dengan ToS lebih longgar, (2) pakai model open-weight
-  besar (Llama 3 70B/Qwen 72B) sebagai Model Guru, (3) opsi human-curation
-  berat sebagai area abu-abu (bukan solusi pasti aman).
-- **STATUS: Item ini TIDAK BOLEH dianggap selesai/aman sampai user
-  memverifikasi ToS asli dan memutuskan mitigasi.**
+- **Teks resmi ToS diverifikasi langsung** (Gemini API Additional Terms of
+  Service, efektif 23 Maret 2026, dari `ai.google.dev/gemini-api/terms`,
+  disediakan lengkap oleh user).
+- **Klausul kunci:** "You may not use the Services to develop models that
+  compete with the Services (e.g., Gemini API or Google AI Studio). You also
+  may not attempt to reverse engineer, extract or replicate any component of
+  the Services, including the underlying data or models (e.g., parameter
+  weights)."
+- **Analisis:** larangan ini merujuk pada membangun *layanan/API LLM tujuan
+  umum yang bersaing langsung dengan Gemini API/Google AI Studio* — bukan
+  larangan umum "model apa pun yang dilatih dengan bantuan Gemini." SCED
+  Engine adalah model kecil (7B) fine-tuned sempit untuk satu domain
+  (finansial IHSG), terintegrasi ke satu produk (4IGen.com), tidak
+  diposisikan sebagai API LLM umum yang bersaing dengan Gemini/AI Studio —
+  karakternya beda dari yang dilarang klausul ini.
+- **Nuansa yang tetap perlu hati-hati:** frasa "tidak boleh reverse
+  engineer/extract/replicate underlying model" — proses generate data
+  sintetis sebaiknya tetap mengikuti aturan ketat "Strict Fact Adherence"
+  yang sudah ada di `teacher_master_prompt.md` (bukan sekadar re-package
+  mentah), yang memang sudah jadi praktik proyek ini.
+- **Kesimpulan (bukan nasihat hukum resmi):** risiko jauh lebih rendah dari
+  dugaan awal, cukup aman untuk lanjut skala saat ini. Rekomendasi: konsultasi
+  singkat ke pengacara IP/teknologi sebelum scaling penuh ke 10.000 data dan
+  sebelum proyek menghasilkan revenue signifikan, sebagai langkah kehati-hatian
+  standar untuk komersialisasi jangka panjang — bukan karena ada red flag
+  spesifik yang ditemukan.
 
 ### 6. Scaling dataset 20 → 500 Q&A
 - Menambah 10–20 emiten IHSG baru, dengan `macro_context` diambil dari
