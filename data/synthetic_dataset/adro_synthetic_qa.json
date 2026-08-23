@@ -1,0 +1,170 @@
+[
+  {
+    "asset_code": "ADRO",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang berfokus pada ketahanan modal, imbal hasil dividen, dan margin keselamatan (margin of safety), bagaimana Anda menilai profil imbal-hasil dan risiko ADRO berdasarkan valuasi serta posisi neracanya saat ini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ADRO",
+        "asset_name": "Adaro Energy Indonesia Tbk",
+        "sector": "Energy / Coal Mining",
+        "period": "Q3-2024 (TTM)",
+        "currency": "USD",
+        "scale": "In Million USD (except ratios)"
+      },
+      "financial_metrics": {
+        "total_assets": 10450.0,
+        "total_revenue": 6500.0,
+        "net_income": 1650.0,
+        "revenue_growth_yoy_percent": -15.2,
+        "net_income_growth_yoy_percent": -22.4,
+        "roe_percent": 24.5,
+        "gross_profit_margin_percent": 38.2,
+        "der_x": 0.25,
+        "cash_and_equivalents": 3200.0,
+        "per_x": 6.2,
+        "pbv_x": 1.2,
+        "dividend_yield_percent": 11.5
+      },
+      "macro_context": {
+        "global_coal_price_usd_ton": 135.0,
+        "coal_price_change_yoy_percent": -28.5,
+        "china_gdp_growth_percent": 4.6,
+        "usd_idr_exchange_rate": 15800,
+        "sector_trend": "Harga komoditas melandai dari puncak siklus, namun likuiditas kas emiten sangat melimpah dan utang sangat rendah"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Metrik valuasi dan struktur modal ADRO mencakup PER sebesar 6.2x, PBV sebesar 1.2x, Dividend Yield sebesar 11.5%, DER sebesar 0.25x, serta posisi Cash and Equivalents sebesar USD 3,200.0 juta dengan Total Assets USD 10,450.0 juta.",
+      "step_2_correlation": "Valuasi pasar yang rendah (PER 6.2x dan PBV 1.2x) ditopang oleh profitabilitas tinggi dengan ROE 24.5%. Likuiditas kas melimpah senilai USD 3,200.0 juta yang mencakup 30.6% dari total aset, dikombinasikan dengan tingkat utang sangat rendah (DER 0.25x), memberikan ruang neraca yang sangat kokoh untuk menopang ketahanan modal dan penyebaran Dividend Yield hingga 11.5%.",
+      "step_3_macro_contextualization": "Di tengah penurunan harga batu bara global menjadi USD 135.0/ton (-28.5% YoY), imbal hasil dividen 11.5% dan limpahan kas ADRO menjadi bantalan solvabilitas yang krusial saat memasuki fase normalisasi siklus komoditas.",
+      "step_4_synthesis": "ADRO menyediakan margin keselamatan yang tebal melalui kombinasi valuasi PER 6.2x, beban utang yang minim (DER 0.25x), dan Dividend Yield 11.5%. Sensitivitas terhadap fluktuasi harga komoditas menjadi risiko utama, tetapi likuiditas kas USD 3,200.0 juta secara efektif memitigasi potensi tekanan neraca."
+    }
+  },
+  {
+    "asset_code": "ADRO",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana evaluasi Anda terhadap efisiensi operasional dan dinamika pertumbuhan bisnis ADRO di tengah perubahan pendapatan dan laba bersih saat ini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ADRO",
+        "asset_name": "Adaro Energy Indonesia Tbk",
+        "sector": "Energy / Coal Mining",
+        "period": "Q3-2024 (TTM)",
+        "currency": "USD",
+        "scale": "In Million USD (except ratios)"
+      },
+      "financial_metrics": {
+        "total_assets": 10450.0,
+        "total_revenue": 6500.0,
+        "net_income": 1650.0,
+        "revenue_growth_yoy_percent": -15.2,
+        "net_income_growth_yoy_percent": -22.4,
+        "roe_percent": 24.5,
+        "gross_profit_margin_percent": 38.2,
+        "der_x": 0.25,
+        "cash_and_equivalents": 3200.0,
+        "per_x": 6.2,
+        "pbv_x": 1.2,
+        "dividend_yield_percent": 11.5
+      },
+      "macro_context": {
+        "global_coal_price_usd_ton": 135.0,
+        "coal_price_change_yoy_percent": -28.5,
+        "china_gdp_growth_percent": 4.6,
+        "usd_idr_exchange_rate": 15800,
+        "sector_trend": "Harga komoditas melandai dari puncak siklus, namun likuiditas kas emiten sangat melimpah dan utang sangat rendah"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Kinerja pertumbuhan dan efisiensi ADRO menunjukkan Total Revenue USD 6,500.0 juta (Revenue Growth YoY -15.2%), Net Income USD 1,650.0 juta (Net Income Growth YoY -22.4%), Gross Profit Margin sebesar 38.2%, dan ROE sebesar 24.5%.",
+      "step_2_correlation": "Kontraksi pada pendapatan (-15.2% YoY) dan penurunan laba bersih (-22.4% YoY) menunjukkan efek operating leverage saat top-line tertekan. Meski demikian, ADRO masih mampu mempertahankan Gross Profit Margin yang solid di level 38.2% dan ROE tinggi sebesar 24.5%, mengindikasikan struktur biaya operasional yang efisien di tingkat pertambangan.",
+      "step_3_macro_contextualization": "Penurunan top-line sejajar dengan koreksi harga batu bara global sebesar -28.5% YoY. Namun, kemampuan ADRO menekan laju penurunan laba bersih (-22.4% YoY) relatif lebih baik dibandingkan penurunan harga komoditas acuan, yang juga ditopang oleh kestabilan pertumbuhan ekonomi konsumen utama seperti Tiongkok (GDP growth 4.6%).",
+      "step_4_synthesis": "ADRO mengalami kontraksi pertumbuhan akibat normalisasi harga komoditas global. Meskipun demikian, tingkat efisiensi bisnis yang tercermin dari Gross Profit Margin 38.2% dan ROE 24.5% menunjukkan efisiensi operasional yang solid dalam mengontrol margin keuntungan."
+    }
+  },
+  {
+    "asset_code": "ADRO",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Sejauh mana kinerja keuangan ADRO terpengaruh oleh kondisi harga komoditas global, pertumbuhan ekonomi pasar utama, dan pergerakan nilai tukar?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ADRO",
+        "asset_name": "Adaro Energy Indonesia Tbk",
+        "sector": "Energy / Coal Mining",
+        "period": "Q3-2024 (TTM)",
+        "currency": "USD",
+        "scale": "In Million USD (except ratios)"
+      },
+      "financial_metrics": {
+        "total_assets": 10450.0,
+        "total_revenue": 6500.0,
+        "net_income": 1650.0,
+        "revenue_growth_yoy_percent": -15.2,
+        "net_income_growth_yoy_percent": -22.4,
+        "roe_percent": 24.5,
+        "gross_profit_margin_percent": 38.2,
+        "der_x": 0.25,
+        "cash_and_equivalents": 3200.0,
+        "per_x": 6.2,
+        "pbv_x": 1.2,
+        "dividend_yield_percent": 11.5
+      },
+      "macro_context": {
+        "global_coal_price_usd_ton": 135.0,
+        "coal_price_change_yoy_percent": -28.5,
+        "china_gdp_growth_percent": 4.6,
+        "usd_idr_exchange_rate": 15800,
+        "sector_trend": "Harga komoditas melandai dari puncak siklus, namun likuiditas kas emiten sangat melimpah dan utang sangat rendah"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Variabel makroekonomi utama mencakup Global Coal Price sebesar USD 135.0/ton (turun -28.5% YoY), China GDP Growth 4.6%, dan USD/IDR Exchange Rate 15,800. Indikator emiten mencakup Revenue Growth -15.2% dan Net Income USD 1,650.0 juta.",
+      "step_2_correlation": "Penurunan harga batu bara dunia sebesar -28.5% menjadi faktor utama yang mentransmisikan penurunan pada Revenue Growth ADRO (-15.2%). Namun, penggunaan mata uang basis USD pada pembukuan ADRO dan nilai tukar USD/IDR di level 15,800 memberikan keunggulan konversi biaya operasional domestik berbasis Rupiah.",
+      "step_3_macro_contextualization": "Pertumbuhan GDP Tiongkok sebesar 4.6% menjaga penyerapan volume ekspor batu bara tetap stabil, menghambat penurunan pendapatan yang lebih dalam di tengah pelemahan harga komoditas global.",
+      "step_4_synthesis": "ADRO memiliki sensitivitas tinggi terhadap tren harga komoditas global (USD 135.0/ton). Namun, stabilitas permintaan dari Tiongkok (GDP 4.6%) serta posisi penerimaan dalam mata uang USD memberikan proteksi alami terhadap volatilitas makroekonomi domestik."
+    }
+  },
+  {
+    "asset_code": "ADRO",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Potensi risiko atau indikator kelemahan apa yang perlu dicermati dari tren kinerja keuangan ADRO untuk mengantisipasi penurunan kinerja lebih lanjut?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "ADRO",
+        "asset_name": "Adaro Energy Indonesia Tbk",
+        "sector": "Energy / Coal Mining",
+        "period": "Q3-2024 (TTM)",
+        "currency": "USD",
+        "scale": "In Million USD (except ratios)"
+      },
+      "financial_metrics": {
+        "total_assets": 10450.0,
+        "total_revenue": 6500.0,
+        "net_income": 1650.0,
+        "revenue_growth_yoy_percent": -15.2,
+        "net_income_growth_yoy_percent": -22.4,
+        "roe_percent": 24.5,
+        "gross_profit_margin_percent": 38.2,
+        "der_x": 0.25,
+        "cash_and_equivalents": 3200.0,
+        "per_x": 6.2,
+        "pbv_x": 1.2,
+        "dividend_yield_percent": 11.5
+      },
+      "macro_context": {
+        "global_coal_price_usd_ton": 135.0,
+        "coal_price_change_yoy_percent": -28.5,
+        "china_gdp_growth_percent": 4.6,
+        "usd_idr_exchange_rate": 15800,
+        "sector_trend": "Harga komoditas melandai dari puncak siklus, namun likuiditas kas emiten sangat melimpah dan utang sangat rendah"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator risiko mencakup penurunan Revenue Growth YoY sebesar -15.2%, kontraksi Net Income Growth YoY sebesar -22.4%, serta koreksi harga batu bara global sebesar -28.5% YoY.",
+      "step_2_correlation": "Laju penurunan laba bersih (-22.4%) yang melampaui penurunan pendapatan (-15.2%) mengindikasikan adanya tekanan porsi biaya tetap (fixed cost) saat volume atau harga jual rata-rata turun. Ini menunjukkan kerentanan margin jika koreksi harga komoditas berlanjut.",
+      "step_3_macro_contextualization": "Tren penurunan harga komoditas global (-28.5% YoY) menandakan berlanjutnya fase normalisasi pasca-puncak siklus (downcycle), yang berpotensi menekan keberlanjutan Dividend Yield 11.5% di masa depan jika laba bersih terus berkurang.",
+      "step_4_synthesis": "Sinyal risiko utama ADRO bersumber dari efek kontraksi siklis laba bersih (-22.4% YoY) akibat melandainya harga batu bara dunia. Meskipun demikian, risiko solvabilitas sangat terbatas berkat beban utang yang rendah (DER 0.25x) dan ketersediaan kas sebesar USD 3,200.0 juta."
+    }
+  }
+]
