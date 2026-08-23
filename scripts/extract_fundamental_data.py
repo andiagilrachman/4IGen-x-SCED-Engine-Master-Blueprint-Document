@@ -26,9 +26,25 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 SQL_DUMPS_DIR = os.path.join(SCRIPT_DIR, "sql_dumps")
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, "_working")
 
-STOCKS_SQL = os.path.join(SQL_DUMPS_DIR, "stocks_sectors.sql")
-SNAPSHOT_SQL = os.path.join(SQL_DUMPS_DIR, "indicator_snapshot_fundamental.sql")
 OUTPUT_PATH = os.path.join(OUTPUT_DIR, "fundamental_snapshot_all.json")
+
+
+def find_sql_file(prefix):
+    """Cari file SQL yang namanya diawali `prefix` di folder sql_dumps,
+    TOLERAN terhadap masalah umum Windows yang menyembunyikan ekstensi file
+    (sering bikin nama jadi dobel, misal 'stocks_sectors.sql.sql' padahal
+    yang terlihat di Explorer cuma 'stocks_sectors.sql'). Pakai wildcard,
+    bukan cocok nama persis."""
+    import glob
+    candidates = glob.glob(os.path.join(SQL_DUMPS_DIR, f"{prefix}*"))
+    # exclude file non-SQL kalau ada yang ke-scan tidak sengaja (README dll)
+    candidates = [c for c in candidates if not c.lower().endswith(".md")]
+    if not candidates:
+        return None
+    if len(candidates) > 1:
+        print(f"PERINGATAN: ditemukan {len(candidates)} file cocok untuk '{prefix}*': {candidates}")
+        print(f"Pakai yang pertama: {candidates[0]}")
+    return candidates[0]
 
 
 def parse_stocks_map(path):
@@ -119,14 +135,22 @@ def parse_indicator_snapshot(path, stock_map, sector_id_map, sectors_map):
 
 
 if __name__ == "__main__":
-    if not os.path.exists(STOCKS_SQL):
-        print(f"ERROR: File tidak ditemukan: {STOCKS_SQL}")
-        print("Taruh file export SQL tabel stocks+sectors di sana dulu.")
+    STOCKS_SQL = find_sql_file("stocks_sectors")
+    SNAPSHOT_SQL = find_sql_file("indicator_snapshot_fundamental")
+
+    if not STOCKS_SQL:
+        print(f"ERROR: Tidak ada file 'stocks_sectors*' ditemukan di {SQL_DUMPS_DIR}")
+        print("Taruh file export SQL tabel stocks+sectors di sana dulu (nama boleh")
+        print("apa saja asal diawali 'stocks_sectors').")
         raise SystemExit(1)
-    if not os.path.exists(SNAPSHOT_SQL):
-        print(f"ERROR: File tidak ditemukan: {SNAPSHOT_SQL}")
+    if not SNAPSHOT_SQL:
+        print(f"ERROR: Tidak ada file 'indicator_snapshot_fundamental*' ditemukan di {SQL_DUMPS_DIR}")
         print("Taruh file export SQL tabel indicator_snapshot_fundamental di sana dulu.")
         raise SystemExit(1)
+
+    print(f"Pakai file stocks/sectors: {STOCKS_SQL}")
+    print(f"Pakai file snapshot fundamental: {SNAPSHOT_SQL}")
+    print()
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
