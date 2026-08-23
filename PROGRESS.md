@@ -338,18 +338,60 @@ dari pilot awal 20 entri).
   Token length masih aman (maksimum ~779 token estimasi, jauh di bawah
   `max_seq_length=2048`).
 
-### 6o. Langkah selanjutnya
-- **Dataset sudah 444 entri — SANGAT layak untuk smoke test training di
-  Colab sekarang.** Ini rekomendasi utama untuk sesi berikutnya: jalankan
-  `notebooks/SCED_Engine_v0_1_Training.ipynb` (10 sel) di Google Colab,
-  laporkan hasilnya (berhasil/error, kualitas output model).
-- Kalau mau scaling lebih lanjut dulu sebelum training: masih ada ~1.116
-  saham belum dipakai dari `fundamental_snapshot_all.json`, dan 82
-  institusi keuangan belum dipakai dari `financial_rows`.
+### 6p. ✅ Pipeline scaling mandiri via .bat — bisa dijalankan tanpa Claude (2026-08-23)
+Total dataset sekarang **564 entri**. Perubahan besar: dibangun ulang
+seluruh pipeline scaling jadi **reusable & bisa dijalankan mandiri di
+Windows** (tidak perlu Claude jalankan satu-satu lagi setiap scaling).
+
+- **`scripts/lib_lens_generators.py`**: konsolidasi SEMUA fungsi generator
+  4 lensa (Value & Risk Margin, Growth, Macro, Risk) dari batch3/5/8 jadi
+  1 modul reusable — termasuk semua fix bug yang sudah ditemukan
+  (`severity_note()` untuk kondisi ekstrem, penanganan PBV negatif/nol/
+  positif secara terpisah).
+- **`scripts/extract_fundamental_data.py` (VERSI PORTABLE)**: pakai path
+  relatif (`scripts/sql_dumps/`), bukan lagi hardcode path sandbox. **BUG
+  PENTING ditemukan & diperbaiki**: dump SQL dari phpMyAdmin ternyata
+  dipecah jadi BANYAK blok `INSERT INTO` terpisah (bukan 1 blok besar
+  seperti asumsi awal) — regex lama cuma baca blok pertama, jadi cuma
+  dapat 346 dari 1.203 saham. Sekarang baca SEMUA blok. **Efek samping
+  bagus**: field `sector` sekarang otomatis ikut ter-ekstrak per saham
+  (sebelumnya harus join manual terpisah tiap kali di batch3/5/8).
+- **`scripts/scale_new_stocks.py`** (script utama untuk scaling
+  berikutnya): baca daftar kode saham dari `scripts/stocks_to_add.txt`,
+  otomatis SKIP kode yang sudah ada di manapun di `data/synthetic_dataset/`
+  (cegah duplikat), generate 4 lensa untuk yang benar-benar baru. Kalau
+  file belum ada, otomatis bikinkan 30 kandidat (fundamental_score
+  tertinggi, belum pernah dipakai) untuk direview dulu.
+- **`run_scaling.bat`**: orkestrasi 3 langkah (extract → scale → rebuild
+  JSONL) jadi 1 file yang tinggal di-double-click di Windows.
+- **Cara pakai untuk user (dicatat juga di komentar dalam file
+  `run_scaling.bat`):**
+  1. Export tabel `stocks`+`sectors` dan `indicator_snapshot_fundamental`
+     dari phpMyAdmin (database `aigen_db`), simpan sebagai
+     `scripts/sql_dumps/stocks_sectors.sql` dan
+     `scripts/sql_dumps/indicator_snapshot_fundamental.sql`.
+  2. Jalankan `run_scaling.bat` — kalau `stocks_to_add.txt` belum ada,
+     akan dibuatkan otomatis 30 kandidat, review/edit dulu.
+  3. Jalankan `run_scaling.bat` SEKALI LAGI untuk generate datanya
+     sungguhan.
+  4. `git add . && git commit && git push` seperti biasa.
+- **Ditest end-to-end**: 30 saham baru berhasil (120 entri baru), 0
+  duplikat terdeteksi, JSONL training ter-rebuild otomatis (444 → 564).
+- **Script batch2-batch8 (satu-pakai) TETAP disimpan** sebagai riwayat/
+  referensi historis, tapi TIDAK PERLU dipakai lagi — `scale_new_stocks.py`
+  sekarang jadi satu-satunya cara scaling ke depan.
+
+### 6q. Langkah selanjutnya
+- User bisa scaling mandiri sekarang lewat `run_scaling.bat` tanpa perlu
+  menunggu sesi kerja dengan Claude — cukup export SQL terbaru dari
+  phpMyAdmin tiap kali mau nambah data.
+- **Rekomendasi: coba smoke test training di Colab sekarang** — dataset
+  sudah 564 entri, pipeline scaling juga sudah mandiri, jadi ini titik
+  wajar untuk validasi ujung-ke-ujung sebelum lanjut scaling lebih jauh.
 - Tetap tunda data eksplisit Invezgo sampai ToS dikonfirmasi (poin 6b).
-- **Pengingat penting**: `scripts/build_training_jsonl.py` HARUS
-  dijalankan ulang setiap kali ada file baru di `data/synthetic_dataset/`
-  — proses ini TIDAK otomatis.
+- Perluas `financial_rows` (institusi keuangan, format berbeda dari
+  `indicator_snapshot_fundamental`) tetap butuh script terpisah kalau mau
+  dilanjutkan (belum diintegrasikan ke `scale_new_stocks.py`).
 
 ### 7. Smoke test training run v0.1 di Colab
 - Jalankan notebook end-to-end (10 sel) sebagai uji pipeline teknis, BUKAN
