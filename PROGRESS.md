@@ -101,22 +101,45 @@
   (yang terbukti tidak scalable di percobaan sebelumnya) — jauh lebih
   efisien dan konsisten karena satu sumber terstruktur untuk ratusan saham.
 
-### 6b. ⚠️ Klarifikasi ToS DataSectors & Invezgo (vendor data) — BELUM SELESAI
-- Data di atas berasal dari **DataSectors** dan **Invezgo**, API vendor
-  data komersial berbayar yang juga dipakai di proyek lain milik user
-  (stockdataengine.com/stockvision.id, dikonfirmasi lewat riwayat proyek
-  tersebut).
-- **Belum diverifikasi:** apakah kontrak/ToS langganan DataSectors/Invezgo
-  mengizinkan datanya dipakai untuk **training model AI** yang akan
-  dikomersialkan (SCED Engine), bukan cuma ditampilkan di aplikasi sendiri.
-  Ini beda kasus dari data BI/BPS yang jelas domain publik.
-- **PERTANYAAN UNTUK USER (belum terjawab):** apakah user punya link
-  dokumentasi ToS DataSectors dan Invezgo, atau tahu ketentuan
-  reuse/redistribusi data di paket langganan mereka?
-- **STATUS: item ini harus dijawab SEBELUM data financial_rows/
-  indicator_snapshot_fundamental dipakai generate dataset training skala
-  besar** — sama seperti prinsip kehati-hatian yang diterapkan ke ToS
-  Gemini sebelumnya (poin 5).
+### 6b. ⚠️ Klarifikasi ToS DataSectors & Invezgo — RISIKO CAMPURAN, PERLU AKSI (2026-08-23)
+- **ToS DataSectors** (`datasectors.com/terms`, dibaca lengkap): generik —
+  soal rate limit, pembayaran, disclaimer akurasi, batas tanggung jawab.
+  TIDAK ADA klausul eksplisit larangan reuse data untuk training model atau
+  produk turunan. **Risiko rendah** — wajar dibaca sebagai data API boleh
+  dipakai membangun produk sendiri termasuk fine-tuning model internal.
+- **ToS Invezgo** (`invezgo.com/id/terms`, dibaca lengkap): ADA klausul
+  ketat — "Everything on Invezgo.com... belongs to Invezgo or its
+  partners... You can print or save it for **personal, non-commercial use
+  only**. You may not copy, share, or sell any content without
+  permission..." Klausul ini kemungkinan besar juga mencakup "Invezgo
+  Data" (didefinisikan di bagian lain ToS sebagai akses data finansial
+  eksklusif untuk subscriber), bukan cuma artikel/konten editorial.
+  **Risiko lebih tinggi** — "personal, non-commercial use" jelas
+  bertentangan dengan tujuan SCED Engine yang komersial.
+- **Catatan penting:** ToS yang dibaca ini kemungkinan ToS umum
+  website/konten Invezgo — ada kemungkinan ToS API/SDK Invezgo yang
+  terpisah (produk developer mereka disebut di halaman lain: API, SDK,
+  MCP) punya ketentuan berbeda. BELUM diverifikasi.
+- **Data yang sudah dicek eksplisit bersumber Invezgo:** kolom
+  `source='invezgo'` di `shareholder_composition`, dan `vendor_insight_score`
+  di `indicator_snapshot_fundamental` menyebut "skor bawaan DataSectors
+  insights untuk pembanding" (mengindikasikan `indicator_snapshot_fundamental`
+  kemungkinan data campuran dari 2 vendor, perlu dicek lebih lanjut field
+  mana dari vendor mana).
+- **REKOMENDASI/KEPUTUSAN SEMENTARA:**
+  1. Prioritaskan generate dataset training dari field yang jelas
+     bersumber DataSectors dulu (lebih aman dipastikan).
+  2. Field yang jelas dari Invezgo — TAHAN dulu sampai user cek apakah ada
+     ToS API-spesifik Invezgo yang berbeda dari yang dibaca ini, atau
+     tanya langsung ke support Invezgo soal izin pakai data untuk training
+     model AI komersial.
+  3. `financial_rows` (dari database `4igen`) perlu dicek lagi asalnya
+     dari vendor mana — belum eksplisit ada kolom `source` di skema
+     tabelnya (beda dari `aigen_db` yang beberapa tabelnya eksplisit
+     mencatat source).
+- **STATUS: belum sepenuhnya selesai** — aman lanjut untuk data
+  DataSectors, tapi perlu keputusan/klarifikasi user untuk data Invezgo
+  sebelum dipakai skala besar.
 
 ### 6c. Scaling dataset 20 → 500 Q&A (lanjutan setelah 6b selesai)
 - Setelah ToS vendor data dikonfirmasi aman, bangun script ekstraksi dari
