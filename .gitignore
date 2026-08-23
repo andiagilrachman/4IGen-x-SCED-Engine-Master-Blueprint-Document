@@ -4,10 +4,11 @@
 *.sql.gz
 *.sql.zip
 
-# === Folder kerja pipeline scaling (scripts/sql_dumps, scripts/_working) ===
-scripts/sql_dumps/
+# === Folder kerja pipeline scaling (scripts/_working) ===
 scripts/_working/
 scripts/stocks_to_add.txt
+# scripts/sql_dumps/*.sql sudah otomatis ke-exclude oleh pola *.sql di atas
+# (folder & README.md di dalamnya TETAP ter-track supaya folder ada setelah clone)
 
 # === Model & training artifacts (besar, tidak perlu di Git — simpan di Colab/Drive/lokal) ===
 models/
