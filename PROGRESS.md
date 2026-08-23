@@ -50,11 +50,26 @@
 
 ## 🔜 BELUM DIKERJAKAN (urutan prioritas)
 
-### 5. Klarifikasi Model Guru (Teacher Model) API
-- Belum diketahui: API/model apa yang dipakai user untuk generate dataset
-  sintetis di `teacher_master_prompt.md` (GPT? Claude? Gemini? lokal?).
-- Perlu dicek ToS provider tsb. soal penggunaan output untuk training model
-  komersial pihak ketiga — beberapa provider melarang ini secara eksplisit.
+### 5. ⚠️ Klarifikasi Model Guru (Teacher Model) API — TEMUAN BERISIKO, BELUM SELESAI
+- **Model Guru yang dipakai:** Gemini (Google).
+- **Temuan riset (2026-08-23):** ditemukan pola konsisten di beberapa dokumen
+  ToS resmi Google untuk produk generative AI lain (ML Kit GenAI API Additional
+  Terms, dan "Google Model Terms" yang didokumentasikan Databricks) yang
+  melarang: (a) menggunakan output model untuk mengembangkan produk/model
+  yang serupa atau bersaing, dan (b) menggunakan output untuk "menciptakan
+  atau meningkatkan model yang serupa" dengan model Google.
+- **Belum terverifikasi langsung** di halaman resmi `ai.google.dev/gemini-api/terms`
+  (halaman spesifik ToS Gemini API standar, bukan Gemini consumer chat) —
+  perlu user buka & baca sendiri bagian "Use Restrictions"/"Prohibited Uses".
+- **Risiko:** kalau ketentuan serupa berlaku di Gemini API standar, memakai
+  output Gemini untuk fine-tuning model Qwen 2.5 7B yang akan dikomersialkan
+  berpotensi melanggar ToS.
+- **Opsi mitigasi yang didiskusikan** (belum diputuskan): (1) ganti Model
+  Guru ke provider lain dengan ToS lebih longgar, (2) pakai model open-weight
+  besar (Llama 3 70B/Qwen 72B) sebagai Model Guru, (3) opsi human-curation
+  berat sebagai area abu-abu (bukan solusi pasti aman).
+- **STATUS: Item ini TIDAK BOLEH dianggap selesai/aman sampai user
+  memverifikasi ToS asli dan memutuskan mitigasi.**
 
 ### 6. Scaling dataset 20 → 500 Q&A
 - Menambah 10–20 emiten IHSG baru, dengan `macro_context` diambil dari
