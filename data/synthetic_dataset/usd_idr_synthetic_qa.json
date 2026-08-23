@@ -1,0 +1,158 @@
+[
+  {
+    "asset_code": "USD-IDR",
+    "lens": "Value & Risk Margin",
+    "instruction": "Dari perspektif pengelola risiko portofolio valas yang menekankan margin keselamatan dan stabilitas nilai tukar, bagaimana Anda menilai profil imbal-hasil dan ketahanan pasangan mata uang USD-IDR saat ini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "USD-IDR",
+        "asset_name": "US Dollar vs Indonesian Rupiah",
+        "market_category": "Forex / Currency Pair",
+        "period": "Q3-2024 / Spot Rate Context",
+        "currency": "IDR",
+        "scale": "Absolute IDR per 1 USD"
+      },
+      "forex_metrics": {
+        "current_rate": 15850,
+        "daily_change_percent": 0.35,
+        "weekly_change_percent": 1.10,
+        "ytd_change_percent": 4.20,
+        "high_52_week": 16450,
+        "low_52_week": 15150
+      },
+      "macro_monetary_context": {
+        "bi_rate_percent": 6.00,
+        "fed_fund_rate_percent": 5.25,
+        "interest_rate_differential_percent": 0.75,
+        "us_dxy_index": 105.8,
+        "indonesia_foreign_reserve_billion_usd": 149.9,
+        "indonesia_inflation_yoy_percent": 2.12,
+        "us_inflation_yoy_percent": 2.60,
+        "trade_balance_status": "Surplus 53 bulan berturut-turut (USD 3.2 Miliar)"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Metrik kunci pasangan mata uang USD-IDR mencakup posisi nilai tukar terkini di level 15,850 dengan rentang 52-week Low di 15,150 dan 52-week High di 16,450 (YTD Change +4.20%). Dari sisi ketahanan makro, Indonesia Foreign Reserve tercatat sebesar USD 149.9 Miliar dan Interest Rate Differential sebesar 0.75%.",
+      "step_2_correlation": "Posisi spot saat ini (15,850) berada di area pertengahan rentang tahunannya, mencerminkan adanya penyangga jarak (buffer) terhadap level tertinggi 16,450. Tingkat spread suku bunga sebesar 0.75% (BI Rate 6.00% vs Fed Fund Rate 5.25%) dan cadangan devisa sebesar USD 149.9 Miliar menjadi bantalan intervensi bagi Bank Indonesia untuk menahan volatilitas berlebih.",
+      "step_3_macro_contextualization": "Meskipun US DXY Index menguat di level 105.8 yang memicu apresiasi Dolar AS (+4.20% YTD), fundamental eksternal Indonesia ditopang oleh surplus neraca perdagangan selama 53 bulan berturut-turut (USD 3.2 Miliar) serta inflasi domestik yang terkendali di 2.12% (lebih rendah dari US Inflation 2.60%).",
+      "step_4_synthesis": "Pasangan USD-IDR menawarkan margin ketahanan yang relatif stabil berkat cadangan devisa USD 149.9 Miliar dan surplus perdagangan berturut-turut. Risiko volatilitas utamanya bersumber dari indeks DXY yang kuat (105.8), namun potensi depresiasi ekstrem Rupiah tertahan oleh bantalan makroekonomi yang memadai."
+    }
+  },
+  {
+    "asset_code": "USD-IDR",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana dinamika laju pergerakan mata uang USD-IDR memengaruhi arus modal dan efisiensi neraca pembayaran eksternal?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "USD-IDR",
+        "asset_name": "US Dollar vs Indonesian Rupiah",
+        "market_category": "Forex / Currency Pair",
+        "period": "Q3-2024 / Spot Rate Context",
+        "currency": "IDR",
+        "scale": "Absolute IDR per 1 USD"
+      },
+      "forex_metrics": {
+        "current_rate": 15850,
+        "daily_change_percent": 0.35,
+        "weekly_change_percent": 1.10,
+        "ytd_change_percent": 4.20,
+        "high_52_week": 16450,
+        "low_52_week": 15150
+      },
+      "macro_monetary_context": {
+        "bi_rate_percent": 6.00,
+        "fed_fund_rate_percent": 5.25,
+        "interest_rate_differential_percent": 0.75,
+        "us_dxy_index": 105.8,
+        "indonesia_foreign_reserve_billion_usd": 149.9,
+        "indonesia_inflation_yoy_percent": 2.12,
+        "us_inflation_yoy_percent": 2.60,
+        "trade_balance_status": "Surplus 53 bulan berturut-turut (USD 3.2 Miliar)"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Laju pergerakan USD-IDR mencakup pergerakan harian Daily Change +0.35%, Weekly Change +1.10%, YTD Change +4.20%, serta indikator pertumbuhan perdagangan berupa surplus neraca perdagangan sebesar USD 3.2 Miliar.",
+      "step_2_correlation": "Depresiasi Rupiah secara bertahap (+1.10% mingguan dan +4.20% YTD) meningkatkan daya saing harga komoditas ekspor Indonesia di pasar global. Hal ini berkorelasi positif dengan kesinambungan pencapaian surplus neraca perdagangan sebesar USD 3.2 Miliar selama 53 bulan berturut-turut.",
+      "step_3_macro_contextualization": "Tingkat inflasi domestik yang terjaga rendah (2.12% vs AS 2.60%) mencegah erosi daya saing riil, sehingga keunggulan harga dari tingkat exchange rate 15,850 dapat dikonversi menjadi efisiensi akumulasi cadangan devisa (USD 149.9 Miliar).",
+      "step_4_synthesis": "Kenaikan nilai tukar USD-IDR hingga level 15,850 memberikan dorongan positif bagi kinerja ekspor bersih dan neraca pembayaran. Hambatan utama terletak pada tingkat imbal hasil suku bunga riil jika tren penguatan Dolar AS memicu tekanan outflow modal asing."
+    }
+  },
+  {
+    "asset_code": "USD-IDR",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Bagaimana transmisi kebijakan suku bunga acuan global dan domestik serta indeks Dolar memengaruhi posisi kurs USD-IDR saat ini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "USD-IDR",
+        "asset_name": "US Dollar vs Indonesian Rupiah",
+        "market_category": "Forex / Currency Pair",
+        "period": "Q3-2024 / Spot Rate Context",
+        "currency": "IDR",
+        "scale": "Absolute IDR per 1 USD"
+      },
+      "forex_metrics": {
+        "current_rate": 15850,
+        "daily_change_percent": 0.35,
+        "weekly_change_percent": 1.10,
+        "ytd_change_percent": 4.20,
+        "high_52_week": 16450,
+        "low_52_week": 15150
+      },
+      "macro_monetary_context": {
+        "bi_rate_percent": 6.00,
+        "fed_fund_rate_percent": 5.25,
+        "interest_rate_differential_percent": 0.75,
+        "us_dxy_index": 105.8,
+        "indonesia_foreign_reserve_billion_usd": 149.9,
+        "indonesia_inflation_yoy_percent": 2.12,
+        "us_inflation_yoy_percent": 2.60,
+        "trade_balance_status": "Surplus 53 bulan berturut-turut (USD 3.2 Miliar)"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Variabel moneter mencakup BI Rate sebesar 6.00%, Fed Fund Rate 5.25%, Interest Rate Differential 0.75%, US DXY Index 105.8, dan Spot Rate USD-IDR sebesar 15,850.",
+      "step_2_correlation": "Tingginya indeks Dolar AS (DXY 105.8) yang didorong oleh Fed Fund Rate 5.25% menyempitkan selisih suku bunga (interest rate differential) menjadi hanya 0.75%. Kondisi ini memicu tekanan apresiasi Dolar AS terhadap Rupiah (+0.35% harian dan +4.20% YTD).",
+      "step_3_macro_contextualization": "Kebijakan BI Rate di level 6.00% bertindak sebagai instrumen stabilisasi moneter untuk menjaga daya tarik imbal hasil aset keuangan domestik di tengah ketatnya kebijakan moneter global (Higher for Longer).",
+      "step_4_synthesis": "USD-IDR memiliki sensitivitas tinggi terhadap pergerakan DXY Index (105.8) dan penyempitan spread suku bunga (0.75%). Stabilitas kurs sangat bergantung pada daya tahan BI Rate 6.00% dan efektivitas intervensi berbasis cadangan devisa."
+    }
+  },
+  {
+    "asset_code": "USD-IDR",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Indikator risiko atau titik kerentanan moneter apa yang patut diwaspadai dari tren pergerakan kurs USD-IDR terhadap stabilitas pasar keuangan?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "USD-IDR",
+        "asset_name": "US Dollar vs Indonesian Rupiah",
+        "market_category": "Forex / Currency Pair",
+        "period": "Q3-2024 / Spot Rate Context",
+        "currency": "IDR",
+        "scale": "Absolute IDR per 1 USD"
+      },
+      "forex_metrics": {
+        "current_rate": 15850,
+        "daily_change_percent": 0.35,
+        "weekly_change_percent": 1.10,
+        "ytd_change_percent": 4.20,
+        "high_52_week": 16450,
+        "low_52_week": 15150
+      },
+      "macro_monetary_context": {
+        "bi_rate_percent": 6.00,
+        "fed_fund_rate_percent": 5.25,
+        "interest_rate_differential_percent": 0.75,
+        "us_dxy_index": 105.8,
+        "indonesia_foreign_reserve_billion_usd": 149.9,
+        "indonesia_inflation_yoy_percent": 2.12,
+        "us_inflation_yoy_percent": 2.60,
+        "trade_balance_status": "Surplus 53 bulan berturut-turut (USD 3.2 Miliar)"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Sinyal risiko utama mencakup laju depresiasi Rupiah jangka pendek (Weekly Change +1.10%), penyempitan Interest Rate Differential hingga level 0.75%, penguatan DXY Index ke 105.8, dan kedekatan spot (15,850) menuju 52-week High (16,450).",
+      "step_2_correlation": "Akselerasi kenaikan mingguan sebesar +1.10% yang dikombinasikan dengan tipisnya spread suku bunga (0.75%) menandakan tingginya potensi pemicu alokasi modal keluar (capital outflow). Jika DXY terus menguat di atas 105.8, tekanan nilai tukar mendekati area batas atas 16,450 berisiko menggerus cadangan devisa.",
+      "step_3_macro_contextualization": "Apabila laju depresiasi berjalan terlalu cepat, terdapat risiko transmisi kenaikan harga barang impor (imported inflation), meskipun inflasi domestik saat ini masih berada di level terukur 2.12%.",
+      "step_4_synthesis": "Potensi risiko utama pada USD-IDR bersumber dari penyempitan spread suku bunga (0.75%) dan potensi reli lanjutan DXY Index (105.8). Kendati demikian, risiko terjadinya krisis mata uang diredam oleh ketersediaan cadangan devisa sebesar USD 149.9 Miliar dan surplus perdagangan bernilai USD 3.2 Miliar."
+    }
+  }
+]
