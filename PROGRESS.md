@@ -79,16 +79,32 @@
   standar untuk komersialisasi jangka panjang — bukan karena ada red flag
   spesifik yang ditemukan.
 
-### 6. Scaling dataset 20 → 500 Q&A
-- Menambah 10–20 emiten IHSG baru, dengan `macro_context` diambil dari
-  salah satu 3 anchor di `data/macro_anchors.json` (bukan angka baru
-  sembarangan) — distribusikan aset ke 3 periode itu secara merata biar
-  variasi makro tersebar, sebelum lanjut ke 500, lalu ke 10.000 sesuai
-  roadmap Fase 5 di `BLUEPRINT.md`.
-- Perlu jaga kualitas per-batch, bukan asal kuantitas — audit manual
-  sampel tiap batch baru.
-- Verifikasi lebih presisi `usd_idr_exchange_rate_approx` &
-  `economic_growth_gdp_percent` di 2 anchor baru sebelum batch besar.
+### 6. ⚠️ Scaling dataset 20 → 500 Q&A — BOTTLENECK DITEMUKAN, BUTUH INPUT USER
+- **Percobaan (2026-08-23):** mulai generate data baru untuk 3 emiten baru
+  (BMRI, UNVR, ANTM) via web search manual satu-per-satu untuk data
+  fundamental riil (sesuai aturan Strict Fact Adherence — dilarang karang
+  angka).
+- **Temuan masalah skalabilitas:** untuk 1 emiten (BMRI) saja butuh 3x
+  pencarian web dan beberapa rasio (NIM, CAR, PER, PBV presisi) tetap tidak
+  didapat dengan kepastian tinggi — sumber berbeda-beda saling tidak
+  konsisten (contoh: PER BMRI ada sumber bilang 7.1x, ada yang 9.14x,
+  tergantung periode/basis estimasi). **Pola ini tidak scalable untuk
+  500-10.000 data** — googling manual satu-satu per emiten akan makan waktu
+  sangat lama dan berisiko data tidak konsisten antar sumber.
+- **Proof-of-concept dibuat:** 1 sampel BMRI (lensa Value & Risk Margin) di
+  `data/synthetic_dataset/bmri_synthetic_qa_PROOF_OF_CONCEPT.json` — dibuat
+  HANYA dari metrik yang benar-benar terverifikasi (total_assets, net_income,
+  ROE, NPL Gross, dividend yield), metrik yang tidak pasti (NIM/CAR/PER/PBV)
+  SENGAJA tidak disertakan, dengan `_source_note` transparan.
+- **PERTANYAAN KRITIS UNTUK USER (belum terjawab):** apakah user sudah
+  punya database/API data fundamental saham terstruktur dari proyek lain
+  (kemungkinan `stockdataengine.com` atau `4igen.com` — proyek user yang
+  lain, tercatat di memori terpisah)? Kalau ada, itu jauh lebih tepat
+  dipakai sebagai sumber data terstruktur untuk generate dataset SCED
+  daripada riset manual satu-satu via web search.
+- **UNVR dan ANTM belum dikerjakan** — menunggu keputusan sumber data dulu
+  sebelum lanjut, supaya tidak buang waktu riset manual kalau ternyata ada
+  cara lebih efisien.
 
 ### 7. Smoke test training run v0.1 di Colab
 - Jalankan notebook end-to-end (10 sel) sebagai uji pipeline teknis, BUKAN

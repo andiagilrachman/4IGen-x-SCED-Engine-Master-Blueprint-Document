@@ -1,0 +1,38 @@
+[
+  {
+    "asset_code": "BMRI",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal, keandalan dividen, dan margin keselamatan (margin of safety), bagaimana Anda menilai profil imbal-hasil dan risiko BMRI berdasarkan valuasinya saat ini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BMRI",
+        "asset_name": "Bank Mandiri (Persero) Tbk",
+        "sector": "Banking / Financials",
+        "period": "FY2024",
+        "currency": "IDR",
+        "scale": "In Trillion IDR (except ratios)"
+      },
+      "financial_metrics": {
+        "total_assets": 2427.0,
+        "net_income": 55.78,
+        "net_income_growth_yoy_percent": 1.31,
+        "roe_percent": 21.2,
+        "npl_gross_percent": 0.97,
+        "dividend_yield_percent": 9.3
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.00,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "sector_trend": "Suku bunga tinggi menekan segmen kredit mikro, namun bantalan permodalan tebal"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci BMRI mencakup ROE sebesar 21.2%, Dividend Yield sebesar 9.3%, dan NPL Gross yang sangat rendah di level 0.97%. Net Income tercatat IDR 55.78 Triliun dengan pertumbuhan YoY 1.31%.",
+      "step_2_correlation": "Dividend Yield 9.3% yang tergolong tinggi ditopang oleh ROE yang kuat (21.2%), mengindikasikan perusahaan mampu membagikan porsi laba besar ke pemegang saham tanpa mengorbankan profitabilitas inti. NPL Gross yang sangat rendah (0.97%) menunjukkan kualitas aset kredit yang terjaga baik.",
+      "step_3_macro_contextualization": "Di tengah BI Rate 6.00% dan inflasi terkendali 2.12%, dividend yield 9.3% BMRI memberikan spread yang sangat kompetitif terhadap suku bunga acuan, menjadikannya menarik bagi investor pemburu yield di lingkungan suku bunga tinggi.",
+      "step_4_synthesis": "BMRI menawarkan kombinasi dividend yield tinggi (9.3%) dan kualitas aset yang sangat terjaga (NPL Gross 0.97%), didukung ROE 21.2% yang solid. Risiko utama adalah pertumbuhan laba bersih yang melambat (hanya 1.31% YoY) di tengah tekanan biaya dana akibat suku bunga tinggi, namun margin keselamatan tetap terjaga oleh kualitas aset yang sangat baik."
+    },
+    "_source_note": "Data diverifikasi dari laporan/pemberitaan resmi kinerja FY2024 (Databoks/Katadata mengutip laporan resmi Bank Mandiri) dan data pasar (SimplyWall.st) per audit 2026-08-23. NIM, CAR, PER, dan PBV presisi TIDAK disertakan di sini karena sumber yang ditemukan saling berbeda angka (belum ada satu sumber terverifikasi tunggal) — lihat catatan di PROGRESS.md soal kebutuhan sumber data terstruktur untuk scaling."
+  }
+]
