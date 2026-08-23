@@ -1,0 +1,174 @@
+[
+  {
+    "asset_code": "BBRI",
+    "lens": "Value & Risk Margin",
+    "instruction": "Sebagai investor yang mengutamakan proteksi modal, keandalan dividen, dan margin keselamatan (margin of safety), bagaimana Anda menilai profil imbal-hasil dan risiko BBRI berdasarkan valuasinya saat ini?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BBRI",
+        "asset_name": "Bank Rakyat Indonesia (Persero) Tbk",
+        "sector": "Banking / Financials",
+        "period": "Q3-2024 (TTM)",
+        "currency": "IDR",
+        "scale": "In Trillion IDR (except ratios)"
+      },
+      "financial_metrics": {
+        "total_assets": 1965.0,
+        "total_revenue": 135.2,
+        "net_income": 45.1,
+        "revenue_growth_yoy_percent": 8.5,
+        "net_income_growth_yoy_percent": 4.2,
+        "roe_percent": 19.8,
+        "nim_percent": 7.6,
+        "npl_gross_percent": 3.1,
+        "npl_coverage_percent": 215.0,
+        "car_percent": 25.2,
+        "per_x": 11.5,
+        "pbv_x": 2.1,
+        "dividend_yield_percent": 5.8
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.00,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "Suku bunga tinggi menekan segmen kredit mikro, namun bantalan permodalan tebal"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Indikator kunci valuasi dan ketahanan modal BBRI mencakup PER sebesar 11.5x, PBV sebesar 2.1x, dan Dividend Yield sebesar 5.8%. Dari sisi kualitas aset dan modal, NPL Gross tercatat sebesar 3.1%, NPL Coverage sebesar 215.0%, serta Capital Adequacy Ratio (CAR) sebesar 25.2%.",
+      "step_2_correlation": "Valuasi PBV 2.1x dan PER 11.5x ditopang oleh profitabilitas yang kuat dengan ROE 19.8%. Dividend yield sebesar 5.8% memberikan arus kas langsung bagi investor. Meskipun NPL Gross berada pada level 3.1%, tingkat NPL Coverage yang mencapai 215.0% dan CAR sebesar 25.2% mengindikasikan bahwa pencadangan dan permodalan sangat memadai untuk menyerap potensi kerugian kredit.",
+      "step_3_macro_contextualization": "Di tengah era suku bunga BI Rate 6.00% dan inflasi 2.12%, imbal hasil dividen BBRI sebesar 5.8% memberikan 'spread' relatif kompetitif terhadap suku bunga acuan. Ketahanan permodalan (CAR 25.2%) menjadi benteng krusial di saat suku bunga tinggi menekan kapasitas pembayaran segmen mikro.",
+      "step_4_synthesis": "BBRI menawarkan kombinasi imbal-hasil dividen 5.8% dan ketahanan modal yang kuat melalui NPL Coverage 215.0% dan CAR 25.2%. Risiko utama terletak pada potensi peningkatan pencadangan jika NPL Gross (3.1%) memburuk akibat suku bunga tinggi, namun valuasi PER 11.5x menyediakan margin keselamatan yang memadai bagi investor berperspektif nilai."
+    }
+  },
+  {
+    "asset_code": "BBRI",
+    "lens": "Growth & Business Expansion",
+    "instruction": "Bagaimana prospek efisiensi operasional dan ekspansi bisnis BBRI jika ditinjau dari pertumbuhan pendapatan, kemampuan mencetak laba bersih, serta tingkat margin bunga bersihnya?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BBRI",
+        "asset_name": "Bank Rakyat Indonesia (Persero) Tbk",
+        "sector": "Banking / Financials",
+        "period": "Q3-2024 (TTM)",
+        "currency": "IDR",
+        "scale": "In Trillion IDR (except ratios)"
+      },
+      "financial_metrics": {
+        "total_assets": 1965.0,
+        "total_revenue": 135.2,
+        "net_income": 45.1,
+        "revenue_growth_yoy_percent": 8.5,
+        "net_income_growth_yoy_percent": 4.2,
+        "roe_percent": 19.8,
+        "nim_percent": 7.6,
+        "npl_gross_percent": 3.1,
+        "npl_coverage_percent": 215.0,
+        "car_percent": 25.2,
+        "per_x": 11.5,
+        "pbv_x": 2.1,
+        "dividend_yield_percent": 5.8
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.00,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "Suku bunga tinggi menekan segmen kredit mikro, namun bantalan permodalan tebal"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Metrik pertumbuhan dan efisiensi BBRI menunjukkan Total Revenue sebesar IDR 135.2 Triliun dengan Revenue Growth YoY sebesar 8.5%. Net Income tercatat sebesar IDR 45.1 Triliun dengan Net Income Growth YoY sebesar 4.2%. Net Interest Margin (NIM) berada di level 7.6% dan Return on Equity (ROE) mencapai 19.8%.",
+      "step_2_correlation": "Pertumbuhan pendapatan sebesar 8.5% YoY yang melampaui pertumbuhan laba bersih (4.2% YoY) mengindikasikan adanya kenaikan beban operasional atau peningkatan alokasi beban penyisihan kerugian kredit. Namun demikian, NIM yang tergolong tinggi di level 7.6% berhasil menjaga profitabilitas ekuitas tetap sangat efisien dengan ROE 19.8%.",
+      "step_3_macro_contextualization": "Pertumbuhan ekonomi PDB sebesar 4.95% mendukung ekspansi kredit, tetapi tingkat BI Rate sebesar 6.00% meningkatkan Cost of Funds. NIM sebesar 7.6% membuktikan daya saing struktur penetapan harga (pricing power) BBRI di segmen mikro meskipun suku bunga acuan tinggi.",
+      "step_4_synthesis": "BBRI mempertahankan profitabilitas tinggi yang ditunjukkan oleh ROE 19.8% dan NIM 7.6%. Kendati demikian, perlambatan konversi pendapatan menjadi laba bersih (pertumbuhan laba 4.2% vs pendapatan 8.5%) menandakan perlunya pencermatan atas efisiensi biaya serta beban provisi ke depan."
+    }
+  },
+  {
+    "asset_code": "BBRI",
+    "lens": "Macro & Interest Rate Sensitivity",
+    "instruction": "Sejauh mana kebijakan suku bunga tinggi BI Rate dan kondisi makroekonomi saat ini memengaruhi penyaluran kredit, margin, dan kualitas aset BBRI?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BBRI",
+        "asset_name": "Bank Rakyat Indonesia (Persero) Tbk",
+        "sector": "Banking / Financials",
+        "period": "Q3-2024 (TTM)",
+        "currency": "IDR",
+        "scale": "In Trillion IDR (except ratios)"
+      },
+      "financial_metrics": {
+        "total_assets": 1965.0,
+        "total_revenue": 135.2,
+        "net_income": 45.1,
+        "revenue_growth_yoy_percent": 8.5,
+        "net_income_growth_yoy_percent": 4.2,
+        "roe_percent": 19.8,
+        "nim_percent": 7.6,
+        "npl_gross_percent": 3.1,
+        "npl_coverage_percent": 215.0,
+        "car_percent": 25.2,
+        "per_x": 11.5,
+        "pbv_x": 2.1,
+        "dividend_yield_percent": 5.8
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.00,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "Suku bunga tinggi menekan segmen kredit mikro, namun bantalan permodalan tebal"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Variabel makro mencakup BI Rate sebesar 6.00%, Inflasi YoY 2.12%, GDP Growth 4.95%, dan Nilai Tukar USD/IDR 15,800. Dari sisi emiten, NPL Gross tercatat sebesar 3.1%, NIM 7.6%, CAR 25.2%, dan Net Income Growth YoY 4.2%.",
+      "step_2_correlation": "BI Rate pada tingkat 6.00% meningkatkan biaya dana yang menekan segmen peminjam mikro, tercermin dari angka NPL Gross yang mencapai 3.1%. Meski begitu, ketahanan sektor riil yang didukung inflasi terkendali (2.12%) dan PDB (4.95%) memungkinkan BBRI mempertahankan NIM sebesar 7.6% dan pertumbuhan pendapatan 8.5%.",
+      "step_3_macro_contextualization": "Pelemahan nilai tukar rupiah (USD/IDR 15,800) dan suku bunga 6.00% membatasi ruang pelonggaran moneter. Fenomena ini mengonfirmasi tren sektoral di mana suku bunga tinggi menekan kualitas kredit mikro, namun rasio CAR BBRI sebesar 25.2% memberikan fleksibilitas solvabilitas yang sangat memadai.",
+      "step_4_synthesis": "BBRI memiliki sensitivitas terhadap ketatnya kebijakan moneter BI Rate 6.00% melalui risiko tekanan pada NPL Gross (3.1%). Namun, struktur NIM yang tebal (7.6%) dan CAR (25.2%) bertindak sebagai peredam kejut (absorber) efektif terhadap dinamika makroekonomi."
+    }
+  },
+  {
+    "asset_code": "BBRI",
+    "lens": "Risk & Red Flags Detector",
+    "instruction": "Anomali atau potensi risiko kerentanan apa yang dapat diidentifikasi dari kinerja keuangan BBRI yang berpotensi menjadi 'red flag' bagi investor?",
+    "input_data": {
+      "metadata": {
+        "asset_code": "BBRI",
+        "asset_name": "Bank Rakyat Indonesia (Persero) Tbk",
+        "sector": "Banking / Financials",
+        "period": "Q3-2024 (TTM)",
+        "currency": "IDR",
+        "scale": "In Trillion IDR (except ratios)"
+      },
+      "financial_metrics": {
+        "total_assets": 1965.0,
+        "total_revenue": 135.2,
+        "net_income": 45.1,
+        "revenue_growth_yoy_percent": 8.5,
+        "net_income_growth_yoy_percent": 4.2,
+        "roe_percent": 19.8,
+        "nim_percent": 7.6,
+        "npl_gross_percent": 3.1,
+        "npl_coverage_percent": 215.0,
+        "car_percent": 25.2,
+        "per_x": 11.5,
+        "pbv_x": 2.1,
+        "dividend_yield_percent": 5.8
+      },
+      "macro_context": {
+        "bi_rate_percent": 6.00,
+        "inflation_yoy_percent": 2.12,
+        "usd_idr_exchange_rate": 15800,
+        "economic_growth_gdp_percent": 4.95,
+        "sector_trend": "Suku bunga tinggi menekan segmen kredit mikro, namun bantalan permodalan tebal"
+      }
+    },
+    "chain_of_thought": {
+      "step_1_identification": "Titik perhatian risiko mencakup NPL Gross sebesar 3.1%, adanya divergensi antara Revenue Growth YoY (8.5%) dengan Net Income Growth YoY (4.2%), serta lingkungan BI Rate sebesar 6.00%.",
+      "step_2_correlation": "Divergensi pertumbuhan di mana laba bersih (4.2%) tumbuh melambat dibandingkan pendapatan (8.5%) menandakan peningkatan porsi pembentukan beban penyisihan (CKPN). Hal ini berbanding lurus dengan posisi NPL Gross 3.1% yang mendekati batas psikologis moderat, dipicu oleh tekanan daya beli atau kemampuan bayar debitur mikro.",
+      "step_3_macro_contextualization": "Suku bunga acuan BI Rate 6.00% yang bertahan lama berpotensi memperpanjang siklus pemburukan kualitas kredit (credit cost prolongation) di segmen UMKM, sehingga membahayakan laju profitabilitas lanjutan.",
+      "step_4_synthesis": "Potensi risiko utama BBRI terletak pada tekanan kualitas kredit (NPL Gross 3.1%) yang memicu pembengkakan biaya provisi dan menekan laju pertumbuhan laba. Meskipun demikian, risiko ini diimbangi oleh bantalan NPL Coverage yang kuat sebesar 215.0% dan CAR 25.2%."
+    }
+  }
+]
