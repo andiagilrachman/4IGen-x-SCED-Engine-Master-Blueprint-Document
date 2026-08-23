@@ -311,21 +311,45 @@ Ini sudah diperbaiki:
 - **Status sekarang: pipeline training benar-benar siap dipakai dengan
   244 entri**, bukan cuma 20 seperti sebelumnya.
 
-### 6m. Langkah selanjutnya
-- **User bisa mulai smoke test training di Colab kapan saja** — notebook
-  sudah update, tinggal jalankan 10 sel seperti biasa (perlu clone repo
-  terbaru dulu di Colab, atau pull kalau sudah pernah clone).
-- Terus perluas cakupan data (financial_rows sisa 82 institusi, saham
-  non-keuangan lain dari 1.203 yang tersedia) — setiap kali nambah file
-  baru ke `data/synthetic_dataset/`, JALANKAN ULANG
-  `scripts/build_training_jsonl.py` supaya `sced_scaled_train_v1.jsonl`
-  ikut ter-update (BUKAN otomatis, perlu dijalankan manual/lewat sesi ini
-  tiap kali ada data baru).
+### 6n. ✅ 50 saham baru 4 lensa penuh + fix bug PBV=0 + rebuild JSONL (2026-08-23)
+Total dataset sekarang **444 entri** (naik dari 244, lebih dari 22x lipat
+dari pilot awal 20 entri).
+
+- **50 saham baru dari 10 sektor** (`batch8_50stocks_4lenses.json`, 200
+  entri: 50 saham x 4 lensa langsung sekaligus) — dipilih rank ke-4 s/d
+  ke-8 `fundamental_score` per sektor (skip 3 teratas yang sudah dipakai
+  di batch3/5), dari `fundamental_snapshot_all.json` (1.203 saham
+  tersedia). Cakupan saham sekarang: 87 saham unik (37 dari batch3/5 +
+  50 baru) + 19 institusi keuangan dari `financial_rows`.
+- **Bug baru ditemukan & diperbaiki**: kondisi `pbv < 0` di lensa Risk
+  tidak menangkap kasus **PBV = 0 persis** (2 saham: BATA, HEXA) — nilai
+  0 salah diklaim "wajar (positif)" padahal PBV 0.0000x lebih mungkin
+  anomali data / nilai buku mendekati nol yang perlu diverifikasi, bukan
+  otomatis dianggap sehat. Diperbaiki di `generate_batch8_50stocks_4lenses.py`
+  DAN `generate_batch5_33stocks_3lenses.py` (jaga-jaga run ulang di masa
+  depan, meski batch5 kebetulan tidak ada kasus ini saat ini) — sekarang
+  3 cabang kondisi: negatif / nol / positif wajar.
+- **6 dari 50 saham baru kondisi ekstrem** (INPS, BATA, ABBA, SAFE, CMPP,
+  ENVY) — otomatis tertangani nada narasinya lewat `severity_note()` yang
+  sudah ada.
+- **JSONL training di-rebuild**: `sced_scaled_train_v1.jsonl` sekarang 444
+  baris (dari `scripts/build_training_jsonl.py`, dijalankan ulang setelah
+  ada data baru — SELALU JALANKAN INI TIAP ADA BATCH DATA BARU).
+  Token length masih aman (maksimum ~779 token estimasi, jauh di bawah
+  `max_seq_length=2048`).
+
+### 6o. Langkah selanjutnya
+- **Dataset sudah 444 entri — SANGAT layak untuk smoke test training di
+  Colab sekarang.** Ini rekomendasi utama untuk sesi berikutnya: jalankan
+  `notebooks/SCED_Engine_v0_1_Training.ipynb` (10 sel) di Google Colab,
+  laporkan hasilnya (berhasil/error, kualitas output model).
+- Kalau mau scaling lebih lanjut dulu sebelum training: masih ada ~1.116
+  saham belum dipakai dari `fundamental_snapshot_all.json`, dan 82
+  institusi keuangan belum dipakai dari `financial_rows`.
 - Tetap tunda data eksplisit Invezgo sampai ToS dikonfirmasi (poin 6b).
-- Setelah smoke test training selesai (baik berhasil maupun ada error),
-  laporkan hasilnya untuk audit kualitas output model — apakah halusinasi
-  angka, konsistensi gaya bahasa, dll (kriteria sukses di `BLUEPRINT.md`
-  bagian 12).
+- **Pengingat penting**: `scripts/build_training_jsonl.py` HARUS
+  dijalankan ulang setiap kali ada file baru di `data/synthetic_dataset/`
+  — proses ini TIDAK otomatis.
 
 ### 7. Smoke test training run v0.1 di Colab
 - Jalankan notebook end-to-end (10 sel) sebagai uji pipeline teknis, BUKAN

@@ -1,24 +1,14 @@
 #!/usr/bin/env python3
 """
-Generate 3 lensa tambahan (Growth, Macro & Interest Rate Sensitivity,
-Risk & Red Flags Detector) untuk 33 saham yang lensa "Value & Risk Margin"-nya
-sudah ada di batch3_expanded_33stocks_value_risk.json.
-
-Perbaikan dari temuan audit (lihat PROGRESS.md poin 6f): nada narasi step_4
-(sintesis) disesuaikan kalau data menunjukkan kondisi ekstrem (PER/PBV/
-Altman Z negatif -> kemungkinan ekuitas negatif) -- tidak lagi generik sama
-rata untuk semua saham.
-
-Input yang dibutuhkan (file kerja lokal, hasil ekstraksi SQL dump vendor,
-TIDAK di-commit ke repo karena besar):
-- fundamental_snapshot_all.json (dari extract_fundamental_data.py)
-- selected_stocks_batch3.json (daftar 33 saham terpilih + sektornya)
+Generate 4 lensa penuh (Value & Risk Margin, Growth, Macro, Risk) untuk 50
+saham baru sekaligus -- konsolidasi pola dari batch3+batch5 (termasuk fix
+bug PBV kondisional) supaya lebih efisien untuk scaling berikutnya.
 """
 import json
 
 FUND_SNAPSHOT_PATH = "/home/claude/fundamental_snapshot_all.json"
-SELECTED_STOCKS_PATH = "/home/claude/selected_stocks_batch3.json"
-OUTPUT_PATH = "data/synthetic_dataset/batch5_33stocks_3lenses.json"
+SELECTED_STOCKS_PATH = "/home/claude/selected_stocks_batch8.json"
+OUTPUT_PATH = "data/synthetic_dataset/batch8_50stocks_4lenses.json"
 
 MACRO_ANCHOR = {
     "bi_rate_percent": 4.75, "inflation_yoy_percent": 4.76,
@@ -51,6 +41,21 @@ def base_input_data(code, sector, d):
             "graham_number": d["graham_number"], "fundamental_score": d["fundamental_score"],
         }.items() if v is not None},
         "macro_context": MACRO_ANCHOR
+    }
+
+
+def build_value_risk(code, sector, d):
+    return {
+        "asset_code": code, "lens": "Value & Risk Margin",
+        "instruction": f"Sebagai investor yang mengutamakan proteksi modal dan margin keselamatan (margin of safety), bagaimana Anda menilai profil valuasi dan risiko {code} ({sector}) berdasarkan data rasio terkini?",
+        "input_data": base_input_data(code, sector, d),
+        "chain_of_thought": {
+            "step_1_identification": f"Indikator kunci {code} mencakup PER sebesar {fmt(d['per_x'], 'x')}, PBV sebesar {fmt(d['pbv_x'], 'x')}, dan EPS sebesar {fmt(d['eps'])}. ROE tercatat {fmt(d['roe_percent'], '%')} dan ROA {fmt(d['roa_percent'], '%')}.",
+            "step_2_correlation": f"Rasio DER sebesar {fmt(d['der_x'], 'x')} menunjukkan struktur permodalan terhadap ekuitas. Altman Z-Score {fmt(d['altman_z_score'])} dan Piotroski F-Score {fmt(d['piotroski_f_score'])} (skala 0-9) memberi indikasi kesehatan keuangan dan kekuatan fundamental dari sudut pandang berbeda.",
+            "step_3_macro_contextualization": f"Di tengah BI Rate {MACRO_ANCHOR['bi_rate_percent']}% dan inflasi {MACRO_ANCHOR['inflation_yoy_percent']}% (periode {PERIOD_LABEL}), valuasi PER {fmt(d['per_x'], 'x')} perlu dibandingkan dengan biaya modal yang berlaku saat ini serta karakteristik sektor {sector}.",
+            "step_4_synthesis": f"Graham Number (estimasi nilai wajar berbasis EPS & BVPS) tercatat {fmt(d['graham_number'])}, salah satu acuan margin keselamatan investor value. Fundamental score komposit {fmt(d['fundamental_score'])} merangkum banyak faktor sekaligus, namun tetap perlu dibaca bersama rasio individual di atas, bukan sebagai angka tunggal pengambil keputusan."
+        },
+        "_source_note": SOURCE_NOTE_TMPL.format(date=d["snapshot_date"])
     }
 
 
@@ -124,16 +129,22 @@ if __name__ == "__main__":
         selected = json.load(f)
 
     results = []
+    skipped = []
     for s in selected:
         code = s["symbol"]
         if code not in snapshot:
+            skipped.append(code)
             continue
         d = snapshot[code]
         sector = s["sector"]
+        results.append(build_value_risk(code, sector, d))
         results.append(build_growth(code, sector, d))
         results.append(build_macro(code, sector, d))
         results.append(build_risk(code, sector, d))
 
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
-    print(f"Berhasil generate {len(results)} entri -> {OUTPUT_PATH}")
+
+    print(f"Berhasil generate {len(results)} entri ({len(results)//4} saham x 4 lensa) -> {OUTPUT_PATH}")
+    if skipped:
+        print(f"Dilewati (tidak ada di snapshot): {skipped}")
