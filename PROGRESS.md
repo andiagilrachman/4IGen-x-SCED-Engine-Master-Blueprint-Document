@@ -79,32 +79,54 @@
   standar untuk komersialisasi jangka panjang — bukan karena ada red flag
   spesifik yang ditemukan.
 
-### 6. ⚠️ Scaling dataset 20 → 500 Q&A — BOTTLENECK DITEMUKAN, BUTUH INPUT USER
-- **Percobaan (2026-08-23):** mulai generate data baru untuk 3 emiten baru
-  (BMRI, UNVR, ANTM) via web search manual satu-per-satu untuk data
-  fundamental riil (sesuai aturan Strict Fact Adherence — dilarang karang
-  angka).
-- **Temuan masalah skalabilitas:** untuk 1 emiten (BMRI) saja butuh 3x
-  pencarian web dan beberapa rasio (NIM, CAR, PER, PBV presisi) tetap tidak
-  didapat dengan kepastian tinggi — sumber berbeda-beda saling tidak
-  konsisten (contoh: PER BMRI ada sumber bilang 7.1x, ada yang 9.14x,
-  tergantung periode/basis estimasi). **Pola ini tidak scalable untuk
-  500-10.000 data** — googling manual satu-satu per emiten akan makan waktu
-  sangat lama dan berisiko data tidak konsisten antar sumber.
-- **Proof-of-concept dibuat:** 1 sampel BMRI (lensa Value & Risk Margin) di
-  `data/synthetic_dataset/bmri_synthetic_qa_PROOF_OF_CONCEPT.json` — dibuat
-  HANYA dari metrik yang benar-benar terverifikasi (total_assets, net_income,
-  ROE, NPL Gross, dividend yield), metrik yang tidak pasti (NIM/CAR/PER/PBV)
-  SENGAJA tidak disertakan, dengan `_source_note` transparan.
-- **PERTANYAAN KRITIS UNTUK USER (belum terjawab):** apakah user sudah
-  punya database/API data fundamental saham terstruktur dari proyek lain
-  (kemungkinan `stockdataengine.com` atau `4igen.com` — proyek user yang
-  lain, tercatat di memori terpisah)? Kalau ada, itu jauh lebih tepat
-  dipakai sebagai sumber data terstruktur untuk generate dataset SCED
-  daripada riset manual satu-satu via web search.
-- **UNVR dan ANTM belum dikerjakan** — menunggu keputusan sumber data dulu
-  sebelum lanjut, supaya tidak buang waktu riset manual kalau ternyata ada
-  cara lebih efisien.
+### 6. ✅ Sumber data fundamental terstruktur ditemukan — `financial_rows` & `indicator_snapshot_fundamental` (2026-08-23)
+- User mengirim export tabel dari 2 database proyek lain miliknya:
+  - **`4igen` → `financial_rows`**: data laporan keuangan mentah (Neraca/BS,
+    Laba-Rugi/IS, Arus Kas/CF, KeyStat), long-format per baris akun per
+    kuartal, untuk **101 saham**. Row name lengkap dalam Bahasa Indonesia
+    (contoh: "Jumlah aset", "Jumlah ekuitas", "Jumlah laba (rugi)",
+    "Pendapatan bunga") — persis field yang dibutuhkan skema SCED
+    (total_assets, net_income, revenue). Cakupan periode: Q1 2023 - Q2 2026.
+  - **`aigen_db` → `indicator_snapshot_fundamental`**: rasio siap pakai
+    (ROE, ROA, DER, PER, PBV, EPS, Altman Z-Score, Piotroski F-Score,
+    Graham Number, fundamental_score) untuk **1.203 saham** (hampir seluruh
+    IDX), snapshot 2026-08-21. Beberapa field tambahan (dividend_yield,
+    revenue_growth_yoy, net_profit_margin, current_ratio) ADA di skema
+    tabel tapi NULL di data sample yang dicek — perlu dicek lagi apakah
+    terisi untuk saham lain.
+  - File SQL disimpan lokal di sesi kerja (belum di-commit ke repo — file
+    besar berisi data vendor komersial, TIDAK untuk taruh di GitHub, lihat
+    poin 6b).
+- **Ini menggantikan pendekatan riset manual web search satu-per-satu**
+  (yang terbukti tidak scalable di percobaan sebelumnya) — jauh lebih
+  efisien dan konsisten karena satu sumber terstruktur untuk ratusan saham.
+
+### 6b. ⚠️ Klarifikasi ToS DataSectors & Invezgo (vendor data) — BELUM SELESAI
+- Data di atas berasal dari **DataSectors** dan **Invezgo**, API vendor
+  data komersial berbayar yang juga dipakai di proyek lain milik user
+  (stockdataengine.com/stockvision.id, dikonfirmasi lewat riwayat proyek
+  tersebut).
+- **Belum diverifikasi:** apakah kontrak/ToS langganan DataSectors/Invezgo
+  mengizinkan datanya dipakai untuk **training model AI** yang akan
+  dikomersialkan (SCED Engine), bukan cuma ditampilkan di aplikasi sendiri.
+  Ini beda kasus dari data BI/BPS yang jelas domain publik.
+- **PERTANYAAN UNTUK USER (belum terjawab):** apakah user punya link
+  dokumentasi ToS DataSectors dan Invezgo, atau tahu ketentuan
+  reuse/redistribusi data di paket langganan mereka?
+- **STATUS: item ini harus dijawab SEBELUM data financial_rows/
+  indicator_snapshot_fundamental dipakai generate dataset training skala
+  besar** — sama seperti prinsip kehati-hatian yang diterapkan ke ToS
+  Gemini sebelumnya (poin 5).
+
+### 6c. Scaling dataset 20 → 500 Q&A (lanjutan setelah 6b selesai)
+- Setelah ToS vendor data dikonfirmasi aman, bangun script ekstraksi dari
+  `financial_rows`/`indicator_snapshot_fundamental` → format schema SCED
+  (`financial_metrics` + `macro_context` dari `data/macro_anchors.json`)
+  → generate Q&A 4 lensa via `teacher_master_prompt.md`.
+- Proof-of-concept BMRI manual (`bmri_synthetic_qa_PROOF_OF_CONCEPT.json`)
+  bisa dijadikan referensi format, tapi datanya sebaiknya diganti dari
+  `financial_rows`/`indicator_snapshot_fundamental` yang lebih presisi
+  begitu sudah boleh dipakai.
 
 ### 7. Smoke test training run v0.1 di Colab
 - Jalankan notebook end-to-end (10 sel) sebagai uji pipeline teknis, BUKAN
