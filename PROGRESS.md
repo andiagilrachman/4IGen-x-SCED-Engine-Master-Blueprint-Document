@@ -202,17 +202,48 @@ kerja tambahan:
   `extract_fundamental_data.py`, `generate_batch2.py`,
   `generate_batch2_3lenses.py`.
 
-### 6e. Langkah selanjutnya
-- Perluas 33 saham baru ke 4 lensa penuh (baru 1 lensa: Value & Risk Margin).
-- Perluas cakupan `financial_rows` ke lebih banyak bank/institusi keuangan
-  dari 101 yang tersedia (baru dipakai 4).
-- Untuk sektor non-keuangan, `financial_rows` tidak tersedia — kalau mau
-  data historis multi-tahun sektor lain, perlu sumber data tambahan atau
-  tanya user apakah ada tabel lain yang belum ter-export.
-- Audit kualitas: cek manual beberapa sampel acak dari 77 entri sebelum
-  dipakai training sungguhan (belum dilakukan review manual di sesi ini,
-  cuma validasi otomatis lewat script — lihat catatan Strict Fact
-  Adherence di atas).
+### 6f. ✅ Audit kualitas + 33 saham dilengkapi ke 4 lensa penuh (2026-08-23)
+Total dataset sekarang **176 entri** (naik dari 77 di akhir sesi
+sebelumnya).
+
+- **Audit otomatis kualitas dataset** (5 sampel acak + cek semua 77 entri
+  yang ada saat itu): script cek apakah semua angka di narasi CoT bisa
+  dilacak balik ke `input_data` (deteksi kemungkinan karangan angka).
+  Hasil: awalnya 102 "potensi tidak match" ternyata SEMUA false-positive
+  dari bug regex audit sendiri (tidak menangkap tanda minus pada angka
+  negatif) — setelah dicek manual, tidak ada fabrikasi data. Angka di CoT
+  konsisten dengan `input_data`.
+- **Temuan kualitas nyata (bukan fabrikasi, tapi soal nada narasi):** 2
+  dari 33 saham (ACST, PGJO) punya rasio ekstrem negatif (PER/PBV negatif,
+  Altman Z sangat negatif, Piotroski F terendah — indikasi kemungkinan
+  ekuitas negatif/kondisi keuangan sangat bermasalah), tapi generator versi
+  lama tetap pakai nada penutup CoT yang generik/netral sama seperti saham
+  sehat. **Diperbaiki**: `generate_batch5_33stocks_3lenses.py` sekarang
+  punya fungsi `severity_note()` yang mendeteksi kondisi ekstrem dan
+  menyesuaikan nada step_4 (Growth) dan opening_tone step_4 (Risk) supaya
+  lebih tegas memperingatkan, bukan generik.
+- **33 saham dilengkapi ke 4 lensa penuh** (`batch5_33stocks_3lenses.json`,
+  99 entri: 3 lensa baru × 33 saham) — Growth & Business Expansion, Macro &
+  Interest Rate Sensitivity, Risk & Red Flags Detector. Digabung dengan
+  `batch3_expanded_33stocks_value_risk.json` (lensa Value & Risk Margin
+  yang sudah ada), sekarang 33 saham ini punya cakupan 4 lensa lengkap.
+- Script tersimpan di `scripts/generate_batch5_33stocks_3lenses.py`
+  (reusable, butuh `fundamental_snapshot_all.json` &
+  `selected_stocks_batch3.json` sebagai input — file kerja lokal, tidak
+  di-commit).
+
+### 6g. Langkah selanjutnya
+- **Rekomendasi cleanup:** terapkan `severity_note()` yang sama ke
+  4 saham batch2 (BMRI/UNVR/ANTM/ASII) dan cek juga apakah ada di antara
+  keduanya yang kondisinya ekstrem (belum dicek).
+- Audit manual (baca langsung, bukan cuma script) untuk minimal beberapa
+  sampel dari tiap batch sebelum training sungguhan — audit sesi ini baru
+  otomatis (cek angka), belum baca kualitas narasi bahasa secara manual.
+- Perluas cakupan `financial_rows` ke lebih banyak bank (baru 4 dari 101
+  saham sektor Keuangan yang tersedia).
+- Pertimbangkan generate lensa untuk lebih banyak saham lagi dari 1.203
+  yang tersedia di `fundamental_snapshot_all.json` (baru dipakai 37 saham:
+  4 dari batch2 + 33 dari batch3/5).
 - Tetap tunda data eksplisit Invezgo sampai ToS dikonfirmasi (poin 6b).
 
 ### 7. Smoke test training run v0.1 di Colab
@@ -235,3 +266,6 @@ kerja tambahan:
   item terkait dari 🔜 BELUM DIKERJAKAN.
 - Commit ke GitHub butuh Personal Access Token baru tiap sesi (bukan token
   yang sama dipakai berulang) — demi keamanan.
+- **Folder lokal user:** `C:\4IGen-x-SCED-Engine` (Windows) — sudah
+  di-clone dari repo ini (2026-08-23). Sinkronisasi rutin pakai
+  `git pull origin main` di folder itu, BUKAN clone ulang.
