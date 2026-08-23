@@ -1,0 +1,46 @@
+# === Data mentah vendor (JANGAN commit — file besar, data vendor komersial mentah) ===
+# SQL dump database (sumber data fundamental/harga saham dari 4igen/aigen_db/DataSectors/Invezgo)
+*.sql
+*.sql.gz
+*.sql.zip
+
+# === Model & training artifacts (besar, tidak perlu di Git — simpan di Colab/Drive/lokal) ===
+models/
+*.safetensors
+*.bin
+*.gguf
+*.pt
+*.pth
+adapter_model/
+results/
+checkpoints/
+wandb/
+
+# === Environment & dependency lokal ===
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+
+# === Jupyter/Colab runtime ===
+.ipynb_checkpoints/
+
+# === OS & editor files ===
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# === Secrets (API key, token — JANGAN PERNAH commit) ===
+.env
+*.env
+*_token.txt
+*api_key*
+credentials.json
+
+# === Output sementara ===
+*.log
+*.tmp
