@@ -381,17 +381,47 @@ Windows** (tidak perlu Claude jalankan satu-satu lagi setiap scaling).
   referensi historis, tapi TIDAK PERLU dipakai lagi — `scale_new_stocks.py`
   sekarang jadi satu-satunya cara scaling ke depan.
 
-### 6q. Langkah selanjutnya
-- User bisa scaling mandiri sekarang lewat `run_scaling.bat` tanpa perlu
-  menunggu sesi kerja dengan Claude — cukup export SQL terbaru dari
-  phpMyAdmin tiap kali mau nambah data.
-- **Rekomendasi: coba smoke test training di Colab sekarang** — dataset
-  sudah 564 entri, pipeline scaling juga sudah mandiri, jadi ini titik
-  wajar untuk validasi ujung-ke-ujung sebelum lanjut scaling lebih jauh.
+### 6r. ✅ MILESTONE: Pipeline scaling terbukti jalan MANDIRI di komputer user (2026-08-23)
+Total dataset sekarang **684 entri**. Ini bukti pertama `run_scaling.bat`
+benar-benar berfungsi tanpa Claude mengerjakan langsung — user berhasil
+generate `batch10_scaled_30stocks.json` (120 entri, 30 saham baru) sendiri
+di `C:\4IGen-x-SCED-Engine`, lalu commit & push sendiri ke GitHub.
+
+- **Kendala yang ditemukan & diperbaiki sepanjang proses ini** (semua
+  sudah di-fix di commit sebelumnya, dicatat di sini sebagai riwayat):
+  1. `run_scaling.bat` sempat dijalankan dari folder salah (`C:\Windows\
+     system32`) — diperbaiki dengan `cd /d %~dp0` di awal `.bat`.
+  2. File SQL sempat ditaruh langsung di `scripts\` bukan `scripts\
+     sql_dumps\` — diperbaiki dengan deteksi & pindah otomatis di `.bat`.
+  3. **Gotcha Windows klasik**: nama file SQL jadi dobel ekstensi
+     (`stocks_sectors.sql.sql`) karena File Explorer menyembunyikan
+     ekstensi yang dikenal saat user rename — diperbaiki dengan
+     `extract_fundamental_data.py` sekarang pakai wildcard/prefix
+     matching, bukan cocok nama persis.
+- Setelah 3 fix di atas, user berhasil jalankan penuh: Langkah 1 (extract)
+  → Langkah 2 (scale, otomatis skip yang sudah ada) → Langkah 3 (rebuild
+  JSONL) → commit → push, semua dari komputernya sendiri.
+- **Verifikasi sinkron**: `git pull` di sesi ini mengonfirmasi commit user
+  (`f8828da`) sudah masuk sempurna, JSONL training 684 baris cocok dengan
+  jumlah entri di `data/synthetic_dataset/*.json`.
+- Ada file kecil `catatan.txt` (isinya cuma catatan perintah git pribadi
+  user) ikut ter-commit tidak sengaja — tidak masalah, dibiarkan saja
+  (bukan data sensitif).
+
+### 6s. Langkah selanjutnya
+- **User sekarang bisa scaling MANDIRI kapan saja** tanpa perlu sesi kerja
+  dengan Claude — cukup export SQL terbaru dari phpMyAdmin, taruh di
+  `scripts\sql_dumps\` (nama fleksibel, tidak perlu persis), lalu jalankan
+  `run_scaling.bat` dua kali (pertama bikin daftar kandidat, kedua generate
+  beneran).
+- **Rekomendasi kuat: coba smoke test training di Colab sekarang** —
+  dataset sudah 684 entri, pipeline scaling maupun training sudah
+  tervalidasi jalan. Ini titik yang sangat wajar untuk validasi ujung-ke-
+  ujung.
 - Tetap tunda data eksplisit Invezgo sampai ToS dikonfirmasi (poin 6b).
-- Perluas `financial_rows` (institusi keuangan, format berbeda dari
-  `indicator_snapshot_fundamental`) tetap butuh script terpisah kalau mau
-  dilanjutkan (belum diintegrasikan ke `scale_new_stocks.py`).
+- Kalau mau scaling lebih lanjut: edit `scripts\stocks_to_add.txt` dengan
+  kode saham pilihan sendiri, atau hapus filenya biar dibuatkan ulang
+  daftar kandidat otomatis.
 
 ### 7. Smoke test training run v0.1 di Colab
 - Jalankan notebook end-to-end (10 sel) sebagai uji pipeline teknis, BUKAN
