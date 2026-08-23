@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "asset_code": "ICBP",
+    "asset_name": "Indofood CBP Sukses Makmur Tbk",
+    "sector": "Consumer Goods / Food & Beverage",
+    "period": "Q3-2024 (TTM)",
+    "currency": "IDR",
+    "scale": "In Trillion IDR (except ratios)"
+  },
+  "financial_metrics": {
+    "total_assets": 122.5,
+    "total_revenue": 55.8,
+    "net_income": 9.2,
+    "revenue_growth_yoy_percent": 4.8,
+    "net_income_growth_yoy_percent": 11.5,
+    "roe_percent": 22.1,
+    "gross_profit_margin_percent": 36.5,
+    "der_x": 0.78,
+    "per_x": 13.8,
+    "pbv_x": 3.0,
+    "dividend_yield_percent": 3.8
+  },
+  "macro_context": {
+    "bi_rate_percent": 6.00,
+    "inflation_yoy_percent": 2.12,
+    "usd_idr_exchange_rate": 15800,
+    "indis_consumer_confidence_index": 123.5,
+    "sector_trend": "Daya beli konsumen stabil, harga bahan baku gandum/kemasan melandai, namun beban utang obligasi USD berisiko jika Rupiah melemah"
+  }
+}
